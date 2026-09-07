@@ -1,0 +1,1574 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.947,
+          30.5785
+        ]
+      },
+      "properties": {
+        "class": "airport",
+        "icao": "ZUUU",
+        "name": "CHENGDU SHUANGLIU INTL",
+        "elevation": 1625,
+        "transition_alt": 9800,
+        "marker-symbol": "airport"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6417,
+          29.719199999999997
+        ]
+      },
+      "properties": {
+        "class": "airport",
+        "icao": "ZUCK",
+        "name": "CHONGQING JIANGBEI INTL",
+        "elevation": 1350,
+        "transition_alt": 9800,
+        "marker-symbol": "airport"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.7516,
+          34.4471
+        ]
+      },
+      "properties": {
+        "class": "airport",
+        "icao": "ZLXY",
+        "name": "XI AN XIANYANG INTL",
+        "elevation": 1572,
+        "transition_alt": 9800,
+        "marker-symbol": "airport"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.5,
+          31.2
+        ]
+      },
+      "properties": {
+        "class": "waypoint",
+        "ident": "DUMET",
+        "region": "ZJ",
+        "usage": "E",
+        "marker-symbol": "waypoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.8,
+          30.8
+        ]
+      },
+      "properties": {
+        "class": "waypoint",
+        "ident": "AGNAV",
+        "region": "ZJ",
+        "usage": "E",
+        "marker-symbol": "waypoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.2,
+          30.2
+        ]
+      },
+      "properties": {
+        "class": "waypoint",
+        "ident": "IGONO",
+        "region": "ZJ",
+        "usage": "E",
+        "marker-symbol": "waypoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.0,
+          29.5
+        ]
+      },
+      "properties": {
+        "class": "waypoint",
+        "ident": "OMBLI",
+        "region": "ZJ",
+        "usage": "E",
+        "marker-symbol": "waypoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.5,
+          29.8
+        ]
+      },
+      "properties": {
+        "class": "waypoint",
+        "ident": "BATUL",
+        "region": "ZJ",
+        "usage": "E",
+        "marker-symbol": "waypoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.8,
+          30.0
+        ]
+      },
+      "properties": {
+        "class": "waypoint",
+        "ident": "NOPDA",
+        "region": "ZJ",
+        "usage": "E",
+        "marker-symbol": "waypoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.2,
+          31.0
+        ]
+      },
+      "properties": {
+        "class": "waypoint",
+        "ident": "GOSOD",
+        "region": "ZJ",
+        "usage": "E",
+        "marker-symbol": "waypoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.8,
+          31.5
+        ]
+      },
+      "properties": {
+        "class": "waypoint",
+        "ident": "TARGO",
+        "region": "ZJ",
+        "usage": "E",
+        "marker-symbol": "waypoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.2,
+          30.9
+        ]
+      },
+      "properties": {
+        "class": "waypoint",
+        "ident": "WX203",
+        "region": "ZJ",
+        "usage": "E",
+        "marker-symbol": "waypoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.6,
+          30.3
+        ]
+      },
+      "properties": {
+        "class": "waypoint",
+        "ident": "WX108",
+        "region": "ZJ",
+        "usage": "E",
+        "marker-symbol": "waypoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.947,
+          30.85
+        ]
+      },
+      "properties": {
+        "class": "waypoint",
+        "ident": "ZUUU.P281",
+        "region": "ZUUU",
+        "usage": "T",
+        "marker-symbol": "waypoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.947,
+          30.3
+        ]
+      },
+      "properties": {
+        "class": "waypoint",
+        "ident": "ZUUU.P282",
+        "region": "ZUUU",
+        "usage": "T",
+        "marker-symbol": "waypoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.4,
+          30.5785
+        ]
+      },
+      "properties": {
+        "class": "waypoint",
+        "ident": "ZUUU.P283",
+        "region": "ZUUU",
+        "usage": "T",
+        "marker-symbol": "waypoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.5,
+          30.5785
+        ]
+      },
+      "properties": {
+        "class": "waypoint",
+        "ident": "ZUUU.P284",
+        "region": "ZUUU",
+        "usage": "T",
+        "marker-symbol": "waypoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.947,
+          30.65
+        ]
+      },
+      "properties": {
+        "class": "waypoint",
+        "ident": "ZUUU.IM02R",
+        "region": "ZUUU",
+        "usage": "T",
+        "marker-symbol": "waypoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.947,
+          30.5
+        ]
+      },
+      "properties": {
+        "class": "waypoint",
+        "ident": "ZUUU.IM20L",
+        "region": "ZUUU",
+        "usage": "T",
+        "marker-symbol": "waypoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.947,
+          30.62
+        ]
+      },
+      "properties": {
+        "class": "waypoint",
+        "ident": "ZUUU.FAF02",
+        "region": "ZUUU",
+        "usage": "T",
+        "marker-symbol": "waypoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.947,
+          30.529999999999998
+        ]
+      },
+      "properties": {
+        "class": "waypoint",
+        "ident": "ZUUU.FAF20",
+        "region": "ZUUU",
+        "usage": "T",
+        "marker-symbol": "waypoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.947,
+          30.584999999999997
+        ]
+      },
+      "properties": {
+        "class": "waypoint",
+        "ident": "ZUUU.MAP02",
+        "region": "ZUUU",
+        "usage": "T",
+        "marker-symbol": "waypoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.947,
+          30.572
+        ]
+      },
+      "properties": {
+        "class": "waypoint",
+        "ident": "ZUUU.MAP20",
+        "region": "ZUUU",
+        "usage": "T",
+        "marker-symbol": "waypoint"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.947,
+          30.5785
+        ]
+      },
+      "properties": {
+        "class": "navaid",
+        "ident": "CTU",
+        "name": "CHENGDU VOR/DME",
+        "type": "V",
+        "frequency": "114.7",
+        "elevation": 1625,
+        "marker-symbol": "navaid"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.15,
+          31.45
+        ]
+      },
+      "properties": {
+        "class": "navaid",
+        "ident": "MIG",
+        "name": "MIANZHU VOR/DME",
+        "type": "V",
+        "frequency": "115.3",
+        "elevation": 2200,
+        "marker-symbol": "navaid"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.55,
+          28.75
+        ]
+      },
+      "properties": {
+        "class": "navaid",
+        "ident": "YIN",
+        "name": "YIBIN VOR/DME",
+        "type": "V",
+        "frequency": "113.8",
+        "elevation": 1200,
+        "marker-symbol": "navaid"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.25,
+          27.9
+        ]
+      },
+      "properties": {
+        "class": "navaid",
+        "ident": "LIA",
+        "name": "LIANGSHAN VOR",
+        "type": "V",
+        "frequency": "112.5",
+        "elevation": 5000,
+        "marker-symbol": "navaid"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.1,
+          30.85
+        ]
+      },
+      "properties": {
+        "class": "navaid",
+        "ident": "NQZ",
+        "name": "NANCHONG NDB",
+        "type": "N",
+        "frequency": "355.0",
+        "elevation": 1200,
+        "marker-symbol": "navaid"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            103.8,
+            31.5
+          ],
+          [
+            103.2,
+            31.0
+          ],
+          [
+            104.5,
+            31.2
+          ],
+          [
+            104.8,
+            30.8
+          ],
+          [
+            105.2,
+            30.2
+          ]
+        ]
+      },
+      "properties": {
+        "class": "airway",
+        "ident": "A593",
+        "type": "H",
+        "direction": "N",
+        "min_altitude": 7800,
+        "max_altitude": 12500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            104.2,
+            30.9
+          ],
+          [
+            104.6,
+            30.3
+          ],
+          [
+            105.0,
+            29.5
+          ]
+        ]
+      },
+      "properties": {
+        "class": "airway",
+        "ident": "B330",
+        "type": "H",
+        "direction": "N",
+        "min_altitude": 7200,
+        "max_altitude": 12500
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            103.5,
+            29.8
+          ],
+          [
+            102.8,
+            30.0
+          ],
+          [
+            103.2,
+            31.0
+          ]
+        ]
+      },
+      "properties": {
+        "class": "airway",
+        "ident": "W50",
+        "type": "L",
+        "direction": "N",
+        "min_altitude": 3000,
+        "max_altitude": 6000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            103.947,
+            30.5785
+          ],
+          [
+            103.947,
+            30.85
+          ],
+          [
+            104.5,
+            31.2
+          ],
+          [
+            104.8,
+            30.8
+          ]
+        ]
+      },
+      "properties": {
+        "class": "procedure",
+        "type": "SID",
+        "proc_ident": "CTU2D",
+        "transition": "DUME",
+        "legs": [
+          {
+            "type": "SID",
+            "proc_ident": "CTU2D",
+            "transition": "DUME",
+            "seq": 1,
+            "leg_type": "IF",
+            "fix_ident": "CTU",
+            "fix_lat": 30.5785,
+            "fix_lon": 103.947,
+            "recommended_navaid": "",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 0.0,
+            "inbound_course": 0.0,
+            "turn_direction": "",
+            "altitude": 1625,
+            "altitude2": 0,
+            "speed_limit": 0,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          },
+          {
+            "type": "SID",
+            "proc_ident": "CTU2D",
+            "transition": "DUME",
+            "seq": 2,
+            "leg_type": "CF",
+            "fix_ident": "P281",
+            "fix_lat": 30.85,
+            "fix_lon": 103.947,
+            "recommended_navaid": "CTU",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 0.0,
+            "inbound_course": 0.0,
+            "turn_direction": "",
+            "altitude": 5000,
+            "altitude2": 0,
+            "speed_limit": 220,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          },
+          {
+            "type": "SID",
+            "proc_ident": "CTU2D",
+            "transition": "DUME",
+            "seq": 3,
+            "leg_type": "TF",
+            "fix_ident": "DUMET",
+            "fix_lat": 31.2,
+            "fix_lon": 104.5,
+            "recommended_navaid": "",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 45.0,
+            "inbound_course": 0.0,
+            "turn_direction": "",
+            "altitude": 8000,
+            "altitude2": 0,
+            "speed_limit": 0,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          },
+          {
+            "type": "SID",
+            "proc_ident": "CTU2D",
+            "transition": "DUME",
+            "seq": 4,
+            "leg_type": "TF",
+            "fix_ident": "AGNAV",
+            "fix_lat": 30.8,
+            "fix_lon": 104.8,
+            "recommended_navaid": "",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 135.0,
+            "inbound_course": 0.0,
+            "turn_direction": "0",
+            "altitude": 10000,
+            "altitude2": 0,
+            "speed_limit": 0,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            103.947,
+            30.5785
+          ],
+          [
+            103.5,
+            30.5785
+          ],
+          [
+            103.5,
+            29.8
+          ],
+          [
+            102.8,
+            30.0
+          ]
+        ]
+      },
+      "properties": {
+        "class": "procedure",
+        "type": "SID",
+        "proc_ident": "BATU1",
+        "transition": "BATU",
+        "legs": [
+          {
+            "type": "SID",
+            "proc_ident": "BATU1",
+            "transition": "BATU",
+            "seq": 1,
+            "leg_type": "IF",
+            "fix_ident": "CTU",
+            "fix_lat": 30.5785,
+            "fix_lon": 103.947,
+            "recommended_navaid": "",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 0.0,
+            "inbound_course": 0.0,
+            "turn_direction": "",
+            "altitude": 1625,
+            "altitude2": 0,
+            "speed_limit": 0,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          },
+          {
+            "type": "SID",
+            "proc_ident": "BATU1",
+            "transition": "BATU",
+            "seq": 2,
+            "leg_type": "CF",
+            "fix_ident": "P284",
+            "fix_lat": 30.5785,
+            "fix_lon": 103.5,
+            "recommended_navaid": "CTU",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 270.0,
+            "inbound_course": 0.0,
+            "turn_direction": "0",
+            "altitude": 5000,
+            "altitude2": 0,
+            "speed_limit": 220,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          },
+          {
+            "type": "SID",
+            "proc_ident": "BATU1",
+            "transition": "BATU",
+            "seq": 3,
+            "leg_type": "TF",
+            "fix_ident": "BATUL",
+            "fix_lat": 29.8,
+            "fix_lon": 103.5,
+            "recommended_navaid": "",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 180.0,
+            "inbound_course": 0.0,
+            "turn_direction": "0",
+            "altitude": 8000,
+            "altitude2": 0,
+            "speed_limit": 0,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          },
+          {
+            "type": "SID",
+            "proc_ident": "BATU1",
+            "transition": "BATU",
+            "seq": 4,
+            "leg_type": "TF",
+            "fix_ident": "NOPDA",
+            "fix_lat": 30.0,
+            "fix_lon": 102.8,
+            "recommended_navaid": "",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 270.0,
+            "inbound_course": 0.0,
+            "turn_direction": "0",
+            "altitude": 10000,
+            "altitude2": 0,
+            "speed_limit": 0,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            104.5,
+            31.2
+          ],
+          [
+            104.8,
+            30.8
+          ],
+          [
+            104.2,
+            30.9
+          ],
+          [
+            103.947,
+            30.85
+          ],
+          [
+            103.947,
+            30.65
+          ]
+        ]
+      },
+      "properties": {
+        "class": "procedure",
+        "type": "STAR",
+        "proc_ident": "DUM1A",
+        "transition": "DUME",
+        "legs": [
+          {
+            "type": "STAR",
+            "proc_ident": "DUM1A",
+            "transition": "DUME",
+            "seq": 1,
+            "leg_type": "IF",
+            "fix_ident": "DUMET",
+            "fix_lat": 31.2,
+            "fix_lon": 104.5,
+            "recommended_navaid": "",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 0.0,
+            "inbound_course": 0.0,
+            "turn_direction": "",
+            "altitude": 12500,
+            "altitude2": 0,
+            "speed_limit": 0,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          },
+          {
+            "type": "STAR",
+            "proc_ident": "DUM1A",
+            "transition": "DUME",
+            "seq": 2,
+            "leg_type": "TF",
+            "fix_ident": "AGNAV",
+            "fix_lat": 30.8,
+            "fix_lon": 104.8,
+            "recommended_navaid": "",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 180.0,
+            "inbound_course": 0.0,
+            "turn_direction": "0",
+            "altitude": 10000,
+            "altitude2": 0,
+            "speed_limit": 0,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          },
+          {
+            "type": "STAR",
+            "proc_ident": "DUM1A",
+            "transition": "DUME",
+            "seq": 3,
+            "leg_type": "TF",
+            "fix_ident": "WX203",
+            "fix_lat": 30.9,
+            "fix_lon": 104.2,
+            "recommended_navaid": "",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 270.0,
+            "inbound_course": 0.0,
+            "turn_direction": "0",
+            "altitude": 8000,
+            "altitude2": 0,
+            "speed_limit": 0,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          },
+          {
+            "type": "STAR",
+            "proc_ident": "DUM1A",
+            "transition": "DUME",
+            "seq": 4,
+            "leg_type": "CF",
+            "fix_ident": "P281",
+            "fix_lat": 30.85,
+            "fix_lon": 103.947,
+            "recommended_navaid": "CTU",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 225.0,
+            "inbound_course": 0.0,
+            "turn_direction": "0",
+            "altitude": 6000,
+            "altitude2": 0,
+            "speed_limit": 250,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          },
+          {
+            "type": "STAR",
+            "proc_ident": "DUM1A",
+            "transition": "DUME",
+            "seq": 5,
+            "leg_type": "TF",
+            "fix_ident": "IM02R",
+            "fix_lat": 30.65,
+            "fix_lon": 103.947,
+            "recommended_navaid": "",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 180.0,
+            "inbound_course": 0.0,
+            "turn_direction": "0",
+            "altitude": 4000,
+            "altitude2": 0,
+            "speed_limit": 220,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            103.5,
+            29.8
+          ],
+          [
+            102.8,
+            30.0
+          ],
+          [
+            103.947,
+            30.3
+          ],
+          [
+            103.947,
+            30.5
+          ]
+        ]
+      },
+      "properties": {
+        "class": "procedure",
+        "type": "STAR",
+        "proc_ident": "BAT1B",
+        "transition": "BATU",
+        "legs": [
+          {
+            "type": "STAR",
+            "proc_ident": "BAT1B",
+            "transition": "BATU",
+            "seq": 1,
+            "leg_type": "IF",
+            "fix_ident": "BATUL",
+            "fix_lat": 29.8,
+            "fix_lon": 103.5,
+            "recommended_navaid": "",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 0.0,
+            "inbound_course": 0.0,
+            "turn_direction": "",
+            "altitude": 12500,
+            "altitude2": 0,
+            "speed_limit": 0,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          },
+          {
+            "type": "STAR",
+            "proc_ident": "BAT1B",
+            "transition": "BATU",
+            "seq": 2,
+            "leg_type": "TF",
+            "fix_ident": "NOPDA",
+            "fix_lat": 30.0,
+            "fix_lon": 102.8,
+            "recommended_navaid": "",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 0.0,
+            "inbound_course": 0.0,
+            "turn_direction": "",
+            "altitude": 10000,
+            "altitude2": 0,
+            "speed_limit": 0,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          },
+          {
+            "type": "STAR",
+            "proc_ident": "BAT1B",
+            "transition": "BATU",
+            "seq": 3,
+            "leg_type": "CF",
+            "fix_ident": "P282",
+            "fix_lat": 30.3,
+            "fix_lon": 103.947,
+            "recommended_navaid": "CTU",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 45.0,
+            "inbound_course": 0.0,
+            "turn_direction": "",
+            "altitude": 6000,
+            "altitude2": 0,
+            "speed_limit": 250,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          },
+          {
+            "type": "STAR",
+            "proc_ident": "BAT1B",
+            "transition": "BATU",
+            "seq": 4,
+            "leg_type": "TF",
+            "fix_ident": "IM20L",
+            "fix_lat": 30.5,
+            "fix_lon": 103.947,
+            "recommended_navaid": "",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 0.0,
+            "inbound_course": 0.0,
+            "turn_direction": "",
+            "altitude": 4000,
+            "altitude2": 0,
+            "speed_limit": 220,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            103.947,
+            30.65
+          ],
+          [
+            103.947,
+            30.62
+          ],
+          [
+            103.947,
+            30.584999999999997
+          ],
+          [
+            103.947,
+            30.584999999999997
+          ],
+          [
+            103.947,
+            30.85
+          ]
+        ]
+      },
+      "properties": {
+        "class": "procedure",
+        "type": "APPROACH",
+        "proc_ident": "ILS02",
+        "transition": "",
+        "legs": [
+          {
+            "type": "APPROACH",
+            "proc_ident": "ILS02",
+            "transition": "",
+            "seq": 1,
+            "leg_type": "IF",
+            "fix_ident": "IM02R",
+            "fix_lat": 30.65,
+            "fix_lon": 103.947,
+            "recommended_navaid": "",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 0.0,
+            "inbound_course": 0.0,
+            "turn_direction": "",
+            "altitude": 4000,
+            "altitude2": 0,
+            "speed_limit": 220,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          },
+          {
+            "type": "APPROACH",
+            "proc_ident": "ILS02",
+            "transition": "",
+            "seq": 2,
+            "leg_type": "CF",
+            "fix_ident": "FAF02",
+            "fix_lat": 30.62,
+            "fix_lon": 103.947,
+            "recommended_navaid": "CTU",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 180.0,
+            "inbound_course": 0.0,
+            "turn_direction": "0",
+            "altitude": 3000,
+            "altitude2": 0,
+            "speed_limit": 180,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          },
+          {
+            "type": "APPROACH",
+            "proc_ident": "ILS02",
+            "transition": "",
+            "seq": 3,
+            "leg_type": "FA",
+            "fix_ident": "MAP02",
+            "fix_lat": 30.584999999999997,
+            "fix_lon": 103.947,
+            "recommended_navaid": "CTU",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 180.0,
+            "inbound_course": 0.0,
+            "turn_direction": "0",
+            "altitude": 1625,
+            "altitude2": 0,
+            "speed_limit": 0,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          },
+          {
+            "type": "APPROACH",
+            "proc_ident": "ILS02",
+            "transition": "",
+            "seq": 4,
+            "leg_type": "CA",
+            "fix_ident": "MAP02",
+            "fix_lat": 30.584999999999997,
+            "fix_lon": 103.947,
+            "recommended_navaid": "CTU",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 180.0,
+            "inbound_course": 0.0,
+            "turn_direction": "0",
+            "altitude": 1625,
+            "altitude2": 0,
+            "speed_limit": 0,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          },
+          {
+            "type": "APPROACH",
+            "proc_ident": "ILS02",
+            "transition": "",
+            "seq": 5,
+            "leg_type": "TF",
+            "fix_ident": "P281",
+            "fix_lat": 30.85,
+            "fix_lon": 103.947,
+            "recommended_navaid": "",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 0.0,
+            "inbound_course": 0.0,
+            "turn_direction": "",
+            "altitude": 5000,
+            "altitude2": 0,
+            "speed_limit": 0,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            103.947,
+            30.5
+          ],
+          [
+            103.947,
+            30.529999999999998
+          ],
+          [
+            103.947,
+            30.572
+          ],
+          [
+            103.947,
+            30.572
+          ],
+          [
+            103.947,
+            30.3
+          ]
+        ]
+      },
+      "properties": {
+        "class": "procedure",
+        "type": "APPROACH",
+        "proc_ident": "ILS20",
+        "transition": "",
+        "legs": [
+          {
+            "type": "APPROACH",
+            "proc_ident": "ILS20",
+            "transition": "",
+            "seq": 1,
+            "leg_type": "IF",
+            "fix_ident": "IM20L",
+            "fix_lat": 30.5,
+            "fix_lon": 103.947,
+            "recommended_navaid": "",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 0.0,
+            "inbound_course": 0.0,
+            "turn_direction": "",
+            "altitude": 4000,
+            "altitude2": 0,
+            "speed_limit": 220,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          },
+          {
+            "type": "APPROACH",
+            "proc_ident": "ILS20",
+            "transition": "",
+            "seq": 2,
+            "leg_type": "CF",
+            "fix_ident": "FAF20",
+            "fix_lat": 30.529999999999998,
+            "fix_lon": 103.947,
+            "recommended_navaid": "CTU",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 0.0,
+            "inbound_course": 0.0,
+            "turn_direction": "",
+            "altitude": 3000,
+            "altitude2": 0,
+            "speed_limit": 180,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          },
+          {
+            "type": "APPROACH",
+            "proc_ident": "ILS20",
+            "transition": "",
+            "seq": 3,
+            "leg_type": "FA",
+            "fix_ident": "MAP20",
+            "fix_lat": 30.572,
+            "fix_lon": 103.947,
+            "recommended_navaid": "CTU",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 0.0,
+            "inbound_course": 0.0,
+            "turn_direction": "",
+            "altitude": 1625,
+            "altitude2": 0,
+            "speed_limit": 0,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          },
+          {
+            "type": "APPROACH",
+            "proc_ident": "ILS20",
+            "transition": "",
+            "seq": 4,
+            "leg_type": "CA",
+            "fix_ident": "MAP20",
+            "fix_lat": 30.572,
+            "fix_lon": 103.947,
+            "recommended_navaid": "CTU",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 0.0,
+            "inbound_course": 0.0,
+            "turn_direction": "",
+            "altitude": 1625,
+            "altitude2": 0,
+            "speed_limit": 0,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          },
+          {
+            "type": "APPROACH",
+            "proc_ident": "ILS20",
+            "transition": "",
+            "seq": 5,
+            "leg_type": "TF",
+            "fix_ident": "P282",
+            "fix_lat": 30.3,
+            "fix_lon": 103.947,
+            "recommended_navaid": "",
+            "arc_radius": 0.0,
+            "theta": 0.0,
+            "rho": 0.0,
+            "outbound_course": 180.0,
+            "inbound_course": 0.0,
+            "turn_direction": "0",
+            "altitude": 5000,
+            "altitude2": 0,
+            "speed_limit": 0,
+            "vertical_angle": 0.0,
+            "center_fix": "",
+            "rnp": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.947,
+              31.24471666666667
+            ],
+            [
+              104.33624444444445,
+              31.15488333333333
+            ],
+            [
+              104.61946666666665,
+              30.909880555555553
+            ],
+            [
+              104.72081944444444,
+              30.57621111111111
+            ],
+            [
+              104.61486388888888,
+              30.243686111111113
+            ],
+            [
+              104.33163888888889,
+              30.000972222222224
+            ],
+            [
+              103.947,
+              29.91228333333333
+            ],
+            [
+              103.5623611111111,
+              30.000972222222224
+            ],
+            [
+              103.27913611111111,
+              30.243686111111113
+            ],
+            [
+              103.17318055555556,
+              30.57621111111111
+            ],
+            [
+              103.27453333333334,
+              30.909880555555553
+            ],
+            [
+              103.55775555555556,
+              31.15488333333333
+            ],
+            [
+              103.947,
+              31.24471666666667
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "class": "airspace",
+        "ident": "ZUUU",
+        "type": "T",
+        "name": "CHENGDU TMA",
+        "upper_limit": 1000,
+        "lower_limit": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              100.0,
+              33.0
+            ],
+            [
+              108.0,
+              33.0
+            ],
+            [
+              110.0,
+              30.0
+            ],
+            [
+              108.0,
+              27.0
+            ],
+            [
+              103.0,
+              26.0
+            ],
+            [
+              99.0,
+              28.0
+            ],
+            [
+              100.0,
+              33.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "class": "airspace",
+        "ident": "ZJFI",
+        "type": "F",
+        "name": "CHENGDU FIR",
+        "upper_limit": 6000,
+        "lower_limit": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              104.0,
+              31.0
+            ],
+            [
+              104.5,
+              31.5
+            ],
+            [
+              105.0,
+              31.2
+            ],
+            [
+              104.8,
+              30.8
+            ],
+            [
+              104.0,
+              31.0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "class": "airspace",
+        "ident": "R201",
+        "type": "R",
+        "name": "RESTRICTED AREA 201",
+        "upper_limit": 2000,
+        "lower_limit": 0
+      }
+    }
+  ],
+  "metadata": {
+    "airport_count": 3,
+    "waypoint_count": 20,
+    "navaid_count": 5,
+    "airway_count": 3,
+    "procedure_count": 6,
+    "airspace_count": 3,
+    "raw_record_count": 88
+  }
+}

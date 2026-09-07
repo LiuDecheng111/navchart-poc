@@ -1,0 +1,4679 @@
+{
+  "type": "FeatureCollection",
+  "properties": {
+    "source": "CAAC e-AIP EAIP2026-09.V1.3",
+    "effective": "2026-09-02",
+    "airport_count": 30,
+    "feature_count": 204
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZBAA",
+        "iata": "PEK",
+        "name_en": "BEIJING/Capital",
+        "name_cn": "北京/首都",
+        "elevation": "35.3 m",
+        "type": "CIVIL",
+        "runway_class": "RWY01/19, RWY18L/36R: 4F; RWY18R/36L: 4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.59833333333333,
+          40.07333333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "19/01",
+        "length": 3800,
+        "width": "60",
+        "true_bearing": 172.98,
+        "magnetic_bearing": "181° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 930/R/A/W/T",
+        "elevation": "THR 28.5m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.6010616886227,
+            40.05637428347239
+          ],
+          [
+            116.59560361891927,
+            40.090292319160156
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "18L/00R",
+        "length": 3800,
+        "width": "60",
+        "true_bearing": 172.98,
+        "magnetic_bearing": "181° MAG",
+        "surface": "ASPH",
+        "pcn": "PCR 1010/R/B/W/T",
+        "elevation": "THR 33.4m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.6010616886227,
+            40.05637428347239
+          ],
+          [
+            116.59560361891927,
+            40.090292319160156
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "36R/18L",
+        "length": 3800,
+        "width": "60",
+        "true_bearing": 352.98,
+        "magnetic_bearing": "001° MAG",
+        "surface": "ASPH",
+        "pcn": "PCR 1010/R/B/W/T",
+        "elevation": "THR 29.9m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.59560361891927,
+            40.090292319160156
+          ],
+          [
+            116.6010616886227,
+            40.05637428347239
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "HUR",
+        "type": "VOR/DME",
+        "name_en": "Huairou",
+        "name_cn": "怀柔",
+        "frequency": "113.6 MHz",
+        "channel": "CH 83X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "62 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.74833333333333,
+          40.33
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "PEK",
+        "type": "VOR/DME",
+        "name_en": "Guanzhuang",
+        "name_cn": "官庄",
+        "frequency": "114.7 MHz",
+        "channel": "CH 94X",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": "62 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.735,
+          40.04833333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "SZY",
+        "type": "VOR/DME",
+        "name_en": "Shaziying",
+        "name_cn": "沙子营",
+        "frequency": "117.2 MHz",
+        "channel": "CH 119X",
+        "purpose": "TERMINAL",
+        "work_time": "",
+        "dme_elevation": "72 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.43,
+          40.10666666666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "JR",
+        "type": "NDB",
+        "name_en": "Liangxiang",
+        "name_cn": "良乡",
+        "frequency": "475 kHz",
+        "channel": "",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.095,
+          39.72
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "CDY",
+        "type": "NDB",
+        "name_en": "Chedaoyu",
+        "name_cn": "车道峪",
+        "frequency": "292 kHz",
+        "channel": "",
+        "purpose": "ENROUTE",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.22333333333333,
+          40.57833333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "VM",
+        "type": "NDB",
+        "name_en": "Shigezhuang",
+        "name_cn": "石各庄",
+        "frequency": "280 kHz",
+        "channel": "",
+        "purpose": "ENROUTE",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.90166666666667,
+          39.29666666666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "JB",
+        "type": "NDB",
+        "name_en": "Zangangzhen",
+        "name_cn": "昝岗镇",
+        "frequency": "403 kHz",
+        "channel": "",
+        "purpose": "ENROUTE",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.19833333333334,
+          39.04333333333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "OB",
+        "type": "NDB",
+        "name_en": "Huairou",
+        "name_cn": "怀柔",
+        "frequency": "380 kHz",
+        "channel": "",
+        "purpose": "TERMINAL",
+        "work_time": "",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.535,
+          40.288333333333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "CU",
+        "type": "NDB",
+        "name_en": "Shahe",
+        "name_cn": "沙河",
+        "frequency": "555 kHz",
+        "channel": "",
+        "purpose": "TERMINAL",
+        "work_time": "",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.37166666666667,
+          40.12166666666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "WF",
+        "type": "NDB",
+        "name_en": "Xiliuhetun",
+        "name_cn": "西柳河屯",
+        "frequency": "395 kHz",
+        "channel": "",
+        "purpose": "TERMINAL",
+        "work_time": "",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.875,
+          39.945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZBDS",
+        "iata": "DSN",
+        "name_en": "ORDOS/Ejin Horo",
+        "name_cn": "鄂尔多斯/伊金霍洛",
+        "elevation": "1399.9 m",
+        "type": "CIVIL",
+        "runway_class": "4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.865,
+          39.49
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "13/31",
+        "length": 3200,
+        "width": "45",
+        "true_bearing": 122.76,
+        "magnetic_bearing": "128° MAG",
+        "surface": "ASPH",
+        "pcn": "PCR 1370/F/B/W/T",
+        "elevation": "THR 1399.6m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            109.88067780382535,
+            39.482212674703945
+          ],
+          [
+            109.84931868444684,
+            39.49778521942306
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "HDS",
+        "type": "VOR/DME",
+        "name_en": "Ordos",
+        "name_cn": "鄂尔多斯",
+        "frequency": "116.1 MHz",
+        "channel": "CH 108X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "1401 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.86166666666666,
+          39.49
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZBER",
+        "iata": "ERL",
+        "name_en": "ERENHOT/Saiwusu",
+        "name_cn": "二连浩特/赛乌素",
+        "elevation": "1014.3 m",
+        "type": "CIVIL",
+        "runway_class": "4C"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.09333333333333,
+          43.425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "12/30",
+        "length": 2800,
+        "width": "45",
+        "true_bearing": 110.25,
+        "magnetic_bearing": "117° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 600/R/A/W/T",
+        "elevation": "THR 1014.3m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            112.10959639228943,
+            43.420641059982444
+          ],
+          [
+            112.07706793274714,
+            43.429356635087764
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "LHT",
+        "type": "VOR/DME",
+        "name_en": "Erenhot",
+        "name_cn": "二连浩特",
+        "frequency": "112.5 MHz",
+        "channel": "CH 72X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "1014 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.12666666666667,
+          43.413333333333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZBYN",
+        "iata": "TYN",
+        "name_en": "TAIYUAN/Wusu",
+        "name_cn": "太原/武宿",
+        "elevation": "788.0 m",
+        "type": "CIVIL",
+        "runway_class": "4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.63,
+          37.748333333333335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "13L/31R",
+        "length": 3600,
+        "width": "45",
+        "true_bearing": 126.99,
+        "magnetic_bearing": "133° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 740/R/A/W/T",
+        "elevation": "THR 775.4m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            112.64635009603909,
+            37.73859240598912
+          ],
+          [
+            112.6136455996043,
+            37.75807200156761
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "TYN",
+        "type": "VOR/DME",
+        "name_en": "Taiyuan",
+        "name_cn": "太原",
+        "frequency": "113.1 MHz",
+        "channel": "CH 78X",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": "787 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.61666666666666,
+          37.75333333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZGGG",
+        "iata": "CAN",
+        "name_en": "GUANGZHOU/Baiyun",
+        "name_cn": "广州/白云",
+        "elevation": "15.2 m",
+        "type": "CIVIL",
+        "runway_class": "RWY02L/20R, RWY02R/20L: 4F; RWY01L/19R, RWY01R/19L, RWY03/21: 4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.30833333333334,
+          23.393333333333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "01L/19R",
+        "length": 3400,
+        "width": "45",
+        "true_bearing": 14,
+        "magnetic_bearing": "017° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 890/R/A/W/T",
+        "elevation": "THR 13.0m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            113.31236365152125,
+            23.408167616157204
+          ],
+          [
+            113.30430391786561,
+            23.37849894722318
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "02L/20R",
+        "length": 3800,
+        "width": "60",
+        "true_bearing": 14,
+        "magnetic_bearing": "017° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 1210/R/A/W/T",
+        "elevation": "THR 13.8m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            113.31283786598942,
+            23.409912819106257
+          ],
+          [
+            113.30382992829661,
+            23.376753718541895
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "03/21",
+        "length": 3600,
+        "width": "45",
+        "true_bearing": 14,
+        "magnetic_bearing": "017° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 890/R/A/W/T",
+        "elevation": "THR 14.5m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            113.312600757192,
+            23.409040217810603
+          ],
+          [
+            113.30406692152086,
+            23.377626333061052
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "CEN",
+        "type": "VOR/DME",
+        "name_en": "Cencun",
+        "name_cn": "岑村",
+        "frequency": "114.6 MHz",
+        "channel": "CH 93X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "108 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.41666666666667,
+          23.151666666666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "CON",
+        "type": "VOR/DME",
+        "name_en": "Conghua",
+        "name_cn": "从化",
+        "frequency": "113.0 MHz",
+        "channel": "CH 77X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "77 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.58666666666667,
+          23.588333333333335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "GYA",
+        "type": "VOR/DME",
+        "name_en": "Gaoyao",
+        "name_cn": "高要",
+        "frequency": "116.5 MHz",
+        "channel": "CH 112X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.48666666666666,
+          23.07
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "LMN",
+        "type": "VOR/DME",
+        "name_en": "Longmen",
+        "name_cn": "龙门",
+        "frequency": "116.3 MHz",
+        "channel": "CH 110X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "39 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.32666666666667,
+          23.648333333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "POU",
+        "type": "VOR/DME",
+        "name_en": "Pingzhou",
+        "name_cn": "平洲",
+        "frequency": "114.1 MHz",
+        "channel": "CH 88X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "27 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.19,
+          23.02166666666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "SHL",
+        "type": "VOR/DME",
+        "name_en": "Shilong",
+        "name_cn": "石龙",
+        "frequency": "115.7 MHz",
+        "channel": "CH 104X",
+        "purpose": "ALL",
+        "work_time": "",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.85,
+          23.091666666666665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "YIN",
+        "type": "VOR/DME",
+        "name_en": "Yingde",
+        "name_cn": "英德",
+        "frequency": "113.5 MHz",
+        "channel": "CH 82X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "167 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.415,
+          24.19
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "TAN",
+        "type": "VOR/DME",
+        "name_en": "Yuantan",
+        "name_cn": "源潭",
+        "frequency": "112.5 MHz",
+        "channel": "CH 72X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "184 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.24166666666666,
+          23.668333333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZGKL",
+        "iata": "KWL",
+        "name_en": "GUILIN/Liangjiang",
+        "name_cn": "桂林/两江",
+        "elevation": "173.6 m",
+        "type": "CIVIL",
+        "runway_class": "4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.03833333333333,
+          25.216666666666665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "01/19",
+        "length": 3200,
+        "width": "45",
+        "true_bearing": 5,
+        "magnetic_bearing": "008° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 830/R/A/W/T",
+        "elevation": "THR 173.6m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            110.03971969355827,
+            25.231001050852566
+          ],
+          [
+            110.0369472997401,
+            25.202332269554116
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "KWL",
+        "type": "VOR/DME",
+        "name_en": "Guilin",
+        "name_cn": "桂林",
+        "frequency": "114.9 MHz",
+        "channel": "CH 96X",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": "171 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.03833333333333,
+          25.19333333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "VQ",
+        "type": "NDB",
+        "name_en": "Darongjiang",
+        "name_cn": "大榕江",
+        "frequency": "398 kHz",
+        "channel": "",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.47666666666667,
+          25.561666666666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "Y",
+        "type": "NDB",
+        "name_en": "Qifengling",
+        "name_cn": "奇峰岭",
+        "frequency": "417 kHz",
+        "channel": "",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.31833333333333,
+          25.171666666666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "PA",
+        "type": "NDB",
+        "name_en": "Wutong",
+        "name_cn": "五通",
+        "frequency": "286 kHz",
+        "channel": "",
+        "purpose": "ALL",
+        "work_time": "",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.06,
+          25.405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "JW",
+        "type": "NDB",
+        "name_en": "Yongfu",
+        "name_cn": "永福",
+        "frequency": "281 kHz",
+        "channel": "",
+        "purpose": "ALL",
+        "work_time": "",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.01666666666667,
+          25.008333333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZGSZ",
+        "iata": "SZX",
+        "name_en": "SHENZHEN/Baoan",
+        "name_cn": "深圳/宝安",
+        "elevation": "4.1 m",
+        "type": "CIVIL",
+        "runway_class": "RWY16L/34R, RWY16R/34L: 4F; RWY15/33: 4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.81166666666667,
+          22.638333333333332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "15/33",
+        "length": 3400,
+        "width": "45",
+        "true_bearing": 153.04,
+        "magnetic_bearing": "156° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 990/R/A/W/T",
+        "elevation": "THR 3.7m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            113.8191758471126,
+            22.624706192140554
+          ],
+          [
+            113.80415599643058,
+            22.651960124830154
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "16L/34R",
+        "length": 3800,
+        "width": "60",
+        "true_bearing": 153.03,
+        "magnetic_bearing": "156° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 900/R/A/W/T",
+        "elevation": "THR 4.0m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            113.8200620619164,
+            22.623104328228663
+          ],
+          [
+            113.80326940999473,
+            22.653561901320746
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "GLN",
+        "type": "VOR/DME",
+        "name_en": "Guanlan",
+        "name_cn": "观澜",
+        "frequency": "112.0 MHz",
+        "channel": "CH 57X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.03333333333333,
+          22.708333333333332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "ZUH",
+        "type": "VOR/DME",
+        "name_en": "Lianshengwei",
+        "name_cn": "连胜围",
+        "frequency": "116.7 MHz",
+        "channel": "CH 114X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "68 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.46666666666667,
+          22.221666666666668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "NLG",
+        "type": "VOR/DME",
+        "name_en": "Nanlang",
+        "name_cn": "南朗",
+        "frequency": "117.7 MHz",
+        "channel": "CH 124X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "93 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.56166666666667,
+          22.531666666666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "SHK",
+        "type": "VOR/DME",
+        "name_en": "Shekou",
+        "name_cn": "蛇口",
+        "frequency": "115.9 MHz",
+        "channel": "CH 106X",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": "339 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.90333333333334,
+          22.496666666666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "UJ",
+        "type": "NDB",
+        "name_en": "Gaolan",
+        "name_cn": "高栏",
+        "frequency": "204 kHz",
+        "channel": "",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.29333333333334,
+          21.92
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZGZJ",
+        "iata": "ZHA",
+        "name_en": "ZHANJIANG/Wuchuan",
+        "name_cn": "湛江/吴川",
+        "elevation": "20.5 m",
+        "type": "CIVIL",
+        "runway_class": "4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.595,
+          21.485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "15/33",
+        "length": 3200,
+        "width": "45",
+        "true_bearing": 149.84,
+        "magnetic_bearing": "152° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 1020/R/C/W/T",
+        "elevation": "THR 20.5m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            110.60276853408209,
+            21.47255859441904
+          ],
+          [
+            110.58723013787912,
+            21.49744104654403
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "WUQ",
+        "type": "VOR/DME",
+        "name_en": "Wuchuan",
+        "name_cn": "吴川",
+        "frequency": "116.25 MHz",
+        "channel": "CH 109Y",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "41 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.69833333333334,
+          21.488333333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "LH",
+        "type": "NDB",
+        "name_en": "Huguang",
+        "name_cn": "湖光",
+        "frequency": "356 kHz",
+        "channel": "",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.33333333333333,
+          21.135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZHEC",
+        "iata": "EHU",
+        "name_en": "EZHOU/Huahu",
+        "name_cn": "鄂州/花湖",
+        "elevation": "23.4 m",
+        "type": "CIVIL",
+        "runway_class": "4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.02833333333334,
+          30.341666666666665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "01L/19R",
+        "length": 3600,
+        "width": "45",
+        "true_bearing": 9.99,
+        "magnetic_bearing": "015° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 820/R/A/W/T",
+        "elevation": "THR 22.5m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            115.0315877512223,
+            30.357608976757543
+          ],
+          [
+            115.0250799753378,
+            30.325724276013347
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "DCD",
+        "type": "VOR/DME",
+        "name_en": "Caidian",
+        "name_cn": "蔡甸",
+        "frequency": "114.25 MHz",
+        "channel": "CH 89Y",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "50 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15833333333333,
+          30.44
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "KGF",
+        "type": "VOR/DME",
+        "name_en": "Chashan",
+        "name_cn": "茶山",
+        "frequency": "116.45 MHz",
+        "channel": "CH 111Y",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "114 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.76166666666667,
+          30.15
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "DHB",
+        "type": "VOR/DME",
+        "name_en": "Hebaohu",
+        "name_cn": "荷苞湖",
+        "frequency": "114.45 MHz",
+        "channel": "CH 91Y",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "100 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.97166666666666,
+          30.698333333333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "HOK",
+        "type": "VOR/DME",
+        "name_en": "Hekou",
+        "name_cn": "河口",
+        "frequency": "116.0 MHz",
+        "channel": "CH 107X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.43,
+          31.325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "DHP",
+        "type": "VOR/DME",
+        "name_en": "Huangpi",
+        "name_cn": "黄陂",
+        "frequency": "113.75 MHz",
+        "channel": "CH 84Y",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "55 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.47,
+          30.87
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "MOU",
+        "type": "VOR/DME",
+        "name_en": "Huilongshan",
+        "name_cn": "回龙山",
+        "frequency": "114.95 MHz",
+        "channel": "CH 96Y",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "112 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.98833333333333,
+          30.611666666666668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "WHA",
+        "type": "VOR/DME",
+        "name_en": "Tianhe",
+        "name_cn": "天河",
+        "frequency": "112.2 MHz",
+        "channel": "CH 59X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "43 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.20333333333333,
+          30.781666666666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "WTM",
+        "type": "VOR/DME",
+        "name_en": "Tianmen",
+        "name_cn": "天门",
+        "frequency": "108.8 MHz",
+        "channel": "CH 25X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "52 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.14166666666667,
+          30.753333333333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "XGD",
+        "type": "VOR/DME",
+        "name_en": "Tianshan",
+        "name_cn": "天山",
+        "frequency": "112.05 MHz",
+        "channel": "CH 57Y",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "178 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.12333333333333,
+          30.691666666666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "XSH",
+        "type": "VOR/DME",
+        "name_en": "Xishui",
+        "name_cn": "浠水",
+        "frequency": "115.4 MHz",
+        "channel": "CH 101X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.26666666666667,
+          30.435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "HG",
+        "type": "NDB",
+        "name_en": "Tianhe",
+        "name_cn": "天河",
+        "frequency": "254 kHz",
+        "channel": "",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.35,
+          30.925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZHHH",
+        "iata": "WUH",
+        "name_en": "WUHAN/Tianhe",
+        "name_cn": "武汉/天河",
+        "elevation": "34.5 m",
+        "type": "CIVIL",
+        "runway_class": "RWY05L/23R: 4F; RWY04/22, RWY05R/23L: 4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.20666666666666,
+          30.785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "04/22",
+        "length": 3400,
+        "width": "45",
+        "true_bearing": 41.43,
+        "magnetic_bearing": "046° MAG",
+        "surface": "ASPH",
+        "pcn": "PCR 1130/R/A/W/T",
+        "elevation": "THR 28.9m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.21844378892025,
+            30.796462220966813
+          ],
+          [
+            114.19489235151778,
+            30.773536714869618
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "05L/23R",
+        "length": 3600,
+        "width": "60",
+        "true_bearing": 41.44,
+        "magnetic_bearing": "046° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 900/R/A/W/T",
+        "elevation": "THR 29.6m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            114.21913911390193,
+            30.7971345661671
+          ],
+          [
+            114.19419736663433,
+            30.772864240319507
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "DCD",
+        "type": "VOR/DME",
+        "name_en": "Caidian",
+        "name_cn": "蔡甸",
+        "frequency": "114.25 MHz",
+        "channel": "CH 89Y",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "50 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15833333333333,
+          30.44
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "DHB",
+        "type": "VOR/DME",
+        "name_en": "Hebaohu",
+        "name_cn": "荷苞湖",
+        "frequency": "114.45 MHz",
+        "channel": "CH 91Y",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "100 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.97166666666666,
+          30.698333333333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "DHP",
+        "type": "VOR/DME",
+        "name_en": "Huangpi",
+        "name_cn": "黄陂",
+        "frequency": "113.75 MHz",
+        "channel": "CH 84Y",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "55 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.47,
+          30.87
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "MOU",
+        "type": "VOR/DME",
+        "name_en": "Huilongshan",
+        "name_cn": "回龙山",
+        "frequency": "114.95 MHz",
+        "channel": "CH 96Y",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "112 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.98833333333333,
+          30.611666666666668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "WHA",
+        "type": "VOR/DME",
+        "name_en": "Tianhe",
+        "name_cn": "天河",
+        "frequency": "112.2 MHz",
+        "channel": "CH 59X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "43 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.20333333333333,
+          30.781666666666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "HG",
+        "type": "NDB",
+        "name_en": "Tianhe",
+        "name_cn": "天河",
+        "frequency": "254 kHz",
+        "channel": "",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.35,
+          30.925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZJQH",
+        "iata": "BAR",
+        "name_en": "QIONGHAI/Boao",
+        "name_cn": "琼海/博鳌",
+        "elevation": "16.2 m",
+        "type": "CIVIL",
+        "runway_class": "4C"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.45333333333333,
+          19.138333333333332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "15/33",
+        "length": 3200,
+        "width": "45",
+        "true_bearing": 150.22,
+        "magnetic_bearing": "153° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 1030/R/B/W/T",
+        "elevation": "THR 16.2m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            110.46089753998773,
+            19.125844279744292
+          ],
+          [
+            110.44576798223271,
+            19.150822077570545
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "DBA",
+        "type": "VOR/DME",
+        "name_en": "Boao",
+        "name_cn": "博鳌",
+        "frequency": "115.4 MHz",
+        "channel": "CH 101X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "33 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.44166666666666,
+          19.161666666666665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZLIC",
+        "iata": "INC",
+        "name_en": "YINCHUAN/Hedong",
+        "name_cn": "银川/河东",
+        "elevation": "1141.3 m",
+        "type": "CIVIL",
+        "runway_class": "4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.39333333333333,
+          38.32
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "03/21",
+        "length": 3600,
+        "width": "45",
+        "true_bearing": 29,
+        "magnetic_bearing": "032° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 1010/R/A/W/T",
+        "elevation": "THR 1139.9m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.40333834135015,
+            38.33415773428205
+          ],
+          [
+            106.38333223237044,
+            38.305841416151154
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "DWZ",
+        "type": "VOR/DME",
+        "name_en": "Wuzhong",
+        "name_cn": "吴忠",
+        "frequency": "112.4 MHz",
+        "channel": "CH 71X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "1103 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.34333333333333,
+          37.92166666666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "YHD",
+        "type": "VOR/DME",
+        "name_en": "Yinchuan",
+        "name_cn": "银川",
+        "frequency": "112.0 MHz",
+        "channel": "CH 57X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "1141 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.41,
+          38.346666666666664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZLLL",
+        "iata": "LHW",
+        "name_en": "LANZHOU/Zhongchuan",
+        "name_cn": "兰州/中川",
+        "elevation": "1948.7 m",
+        "type": "CIVIL",
+        "runway_class": "4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.62,
+          36.515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "19/01",
+        "length": 4000,
+        "width": "45",
+        "true_bearing": 177.13,
+        "magnetic_bearing": "180° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 1000/R/A/W/T",
+        "elevation": "THR 1948.7m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            103.62112028186185,
+            36.49703612283315
+          ],
+          [
+            103.61887919792407,
+            36.53296386668665
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "18L/00R",
+        "length": 4000,
+        "width": "45",
+        "true_bearing": 177.12,
+        "magnetic_bearing": "180° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 1000/R/A/W/T",
+        "elevation": "THR 1945.5m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            103.62112418200293,
+            36.49703628025122
+          ],
+          [
+            103.6188752959765,
+            36.53296370919549
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "36R/18L",
+        "length": 4000,
+        "width": "45",
+        "true_bearing": 357.12,
+        "magnetic_bearing": "360° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 1000/R/A/W/T",
+        "elevation": "THR 1926.9m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            103.6188752959765,
+            36.53296370919549
+          ],
+          [
+            103.62112418200293,
+            36.49703628025122
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "DNC",
+        "type": "VOR/DME",
+        "name_en": "Lanzhou",
+        "name_cn": "兰州",
+        "frequency": "114.0 MHz",
+        "channel": "CH 87X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "1965 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.61833333333334,
+          36.541666666666664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "DJC",
+        "type": "VOR/DME",
+        "name_en": "Wangjiachuan",
+        "name_cn": "王家川",
+        "frequency": "115.2 MHz",
+        "channel": "CH 99X",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": "2304 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.44166666666666,
+          36.77
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "DZH",
+        "type": "VOR/DME",
+        "name_en": "Zhonghe",
+        "name_cn": "忠和",
+        "frequency": "116.0 MHz",
+        "channel": "CH 107X",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": "1857 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.79833333333333,
+          36.235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZPPP",
+        "iata": "KMG",
+        "name_en": "KUNMING/Changshui",
+        "name_cn": "昆明/长水",
+        "elevation": "2103.5 m",
+        "type": "CIVIL",
+        "runway_class": "RWY04R/22L: 4F; RWY03/21: 4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.94166666666666,
+          25.105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "03/21",
+        "length": 4000,
+        "width": "45",
+        "true_bearing": 38.4,
+        "magnetic_bearing": "040° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 1160/R/A/W/T",
+        "elevation": "THR 2100.5m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            102.95400584772233,
+            25.11909533866605
+          ],
+          [
+            102.92933032995526,
+            25.090903640618752
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "04R/22L",
+        "length": 4000,
+        "width": "45",
+        "true_bearing": 38.4,
+        "magnetic_bearing": "040° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 1230/R/B/W/T",
+        "elevation": "THR 2099.7m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            102.95400584772233,
+            25.11909533866605
+          ],
+          [
+            102.92933032995526,
+            25.090903640618752
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "XSJ",
+        "type": "VOR/DME",
+        "name_en": "Jinning",
+        "name_cn": "晋宁",
+        "frequency": "108.2 MHz",
+        "channel": "CH 19X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "2383 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.8,
+          24.683333333333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "LXI",
+        "type": "VOR/DME",
+        "name_en": "Luxi",
+        "name_cn": "泸西",
+        "frequency": "112.3 MHz",
+        "channel": "CH 70X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "1753 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.74333333333334,
+          24.541666666666668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "DJT",
+        "type": "VOR/DME",
+        "name_en": "Malong",
+        "name_cn": "马龙",
+        "frequency": "114.6 MHz",
+        "channel": "CH 93X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "2314 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.605,
+          25.531666666666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "XFA",
+        "type": "VOR/DME",
+        "name_en": "Panlong",
+        "name_cn": "盘龙",
+        "frequency": "110.8 MHz",
+        "channel": "CH 45X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "2788 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.93333333333334,
+          25.401666666666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "SGM",
+        "type": "VOR/DME",
+        "name_en": "Xishan",
+        "name_cn": "西山",
+        "frequency": "110.6 MHz",
+        "channel": "CH 43X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "2312 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.52,
+          25.081666666666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZSFZ",
+        "iata": "FOC",
+        "name_en": "FUZHOU/Changle",
+        "name_cn": "福州/长乐",
+        "elevation": "14.3 m",
+        "type": "CIVIL",
+        "runway_class": "RWY04/22: 4F; RWY03/21: 4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.665,
+          25.933333333333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "03/21",
+        "length": 3600,
+        "width": "45",
+        "true_bearing": 27,
+        "magnetic_bearing": "032° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 870/R/A/W/T",
+        "elevation": "THR 6.3m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            119.67317299414901,
+            25.947756529593924
+          ],
+          [
+            119.65682900664275,
+            25.91890967867332
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "04/22",
+        "length": 3600,
+        "width": "45",
+        "true_bearing": 27,
+        "magnetic_bearing": "032° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 860/R/A/W/T",
+        "elevation": "THR 6.7m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            119.67317299414901,
+            25.947756529593924
+          ],
+          [
+            119.65682900664275,
+            25.91890967867332
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "FQG",
+        "type": "VOR/DME",
+        "name_en": "Fuqing",
+        "name_cn": "福清",
+        "frequency": "117.4 MHz",
+        "channel": "CH 121X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.385,
+          25.74
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "FOC",
+        "type": "VOR/DME",
+        "name_en": "Fuzhou",
+        "name_cn": "福州",
+        "frequency": "116.8 MHz",
+        "channel": "CH 115X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.65166666666667,
+          25.913333333333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "LJG",
+        "type": "VOR/DME",
+        "name_en": "Lianjiang",
+        "name_cn": "连江",
+        "frequency": "117.6 MHz",
+        "channel": "CH 123X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.54833333333333,
+          26.22
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "NFA",
+        "type": "VOR/DME",
+        "name_en": "sanshan",
+        "name_cn": "三山",
+        "frequency": "116.2 MHz",
+        "channel": "CH 109X",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.58666666666667,
+          25.581666666666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "N",
+        "type": "",
+        "name_en": "LM 21",
+        "name_cn": "LM 21",
+        "frequency": "229 kHz",
+        "channel": "",
+        "purpose": "TERMINAL",
+        "work_time": "",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.675,
+          25.956666666666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZSHC",
+        "iata": "HGH",
+        "name_en": "HANGZHOU/Xiaoshan",
+        "name_cn": "杭州/萧山",
+        "elevation": "6.7 m",
+        "type": "CIVIL",
+        "runway_class": "RWY06/24: 4F; RWY07/25: 4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.43333333333334,
+          30.22833333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "06/24",
+        "length": 3400,
+        "width": "60",
+        "true_bearing": 62.95,
+        "magnetic_bearing": "069° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 1010/R/B/W/T",
+        "elevation": "THR 6.7m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.44909330528658,
+            30.235285094303823
+          ],
+          [
+            120.4175755898821,
+            30.22137968694497
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "07/25",
+        "length": 3600,
+        "width": "45",
+        "true_bearing": 62.95,
+        "magnetic_bearing": "069° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 790/R/A/W/T",
+        "elevation": "THR 6.7m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.4500204318671,
+            30.23569396268736
+          ],
+          [
+            120.4166487331893,
+            30.220970590223626
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "DSH",
+        "type": "VOR/DME",
+        "name_en": "Dangshan",
+        "name_cn": "党山",
+        "frequency": "117.3 MHz",
+        "channel": "CH 120X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "38 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.50166666666667,
+          30.148333333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "HGH",
+        "type": "VOR/DME",
+        "name_en": "Hangzhou",
+        "name_cn": "杭州",
+        "frequency": "113.0 MHz",
+        "channel": "CH 77X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "13 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.46166666666667,
+          30.24
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "CJ",
+        "type": "NDB",
+        "name_en": "Jianqiao",
+        "name_cn": "笕桥",
+        "frequency": "324 kHz",
+        "channel": "",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.16666666666667,
+          30.305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "WY",
+        "type": "NDB",
+        "name_en": "Wenyan",
+        "name_cn": "闻堰",
+        "frequency": "572 kHz",
+        "channel": "",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.20166666666667,
+          30.121666666666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZSNB",
+        "iata": "NGB",
+        "name_en": "NINGBO/Lishe",
+        "name_cn": "宁波/栎社",
+        "elevation": "3.7 m",
+        "type": "CIVIL",
+        "runway_class": "4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.46333333333334,
+          29.826666666666668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "13/31",
+        "length": 3200,
+        "width": "45",
+        "true_bearing": 123.25,
+        "magnetic_bearing": "129° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 790/R/A/W/T",
+        "elevation": "THR 3.7m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.477203098273,
+            29.818776471137785
+          ],
+          [
+            121.44946137832117,
+            29.83455541323335
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "AND",
+        "type": "VOR/DME",
+        "name_en": "Andong",
+        "name_cn": "庵东",
+        "frequency": "114.8 MHz",
+        "channel": "CH 95X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "32 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.22166666666666,
+          30.256666666666668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "SHZ",
+        "type": "VOR/DME",
+        "name_en": "Shengzhou",
+        "name_cn": "嵊州",
+        "frequency": "113.4 MHz",
+        "channel": "CH 81X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.81666666666666,
+          29.6
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "NGB",
+        "type": "VOR/DME",
+        "name_en": "Ningbo",
+        "name_cn": "宁波",
+        "frequency": "116.3 MHz",
+        "channel": "CH 110X",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": "9 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.46333333333334,
+          29.83
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "BK",
+        "type": "NDB",
+        "name_en": "Lishe",
+        "name_cn": "栎社",
+        "frequency": "227 kHz",
+        "channel": "",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.33333333333333,
+          29.895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZSNJ",
+        "iata": "NKG",
+        "name_en": "NANJING/Lukou",
+        "name_cn": "南京/禄口",
+        "elevation": "14.9 m",
+        "type": "CIVIL",
+        "runway_class": "RWY07/25: 4F; RWY06/24: 4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.86333333333333,
+          31.743333333333332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "06/24",
+        "length": 3600,
+        "width": "45",
+        "true_bearing": 58,
+        "magnetic_bearing": "064° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 1230/R/B/W/T",
+        "elevation": "THR 13m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.87947759267028,
+            31.75191053689188
+          ],
+          [
+            118.84719206442225,
+            31.73475409487067
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "07/25",
+        "length": 3600,
+        "width": "60",
+        "true_bearing": 58,
+        "magnetic_bearing": "064° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 1110/R/B/W/T",
+        "elevation": "THR 12.5m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.87947759267028,
+            31.75191053689188
+          ],
+          [
+            118.84719206442225,
+            31.73475409487067
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "NJL",
+        "type": "VOR/DME",
+        "name_en": "Lukou",
+        "name_cn": "禄口",
+        "frequency": "113.6 MHz",
+        "channel": "CH 83X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "24 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.88666666666667,
+          31.755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "MLJ",
+        "type": "VOR/DME",
+        "name_en": "Moling",
+        "name_cn": "秣陵",
+        "frequency": "117.05 MHz",
+        "channel": "CH 117Y",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "19 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.855,
+          31.845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "SNQ",
+        "type": "VOR/DME",
+        "name_en": "Shiqiu",
+        "name_cn": "石湫",
+        "frequency": "115.75 MHz",
+        "channel": "CH 104Y",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "27 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.96833333333333,
+          31.68
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "XDY",
+        "type": "VOR/DME",
+        "name_en": "Xiaodanyang",
+        "name_cn": "小丹阳",
+        "frequency": "115.15 MHz",
+        "channel": "CH 98Y",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "51 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.71666666666667,
+          31.666666666666668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "A",
+        "type": "NDB",
+        "name_en": "Daxiaochang",
+        "name_cn": "大校场",
+        "frequency": "511 kHz",
+        "channel": "",
+        "purpose": "TERMINAL",
+        "work_time": "",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.79333333333334,
+          31.985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "Z",
+        "type": "",
+        "name_en": "NDB",
+        "name_cn": "NDB",
+        "frequency": "420kHz",
+        "channel": "",
+        "purpose": "TERMINAL",
+        "work_time": "",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.83833333333334,
+          31.71
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZSNT",
+        "iata": "NTG",
+        "name_en": "NANTONG/Xingdong",
+        "name_cn": "南通/兴东",
+        "elevation": "4.9 m",
+        "type": "CIVIL",
+        "runway_class": "4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.98166666666667,
+          32.068333333333335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "18/00",
+        "length": 3400,
+        "width": "45",
+        "true_bearing": 179,
+        "magnetic_bearing": "184° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 890/R/A/W/T",
+        "elevation": "THR 4.8m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.98198147795131,
+            32.053047194151205
+          ],
+          [
+            120.98135175012062,
+            32.08361947173697
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "36/18",
+        "length": 3400,
+        "width": "45",
+        "true_bearing": 359,
+        "magnetic_bearing": "004° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 890/R/A/W/T",
+        "elevation": "THR 4.9m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            120.98135175012062,
+            32.08361947173697
+          ],
+          [
+            120.98198147795131,
+            32.053047194151205
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "NTG",
+        "type": "VOR/DME",
+        "name_en": "Nantong",
+        "name_cn": "南通",
+        "frequency": "115.6 MHz",
+        "channel": "CH 103X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "19 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.97833333333334,
+          32.096666666666664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "W",
+        "type": "",
+        "name_en": "LMM 36",
+        "name_cn": "LMM 36",
+        "frequency": "425 kHz",
+        "channel": "",
+        "purpose": "TERMINAL",
+        "work_time": "",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.98,
+          32.05
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZSOF",
+        "iata": "HFE",
+        "name_en": "HEFEI/Xinqiao",
+        "name_cn": "合肥/新桥",
+        "elevation": "63.5 m",
+        "type": "CIVIL",
+        "runway_class": "4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.975,
+          31.986666666666668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "15/33",
+        "length": 3400,
+        "width": "45",
+        "true_bearing": 150,
+        "magnetic_bearing": "154° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 890/R/A/W/T",
+        "elevation": "THR 61.1m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            116.98401130451744,
+            31.973426147206535
+          ],
+          [
+            116.96598609402587,
+            31.999906549170568
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "HFC",
+        "type": "VOR/DME",
+        "name_en": "Cha'an",
+        "name_cn": "茶庵",
+        "frequency": "111.8 MHz",
+        "channel": "CH 55X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "47 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.76833333333333,
+          32.08
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "HFE",
+        "type": "VOR/DME",
+        "name_en": "Luogang",
+        "name_cn": "骆岗",
+        "frequency": "116.7 MHz",
+        "channel": "CH 114X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "89 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.30166666666666,
+          31.775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "THA",
+        "type": "VOR/DME",
+        "name_en": "Taohua",
+        "name_cn": "桃花",
+        "frequency": "114.7 MHz",
+        "channel": "CH 94X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "45 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.12333333333333,
+          31.778333333333332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "XQH",
+        "type": "VOR/DME",
+        "name_en": "Xinqiao",
+        "name_cn": "新桥",
+        "frequency": "109.8 MHz",
+        "channel": "CH 35X",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": "65 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.96,
+          32.01
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZSPD",
+        "iata": "PVG",
+        "name_en": "SHANGHAI/Pudong",
+        "name_cn": "上海/浦东",
+        "elevation": "3.5 m",
+        "type": "CIVIL",
+        "runway_class": "RWY16L/34R, RWY16R/34L, RWY17R/35L: 4F; RWY17L/35R: 4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.79333333333334,
+          31.145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "16L/34R",
+        "length": 3800,
+        "width": "60",
+        "true_bearing": 162.02,
+        "magnetic_bearing": "168° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 980/R/B/W/T",
+        "elevation": "THR 3.5m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.79949511649706,
+            31.128747203385146
+          ],
+          [
+            121.78716943730144,
+            31.161252503184066
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "17L/35R",
+        "length": 4000,
+        "width": "60",
+        "true_bearing": 162,
+        "magnetic_bearing": "168° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 890/R/A/W/T",
+        "elevation": "THR 2.8m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.79982633844028,
+            31.127893723669736
+          ],
+          [
+            121.7868379848459,
+            31.162105950499452
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "AND",
+        "type": "VOR/DME",
+        "name_en": "Andong",
+        "name_cn": "庵东",
+        "frequency": "114.8 MHz",
+        "channel": "CH 95X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "32 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.22166666666666,
+          30.256666666666668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "HSH",
+        "type": "VOR/DME",
+        "name_en": "Hengsha",
+        "name_cn": "横沙",
+        "frequency": "114.4 MHz",
+        "channel": "CH 91X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "24 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.84666666666666,
+          31.368333333333332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "PUD",
+        "type": "VOR/DME",
+        "name_en": "Pudong",
+        "name_cn": "浦东",
+        "frequency": "116.9 MHz",
+        "channel": "CH 116X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "15 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.78333333333333,
+          31.171666666666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "XSY",
+        "type": "VOR/DME",
+        "name_en": "Shuyuan",
+        "name_cn": "书院",
+        "frequency": "112.7 MHz",
+        "channel": "CH 74X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "27 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.87333333333333,
+          30.931666666666665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "PDL",
+        "type": "VOR/DME",
+        "name_en": "Liuzao",
+        "name_cn": "六灶",
+        "frequency": "109.4 MHz",
+        "channel": "CH 31X",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": "4 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.67166666666667,
+          31.13
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZSSS",
+        "iata": "SHA",
+        "name_en": "SHANGHAI/Hongqiao",
+        "name_cn": "上海/虹桥",
+        "elevation": "3.0 m",
+        "type": "CIVIL",
+        "runway_class": "4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.335,
+          31.196666666666665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "18L/00R",
+        "length": 3400,
+        "width": "45",
+        "true_bearing": 177.34,
+        "magnetic_bearing": "183° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 880/R/B/W/T",
+        "elevation": "THR 2.1m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.33582933587046,
+            31.18139466975427
+          ],
+          [
+            121.33417039636811,
+            31.21193865825852
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "36R/18L",
+        "length": 3400,
+        "width": "45",
+        "true_bearing": 357.34,
+        "magnetic_bearing": "003° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 880/R/B/W/T",
+        "elevation": "THR 2.7m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.33417039636811,
+            31.21193865825852
+          ],
+          [
+            121.33582933587046,
+            31.18139466975427
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "JTN",
+        "type": "VOR/DME",
+        "name_en": "Jiuting",
+        "name_cn": "九亭",
+        "frequency": "109.6 MHz",
+        "channel": "CH 33X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "28 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.34166666666667,
+          31.123333333333335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "CGT",
+        "type": "VOR/DME",
+        "name_en": "Chonggu",
+        "name_cn": "重固",
+        "frequency": "112.5 MHz",
+        "channel": "CH 72X",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": "24 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.19333333333333,
+          31.21
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "SHA",
+        "type": "VOR/DME",
+        "name_en": "Hongqiao",
+        "name_cn": "虹桥",
+        "frequency": "117.2 MHz",
+        "channel": "CH 119X",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": "16 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.33333333333333,
+          31.223333333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "PDL",
+        "type": "VOR/DME",
+        "name_en": "Liuzao",
+        "name_cn": "六灶",
+        "frequency": "109.4 MHz",
+        "channel": "CH 31X",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": "4 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.67166666666667,
+          31.13
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "PK",
+        "type": "NDB",
+        "name_en": "Nanxiang",
+        "name_cn": "南翔",
+        "frequency": "208 kHz",
+        "channel": "",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.33,
+          31.283333333333335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZSTX",
+        "iata": "TXN",
+        "name_en": "HUANGSHAN/Tunxi",
+        "name_cn": "黄山/屯溪",
+        "elevation": "134.4 m",
+        "type": "CIVIL",
+        "runway_class": "4D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.255,
+          29.735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "13/31",
+        "length": 2600,
+        "width": "45",
+        "true_bearing": 127.33,
+        "magnetic_bearing": "132° MAG",
+        "surface": "ASPH",
+        "pcn": "PCR 660/R/A/W/T",
+        "elevation": "THR 134.4m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            118.26570522787785,
+            29.72790998077332
+          ],
+          [
+            118.24429325875933,
+            29.742089157663848
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "TXN",
+        "type": "VOR/DME",
+        "name_en": "Huangshan",
+        "name_cn": "黄山",
+        "frequency": "116.1 MHz",
+        "channel": "CH 108X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "141 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.25333333333333,
+          29.738333333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZSZS",
+        "iata": "HSN",
+        "name_en": "ZHOUSHAN/Putuoshan",
+        "name_cn": "舟山/普陀山",
+        "elevation": "1.8 m",
+        "type": "CIVIL",
+        "runway_class": "4D"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.36333333333333,
+          29.935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "18/00",
+        "length": 2500,
+        "width": "45",
+        "true_bearing": 175,
+        "magnetic_bearing": "181° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 640/R/B/W/T",
+        "elevation": "THR 1.8m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            122.36446379922165,
+            29.923801252481084
+          ],
+          [
+            122.36220261294734,
+            29.946198737871292
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "36/18",
+        "length": 2500,
+        "width": "45",
+        "true_bearing": 355,
+        "magnetic_bearing": "001° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 640/R/B/W/T",
+        "elevation": "THR 1.8m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            122.36220261294734,
+            29.946198737871292
+          ],
+          [
+            122.36446379922165,
+            29.923801252481084
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "HSN",
+        "type": "VOR/DME",
+        "name_en": "Zhoushan",
+        "name_cn": "舟山",
+        "frequency": "112.3 MHz",
+        "channel": "CH 70X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "9 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.36333333333333,
+          29.931666666666665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "LA",
+        "type": "NDB",
+        "name_en": "Putuoshan",
+        "name_cn": "普陀山",
+        "frequency": "363 kHz",
+        "channel": "",
+        "purpose": "TERMINAL",
+        "work_time": "",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          122.405,
+          30.005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZUCK",
+        "iata": "CKG",
+        "name_en": "CHONGQING/Jiangbei",
+        "name_cn": "重庆/江北",
+        "elevation": "415.6 m",
+        "type": "CIVIL",
+        "runway_class": "RWY03L/21R, RWY03R/21L: 4F; RWY02L/20R, RWY02R/20L: 4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.64,
+          29.72
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "02L/20R",
+        "length": 3200,
+        "width": "45",
+        "true_bearing": 17,
+        "magnetic_bearing": "020° MAG",
+        "surface": "ASPH",
+        "pcn": "PCR 970/R/A/W/T",
+        "elevation": "THR 411.8m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.64484485547366,
+            29.733760320269408
+          ],
+          [
+            106.63515647278913,
+            29.706239503394137
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "03L/21R",
+        "length": 3800,
+        "width": "60",
+        "true_bearing": 17,
+        "magnetic_bearing": "020° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 810/R/A/W/T",
+        "elevation": "THR 405.3m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.64575341383632,
+            29.7363403606768
+          ],
+          [
+            106.6342484592218,
+            29.703659390661233
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "SHC",
+        "type": "VOR/DME",
+        "name_en": "Changshengqiao",
+        "name_cn": "长生桥",
+        "frequency": "111.0 MHz",
+        "channel": "CH 47X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "500 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.72833333333334,
+          29.431666666666665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "FLG",
+        "type": "VOR/DME",
+        "name_en": "Fuling",
+        "name_cn": "涪陵",
+        "frequency": "114.0 MHz",
+        "channel": "CH 87X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.37833333333333,
+          29.7
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "CKG",
+        "type": "VOR/DME",
+        "name_en": "Jiangbei",
+        "name_cn": "江北",
+        "frequency": "116.1 MHz",
+        "channel": "CH 108X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "418 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.65333333333334,
+          29.746666666666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "QJG",
+        "type": "VOR/DME",
+        "name_en": "Qijiang",
+        "name_cn": "綦江",
+        "frequency": "112.7 MHz",
+        "channel": "CH 74X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "426 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.665,
+          29.051666666666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "CJJ",
+        "type": "VOR/DME",
+        "name_en": "Baisha",
+        "name_cn": "白沙",
+        "frequency": "112.25 MHz",
+        "channel": "CH 59Y",
+        "purpose": "TERMINAL",
+        "work_time": "",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.07666666666667,
+          29.065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "CJG",
+        "type": "VOR/DME",
+        "name_en": "Jingguan",
+        "name_cn": "静观",
+        "frequency": "110.85 MHz",
+        "channel": "CH 45Y",
+        "purpose": "TERMINAL",
+        "work_time": "",
+        "dme_elevation": "843 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.53333333333333,
+          29.928333333333335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "CST",
+        "type": "VOR/DME",
+        "name_en": "Shituo",
+        "name_cn": "石沱",
+        "frequency": "117.55 MHz",
+        "channel": "CH 122Y",
+        "purpose": "TERMINAL",
+        "work_time": "",
+        "dme_elevation": "881 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.99833333333333,
+          29.715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "DS",
+        "type": "NDB",
+        "name_en": "Heliushui",
+        "name_cn": "合流水",
+        "frequency": "250 kHz",
+        "channel": "",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.84833333333333,
+          30.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "W",
+        "type": "NDB",
+        "name_en": "Nanjintai",
+        "name_cn": "南近台",
+        "frequency": "210 kHz",
+        "channel": "",
+        "purpose": "TERMINAL",
+        "work_time": "",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.635,
+          29.698333333333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "OS",
+        "type": "NDB",
+        "name_en": "Tongjingchang",
+        "name_cn": "统景场",
+        "frequency": "241 kHz",
+        "channel": "",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.84666666666666,
+          29.851666666666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZULS",
+        "iata": "LXA",
+        "name_en": "LHASA/Konggar",
+        "name_cn": "拉萨/贡嘎",
+        "elevation": "3570.8 m",
+        "type": "CIVIL",
+        "runway_class": "4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.91166666666666,
+          29.296666666666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "10L/28R",
+        "length": 4000,
+        "width": "45",
+        "true_bearing": 89,
+        "magnetic_bearing": "089° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 650/R/A/W/T",
+        "elevation": "THR 3570.8m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            90.9322879192257,
+            29.296978989588272
+          ],
+          [
+            90.89104554089019,
+            29.296351176560943
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "LXA",
+        "type": "VOR/DME",
+        "name_en": "Lhasa",
+        "name_cn": "拉萨",
+        "frequency": "113.1 MHz",
+        "channel": "CH 78X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "3571 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.99833333333333,
+          29.296666666666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "DM",
+        "type": "NDB",
+        "name_en": "Zedang",
+        "name_cn": "泽当",
+        "frequency": "435 kHz",
+        "channel": "",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          91.765,
+          29.255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZWWW",
+        "iata": "URC",
+        "name_en": "URUMQI/Tianshan",
+        "name_cn": "乌鲁木齐/天山",
+        "elevation": "647.9 m",
+        "type": "CIVIL",
+        "runway_class": "RWY08L/26R, RWY08R/26L: 4F; RWY07/25: 4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.475,
+          43.90833333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "07/25",
+        "length": 3600,
+        "width": "45",
+        "true_bearing": 73.58,
+        "magnetic_bearing": "071° MAG",
+        "surface": "ASPH",
+        "pcn": "PCR 960/R/A/W/T",
+        "elevation": "THR 647.6m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            87.49655425611385,
+            43.91290721209401
+          ],
+          [
+            87.45344905771847,
+            43.90375540386136
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "08L/26R",
+        "length": 3200,
+        "width": "45",
+        "true_bearing": 73.58,
+        "magnetic_bearing": "071° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 850/R/A/W/T",
+        "elevation": "THR 637.2m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            87.49415917518076,
+            43.91239920341744
+          ],
+          [
+            87.45584344315596,
+            43.90426426268721
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "FKG",
+        "type": "VOR/DME",
+        "name_en": "Fukang",
+        "name_cn": "阜康",
+        "frequency": "116.3 MHz",
+        "channel": "CH 110X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "551 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.98333333333333,
+          44.17333333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "WUR",
+        "type": "VOR/DME",
+        "name_en": "Urumqi",
+        "name_cn": "乌鲁木齐",
+        "frequency": "115.3 MHz",
+        "channel": "CH 100X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "664 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50833333333334,
+          43.913333333333334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZYHB",
+        "iata": "HRB",
+        "name_en": "HARBIN/Taiping",
+        "name_cn": "哈尔滨/太平",
+        "elevation": "152.9 m",
+        "type": "CIVIL",
+        "runway_class": "4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.25166666666667,
+          45.625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "05L/23R",
+        "length": 3200,
+        "width": "45",
+        "true_bearing": 39.43,
+        "magnetic_bearing": "051° MAG",
+        "surface": "ASPH",
+        "pcn": "PCR 1390/R/B/W/T",
+        "elevation": "THR 139.3m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            126.26473715039279,
+            45.63611344715893
+          ],
+          [
+            126.23860136457075,
+            45.61388506294791
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "HRB",
+        "type": "VOR/DME",
+        "name_en": "Harbin",
+        "name_cn": "哈尔滨",
+        "frequency": "112.5 MHz",
+        "channel": "CH 72X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "137 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.26,
+          45.626666666666665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "LS",
+        "type": "NDB",
+        "name_en": "Shuiquan",
+        "name_cn": "水泉",
+        "frequency": "445 kHz",
+        "channel": "",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.045,
+          45.45
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "L",
+        "type": "",
+        "name_en": "LMM 05L",
+        "name_cn": "LMM 05L",
+        "frequency": "220 kHz",
+        "channel": "",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.23,
+          45.60666666666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "MJ",
+        "type": "",
+        "name_en": "LOM 23R",
+        "name_cn": "LOM 23R",
+        "frequency": "417 kHz",
+        "channel": "",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.32166666666667,
+          45.681666666666665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "M",
+        "type": "",
+        "name_en": "LMM 23R",
+        "name_cn": "LMM 23R",
+        "frequency": "202 kHz",
+        "channel": "",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.27,
+          45.64
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZYJM",
+        "iata": "JMU",
+        "name_en": "JIAMUSI/Songjiang",
+        "name_cn": "佳木斯/松江",
+        "elevation": "79.9 m",
+        "type": "CIVIL",
+        "runway_class": "4C"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.465,
+          46.84166666666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "06/24",
+        "length": 2500,
+        "width": "45",
+        "true_bearing": 48,
+        "magnetic_bearing": "059° MAG",
+        "surface": "CONC",
+        "pcn": "PCR 660/R/C/W/T",
+        "elevation": "THR 79.9m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            130.47721497367243,
+            46.84918806218712
+          ],
+          [
+            130.45278844622797,
+            46.834143972135294
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "JMU",
+        "type": "VOR/DME",
+        "name_en": "Jiamusi",
+        "name_cn": "佳木斯",
+        "frequency": "113.5 MHz",
+        "channel": "CH 82X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "91 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.465,
+          46.84166666666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "R",
+        "type": "",
+        "name_en": "LMM 06",
+        "name_cn": "LMM 06",
+        "frequency": "200 kHz",
+        "channel": "",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.44166666666666,
+          46.82833333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "G",
+        "type": "",
+        "name_en": "LM 24",
+        "name_cn": "LM 24",
+        "frequency": "304 kHz",
+        "channel": "",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          130.485,
+          46.855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "airport",
+        "icao": "ZYTL",
+        "iata": "DLC",
+        "name_en": "DALIAN/Zhoushuizi",
+        "name_cn": "大连/周水子",
+        "elevation": "32.6 m",
+        "type": "CIVIL",
+        "runway_class": "4E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.54,
+          38.96666666666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "runway",
+        "designator": "10/28",
+        "length": 3300,
+        "width": "45",
+        "true_bearing": 96,
+        "magnetic_bearing": "103° MAG",
+        "surface": "ASPH",
+        "pcn": "PCR 810/R/A/W/T",
+        "elevation": "THR 32.3m"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            121.55898002282896,
+            38.96511405189113
+          ],
+          [
+            121.52101914598231,
+            38.96821620706937
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "DBL",
+        "type": "VOR/DME",
+        "name_en": "Dalian",
+        "name_cn": "大连",
+        "frequency": "115.4 MHz",
+        "channel": "CH 101X",
+        "purpose": "ALL",
+        "work_time": "H24",
+        "dme_elevation": "59 m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.57,
+          38.961666666666666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "FC",
+        "type": "NDB",
+        "name_en": "Fujiazhuang",
+        "name_cn": "付家庄",
+        "frequency": "213 kHz",
+        "channel": "",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.62833333333333,
+          38.86833333333333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "ZF",
+        "type": "",
+        "name_en": "LOM 10",
+        "name_cn": "LOM 10",
+        "frequency": "391 kHz",
+        "channel": "",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.48166666666667,
+          38.971666666666664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "Z",
+        "type": "",
+        "name_en": "LMM 10",
+        "name_cn": "LMM 10",
+        "frequency": "440 kHz",
+        "channel": "",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.50833333333334,
+          38.96666666666667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "navaid",
+        "designator": "K",
+        "type": "",
+        "name_en": "LMM 28",
+        "name_cn": "LMM 28",
+        "frequency": "257 kHz",
+        "channel": "",
+        "purpose": "TERMINAL",
+        "work_time": "H24",
+        "dme_elevation": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.56666666666666,
+          38.965
+        ]
+      }
+    }
+  ]
+}

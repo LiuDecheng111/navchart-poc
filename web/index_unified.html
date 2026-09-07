@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavChart POC - 整合航图 (全球渐进式渲染)</title>
+    <link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+    <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            overflow: hidden;
+            background: #0a0e1a;
+        }
+
+        #topbar {
+            position: absolute; top: 0; left: 0; right: 0; height: 48px;
+            background: rgba(10, 14, 26, 0.92); backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            display: flex; align-items: center; padding: 0 20px; z-index: 100;
+        }
+        #topbar .logo { color: #4fc3f7; font-size: 16px; font-weight: 700; letter-spacing: 1px; margin-right: 12px; }
+        #topbar .subtitle { color: #888; font-size: 12px; }
+        #topbar .spacer { flex: 1; }
+        #topbar .badge {
+            background: rgba(76,175,80,0.15); color: #81c784;
+            padding: 3px 10px; border-radius: 4px; font-size: 11px; margin-right: 8px;
+        }
+        #topbar .badge.osm { background: rgba(255,183,77,0.15); color: #ffb74d; }
+        #airport-select {
+            margin-left: 16px; background: rgba(255,255,255,0.06); color: #eee;
+            border: 1px solid rgba(255,255,255,0.12); border-radius: 4px;
+            padding: 4px 8px; font-size: 12px; cursor: pointer;
+        }
+
+        #map { position: absolute; top: 48px; bottom: 0; left: 0; right: 0; }
+
+        #layer-panel {
+            position: absolute; top: 64px; right: 16px; width: 220px;
+            background: rgba(10, 14, 26, 0.92); backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.08); border-radius: 8px;
+            padding: 14px; z-index: 90; max-height: 80vh; overflow-y: auto;
+        }
+        #layer-panel h3 { color: #eee; font-size: 13px; margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+        #layer-panel .group-title { color: #4fc3f7; font-size: 11px; margin: 10px 0 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .layer-item { display: flex; align-items: center; padding: 3px 0; cursor: pointer; user-select: none; }
+        .layer-item input[type="checkbox"] { margin-right: 8px; accent-color: #4fc3f7; cursor: pointer; }
+        .layer-item label { color: #ccc; font-size: 11px; cursor: pointer; flex: 1; }
+        .layer-item .count { color: #555; font-size: 10px; margin-right: 4px; }
+        .layer-item .color-dot { width: 8px; height: 8px; border-radius: 2px; }
+
+        #info-panel {
+            position: absolute; bottom: 16px; left: 16px; width: 360px;
+            background: rgba(10, 14, 26, 0.92); backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.08); border-radius: 8px;
+            padding: 14px; z-index: 90; display: none; max-height: 55vh; overflow-y: auto;
+        }
+        #info-panel h4 { color: #4fc3f7; font-size: 14px; margin-bottom: 8px; display: flex; align-items: center; justify-content: space-between; }
+        #info-panel .close-btn { cursor: pointer; color: #888; font-size: 16px; line-height: 1; }
+        #info-panel .close-btn:hover { color: #fff; }
+        #info-panel .info-row { display: flex; padding: 2px 0; font-size: 11px; }
+        #info-panel .info-key { color: #888; width: 90px; flex-shrink: 0; }
+        #info-panel .info-val { color: #ddd; flex: 1; word-break: break-all; }
+
+        #statusbar {
+            position: absolute; bottom: 16px; right: 16px;
+            background: rgba(10, 14, 26, 0.92); backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.08); border-radius: 6px;
+            padding: 6px 12px; z-index: 90; font-size: 11px; color: #888;
+        }
+        #statusbar .coord { color: #4fc3f7; font-family: monospace; }
+        #statusbar .lod { color: #ffb74d; margin-left: 8px; }
+
+        #theme-toggle {
+            position: absolute; top: 64px; left: 16px; z-index: 90;
+            background: rgba(10, 14, 26, 0.92); backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.08); border-radius: 6px;
+            padding: 8px 14px; color: #ccc; font-size: 12px; cursor: pointer;
+        }
+        #theme-toggle:hover { border-color: #4fc3f7; color: #4fc3f7; }
+
+        #basemap-toggle {
+            position: absolute; top: 64px; left: 140px; z-index: 90;
+            background: rgba(10, 14, 26, 0.92); backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.08); border-radius: 6px;
+            padding: 8px 14px; color: #ccc; font-size: 12px; cursor: pointer;
+        }
+        #basemap-toggle:hover { border-color: #ffb74d; color: #ffb74d; }
+
+        #loading {
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+            color: #4fc3f7; font-size: 16px; z-index: 200; text-align: center;
+        }
+        #loading .spinner {
+            width: 40px; height: 40px; border: 3px solid rgba(79,195,247,0.2);
+            border-top-color: #4fc3f7; border-radius: 50%;
+            animation: spin 1s linear infinite; margin: 0 auto 12px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        body.light { background: #e8e8e8; }
+        body.light #topbar { background: rgba(255,255,255,0.95); border-bottom-color: #ddd; }
+        body.light #topbar .subtitle { color: #666; }
+        body.light #layer-panel, body.light #info-panel, body.light #statusbar, body.light #theme-toggle {
+            background: rgba(255,255,255,0.95); border-color: #ddd;
+        }
+        body.light #layer-panel h3, body.light .layer-item label { color: #333; }
+        body.light #info-panel .info-val { color: #333; }
+        body.light #theme-toggle { color: #333; }
+    </style>
+</head>
+<body>
+    <div id="loading">
+        <div class="spinner"></div>
+        <div>正在加载整合航图数据...</div>
+        <div style="font-size:12px;color:#666;margin-top:8px;">e-AIP 真实数据 + OSM 机场地面数据</div>
+    </div>
+
+    <div id="topbar">
+        <span class="logo">NAVCHART</span>
+        <span class="subtitle">整合航图 · 全球渐进式渲染</span>
+        <select id="airport-select">
+            <option value="">-- 选择机场快速跳转 --</option>
+        </select>
+        <div class="spacer"></div>
+        <span class="badge">e-AIP 真实数据</span>
+        <span class="badge osm">OSM 地面数据</span>
+    </div>
+
+    <div id="map"></div>
+
+    <button id="theme-toggle">🌙 夜间模式</button>
+    <button id="basemap-toggle" style="left:140px">🛰️ 卫星图</button>
+
+    <div id="layer-panel">
+        <h3>图层控制</h3>
+        <div class="group-title">航空导航数据 (e-AIP)</div>
+        <div class="layer-item">
+            <input type="checkbox" id="layer-airport" checked>
+            <label for="layer-airport">机场</label>
+            <span class="count" id="count-airport">30</span>
+            <span class="color-dot" style="background:#4fc3f7"></span>
+        </div>
+        <div class="layer-item">
+            <input type="checkbox" id="layer-navaid" checked>
+            <label for="layer-navaid">导航台</label>
+            <span class="count" id="count-navaid">126</span>
+            <span class="color-dot" style="background:#ffd54f"></span>
+        </div>
+        <div class="layer-item">
+            <input type="checkbox" id="layer-runway-real" checked>
+            <label for="layer-runway-real">跑道(概略)</label>
+            <span class="count" id="count-runway-real">48</span>
+            <span class="color-dot" style="background:#ff8a65"></span>
+        </div>
+
+        <div class="group-title">机场地面细节 (OSM)</div>
+        <div class="layer-item">
+            <input type="checkbox" id="layer-apron" checked>
+            <label for="layer-apron">停机坪</label>
+            <span class="color-dot" style="background:#424242"></span>
+        </div>
+        <div class="layer-item">
+            <input type="checkbox" id="layer-runway" checked>
+            <label for="layer-runway">跑道(精确)</label>
+            <span class="color-dot" style="background:#e0e0e0"></span>
+        </div>
+        <div class="layer-item">
+            <input type="checkbox" id="layer-taxiway" checked>
+            <label for="layer-taxiway">滑行道</label>
+            <span class="color-dot" style="background:#757575"></span>
+        </div>
+        <div class="layer-item">
+            <input type="checkbox" id="layer-parking" checked>
+            <label for="layer-parking">机位</label>
+            <span class="color-dot" style="background:#64b5f6"></span>
+        </div>
+        <div class="layer-item">
+            <input type="checkbox" id="layer-gate" checked>
+            <label for="layer-gate">登机口</label>
+            <span class="color-dot" style="background:#81c784"></span>
+        </div>
+        <div class="layer-item">
+            <input type="checkbox" id="layer-terminal" checked>
+            <label for="layer-terminal">航站楼</label>
+            <span class="color-dot" style="background:#ffb74d"></span>
+        </div>
+        <div class="layer-item">
+            <input type="checkbox" id="layer-labels" checked>
+            <label for="layer-labels">标注文字</label>
+            <span class="color-dot" style="background:#fff"></span>
+        </div>
+    </div>
+
+    <div id="info-panel">
+        <h4>
+            <span id="info-title">要素详情</span>
+            <span class="close-btn" onclick="document.getElementById('info-panel').style.display='none'">×</span>
+        </h4>
+        <div id="info-content"></div>
+    </div>
+
+    <div id="statusbar">
+        <span>缩放: <span id="zoom-level">--</span></span>
+        &nbsp;|&nbsp;
+        <span>坐标: <span class="coord" id="mouse-coord">--</span></span>
+        <span class="lod" id="lod-level">全球视图</span>
+    </div>
+
+    <script>
+        // 全局错误捕获
+        window.onerror = function(msg, url, line) {
+            document.title = 'JS_ERROR: ' + msg + ' @line:' + line;
+        };
+
+        const map = new maplibregl.Map({
+            container: 'map',
+            style: {
+                version: 8,
+                sources: {
+                },
+                glyphs: 'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf',
+                layers: [
+                    { id: 'background', type: 'background', paint: { 'background-color': '#0a0e1a' } }
+                ]
+            },
+            center: [104, 35],
+            zoom: 2.5,
+            minZoom: 2,
+            maxZoom: 18,
+            hash: true,
+            attributionControl: false
+        });
+
+        map.addControl(new maplibregl.NavigationControl({ showCompass: true }), 'top-right');
+        map.addControl(new maplibregl.ScaleControl({ unit: 'nautical' }), 'bottom-left');
+
+        // 全国30个机场列表
+        const AIRPORT_LIST = [
+            ['ZBAA', '北京/首都', 40.0733, 116.5983],
+            ['ZBDS', '鄂尔多斯/伊金霍洛', 39.4900, 109.8650],
+            ['ZBER', '二连浩特/赛乌素', 43.4250, 112.0933],
+            ['ZBYN', '太原/武宿', 37.7483, 112.6300],
+            ['ZGGG', '广州/白云', 23.3933, 113.3083],
+            ['ZGKL', '桂林/两江', 25.2167, 110.0383],
+            ['ZGSZ', '深圳/宝安', 22.6383, 113.8117],
+            ['ZGZJ', '湛江/吴川', 21.4850, 110.5950],
+            ['ZHEC', '鄂州/花湖', 30.3417, 115.0283],
+            ['ZHHH', '武汉/天河', 30.7850, 114.2067],
+            ['ZJQH', '琼海/博鳌', 19.1383, 110.4533],
+            ['ZLIC', '银川/河东', 38.3200, 106.3933],
+            ['ZLLL', '兰州/中川', 36.5150, 103.6200],
+            ['ZPPP', '昆明/长水', 25.1050, 102.9417],
+            ['ZSFZ', '福州/长乐', 25.9333, 119.6650],
+            ['ZSHC', '杭州/萧山', 30.2283, 120.4333],
+            ['ZSNB', '宁波/栎社', 29.8267, 121.4633],
+            ['ZSNJ', '南京/禄口', 31.7433, 118.8633],
+            ['ZSNT', '南通/兴东', 32.0683, 120.9817],
+            ['ZSOF', '合肥/新桥', 31.9867, 116.9750],
+            ['ZSPD', '上海/浦东', 31.1450, 121.7933],
+            ['ZSSS', '上海/虹桥', 31.1967, 121.3350],
+            ['ZSTX', '黄山/屯溪', 29.7350, 118.2550],
+            ['ZSZS', '舟山/普陀山', 29.9350, 122.3633],
+            ['ZUCK', '重庆/江北', 29.7200, 106.6400],
+            ['ZULS', '拉萨/贡嘎', 29.2967, 90.9117],
+            ['ZWWW', '乌鲁木齐/天山', 43.9083, 87.4750],
+            ['ZYHB', '哈尔滨/太平', 45.6250, 126.2517],
+            ['ZYJM', '佳木斯/松江', 46.8417, 130.4650],
+            ['ZYTL', '大连/周水子', 38.9667, 121.5400]
+        ];
+
+        // 机场跳转全局函数
+        window.jumpToAirport = function(icao) {
+            const airport = AIRPORT_LIST.find(a => a[0] === icao);
+            if (airport) {
+                map.flyTo({center: [airport[3], airport[2]], zoom: 13.5, speed: 1.5});
+            }
+        };
+
+        function initAirportSelect() {
+            const select = document.getElementById('airport-select');
+            AIRPORT_LIST.forEach(([icao, name]) => {
+                const opt = document.createElement('option');
+                opt.value = icao;
+                opt.textContent = icao + ' - ' + name;
+                select.appendChild(opt);
+            });
+            select.addEventListener('change', (e) => {
+                if (e.target.value) window.jumpToAirport(e.target.value);
+            });
+        }
+
+        // LOD 级别提示
+        function updateLOD() {
+            const z = map.getZoom();
+            let lod = '全球视图';
+            if (z >= 14) lod = '机场场面图';
+            else if (z >= 12) lod = '机场地面细节';
+            else if (z >= 10) lod = '机场轮廓';
+            else if (z >= 8) lod = '跑道可见';
+            else if (z >= 5) lod = '导航台可见';
+            else if (z >= 3) lod = '机场点可见';
+            document.getElementById('lod-level').textContent = lod;
+        }
+
+        let realData = null;
+        let groundData = null;
+        let landData = null;
+        let countriesData = null;
+        let countryLabelsData = null;
+        let isDark = true;
+        let basemapMode = 'satellite'; // 'satellite' or 'simple'
+
+        async function loadData() {
+            try {
+                // 并行加载所有数据源
+                const [realResp, groundResp, landResp, countriesResp, labelsResp] = await Promise.all([
+                    fetch('../data/china_airports_real.geojson'),
+                    fetch('../data/china_airports_ground.geojson'),
+                    fetch('../data/ne_110m_land.geojson'),
+                    fetch('../data/ne_110m_countries.geojson'),
+                    fetch('../data/country_labels.geojson')
+                ]);
+                realData = await realResp.json();
+                groundData = await groundResp.json();
+                landData = await landResp.json();
+                countriesData = await countriesResp.json();
+                countryLabelsData = await labelsResp.json();
+                console.log('[e-AIP真实数据]', realData.features.length, 'Feature');
+                console.log('[OSM地面数据]', groundData.features.length, 'Feature');
+                console.log('[Natural Earth陆地]', landData.features.length, 'Feature');
+                console.log('[Natural Earth国家]', countriesData.features.length, 'Feature');
+                console.log('[国家标注点]', countryLabelsData.features.length, 'Feature');
+
+                if (!map.loaded()) {
+                    await new Promise(resolve => map.once('load', resolve));
+                }
+
+                renderLayers();
+                initAirportSelect();
+                document.getElementById('loading').style.display = 'none';
+            } catch (e) {
+                document.getElementById('loading').innerHTML =
+                    '<div style="color:#ff6b6b">数据加载失败: ' + e.message + '</div>';
+                console.error(e);
+            }
+        }
+
+        function renderLayers() {
+            // ===== 底图: Esri 卫星影像 + 深色滤镜 =====
+            map.addSource('basemap', {
+                type: 'raster',
+                tiles: ['https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'],
+                tileSize: 256,
+                attribution: '© Esri, Maxar, Earthstar Geographics'
+            });
+            map.addLayer({
+                id: 'basemap',
+                type: 'raster',
+                source: 'basemap',
+                paint: {
+                    'raster-opacity': 0.55
+                }
+            });
+
+            // ===== 简化海陆底图: Natural Earth 矢量数据 (默认隐藏) =====
+            map.addSource('land', { type: 'geojson', data: landData });
+            map.addSource('countries', { type: 'geojson', data: countriesData });
+            map.addSource('country-labels', { type: 'geojson', data: countryLabelsData });
+
+            // 陆地填充 (深灰黑色)
+            map.addLayer({
+                id: 'simple-land',
+                type: 'fill',
+                source: 'land',
+                paint: { 'fill-color': '#141414' },
+                layout: { 'visibility': 'none' }
+            });
+
+            // 国家边界线 (浅灰色)
+            map.addLayer({
+                id: 'simple-borders',
+                type: 'line',
+                source: 'countries',
+                paint: {
+                    'line-color': '#3a3a3a',
+                    'line-width': 0.8,
+                    'line-opacity': 0.8
+                },
+                layout: { 'visibility': 'none' }
+            });
+
+            // 国家名称标注 (灰色文字, 使用 Point 标注点)
+            map.addLayer({
+                id: 'simple-labels',
+                type: 'symbol',
+                source: 'country-labels',
+                layout: {
+                    'text-field': ['get', 'name'],
+                    'text-size': ['interpolate', ['linear'], ['zoom'], 2, 12, 5, 16],
+                    'text-allow-overlap': true,
+                    'text-optional': false,
+                    'visibility': 'none'
+                },
+                paint: {
+                    'text-color': '#999999',
+                    'text-halo-color': '#141414',
+                    'text-halo-width': 2.5
+                },
+                minzoom: 2
+            });
+
+            // ===== 数据源1: e-AIP 真实数据 =====
+            map.addSource('real', { type: 'geojson', data: realData });
+
+            // 机场点 (zoom >= 3)
+            map.addLayer({
+                id: 'airport-point',
+                type: 'circle',
+                source: 'real',
+                filter: ['all', ['==', ['get', 'category'], 'airport'], ['==', ['geometry-type'], 'Point']],
+                minzoom: 3,
+                paint: {
+                    'circle-radius': ['interpolate', ['linear'], ['zoom'], 3, 3, 6, 5, 10, 7],
+                    'circle-color': '#4fc3f7',
+                    'circle-stroke-color': '#0a0e1a',
+                    'circle-stroke-width': 1.5,
+                    'circle-opacity': 0.95
+                }
+            });
+
+            // 机场标注 (zoom >= 4)
+            map.addLayer({
+                id: 'airport-label',
+                type: 'symbol',
+                source: 'real',
+                filter: ['all', ['==', ['get', 'category'], 'airport'], ['==', ['geometry-type'], 'Point']],
+                minzoom: 4,
+                layout: {
+                    'text-field': ['get', 'icao'],
+                    'text-size': ['interpolate', ['linear'], ['zoom'], 4, 10, 8, 12],
+                    'text-font': ['Noto Sans Regular'],
+                    'text-offset': [0, 1.2],
+                    'text-allow-overlap': false
+                },
+                paint: { 'text-color': '#4fc3f7', 'text-halo-color': '#0a0e1a', 'text-halo-width': 1.5 }
+            });
+
+            // 导航台点 (zoom >= 5)
+            map.addLayer({
+                id: 'navaid-point',
+                type: 'circle',
+                source: 'real',
+                filter: ['all', ['==', ['get', 'category'], 'navaid'], ['==', ['geometry-type'], 'Point']],
+                minzoom: 5,
+                paint: {
+                    'circle-radius': ['interpolate', ['linear'], ['zoom'], 5, 3, 8, 4.5, 12, 6],
+                    'circle-color': [
+                        'match', ['get', 'type'],
+                        'VOR/DME', '#ffd54f',
+                        'VOR', '#ffd54f',
+                        'DME', '#ffb74d',
+                        'NDB', '#ef5350',
+                        'ILS', '#ab47bc',
+                        '#90a4ae'
+                    ],
+                    'circle-stroke-color': '#0a0e1a',
+                    'circle-stroke-width': 1,
+                    'circle-opacity': 0.9
+                }
+            });
+
+            // 导航台标注 (zoom >= 7)
+            map.addLayer({
+                id: 'navaid-label',
+                type: 'symbol',
+                source: 'real',
+                filter: ['all', ['==', ['get', 'category'], 'navaid'], ['==', ['geometry-type'], 'Point']],
+                minzoom: 7,
+                layout: {
+                    'text-field': ['get', 'designator'],
+                    'text-size': 9,
+                    'text-font': ['Noto Sans Regular'],
+                    'text-offset': [0, 1.2],
+                    'text-allow-overlap': false
+                },
+                paint: { 'text-color': '#bbb', 'text-halo-color': '#0a0e1a', 'text-halo-width': 1 }
+            });
+
+            // 跑道线(e-AIP概略) (zoom >= 8)
+            map.addLayer({
+                id: 'runway-real-line',
+                type: 'line',
+                source: 'real',
+                filter: ['all', ['==', ['get', 'category'], 'runway'], ['==', ['geometry-type'], 'LineString']],
+                minzoom: 8,
+                layout: { 'line-cap': 'round', 'line-join': 'round' },
+                paint: {
+                    'line-color': '#ff8a65',
+                    'line-width': ['interpolate', ['linear'], ['zoom'], 8, 2, 10, 4, 12, 6],
+                    'line-opacity': 0.7
+                }
+            });
+
+            // ===== 数据源2: OSM 机场地面数据 =====
+            map.addSource('ground', { type: 'geojson', data: groundData });
+
+            // 机场边界面 (zoom >= 9)
+            map.addLayer({
+                id: 'aerodrome-fill',
+                type: 'fill',
+                source: 'ground',
+                filter: ['all', ['==', ['get', 'aeroway'], 'aerodrome'], ['==', ['geometry-type'], 'Polygon']],
+                minzoom: 9,
+                paint: { 'fill-color': '#1a2332', 'fill-opacity': 0.4 }
+            });
+
+            // 停机坪面 (zoom >= 10)
+            map.addLayer({
+                id: 'apron-fill',
+                type: 'fill',
+                source: 'ground',
+                filter: ['all', ['==', ['get', 'aeroway'], 'apron'], ['==', ['geometry-type'], 'Polygon']],
+                minzoom: 10,
+                paint: { 'fill-color': '#2a2a2a', 'fill-opacity': 0.7, 'fill-outline-color': '#444' }
+            });
+
+            // 航站楼面 (zoom >= 10)
+            map.addLayer({
+                id: 'terminal-fill',
+                type: 'fill',
+                source: 'ground',
+                filter: ['all', ['==', ['get', 'aeroway'], 'terminal'], ['==', ['geometry-type'], 'Polygon']],
+                minzoom: 10,
+                paint: { 'fill-color': '#5d4037', 'fill-opacity': 0.6, 'fill-outline-color': '#8d6e63' }
+            });
+
+            // 机库/塔台面 (zoom >= 10)
+            map.addLayer({
+                id: 'building-fill',
+                type: 'fill',
+                source: 'ground',
+                filter: ['all', ['match', ['get', 'aeroway'], ['hangar', 'tower'], true, false], ['==', ['geometry-type'], 'Polygon']],
+                minzoom: 10,
+                paint: { 'fill-color': '#4e342e', 'fill-opacity': 0.6, 'fill-outline-color': '#6d4c41' }
+            });
+
+            // 跑道线(OSM精确) (zoom >= 10)
+            map.addLayer({
+                id: 'runway-line',
+                type: 'line',
+                source: 'ground',
+                filter: ['all', ['==', ['get', 'aeroway'], 'runway'], ['==', ['geometry-type'], 'LineString']],
+                minzoom: 10,
+                layout: { 'line-cap': 'round', 'line-join': 'round' },
+                paint: {
+                    'line-color': '#e0e0e0',
+                    'line-width': ['interpolate', ['linear'], ['zoom'], 10, 4, 13, 8, 15, 12, 17, 16],
+                    'line-opacity': 0.95
+                }
+            });
+
+            // 跑道中心线 (zoom >= 12)
+            map.addLayer({
+                id: 'runway-centerline',
+                type: 'line',
+                source: 'ground',
+                filter: ['all', ['==', ['get', 'aeroway'], 'runway'], ['==', ['geometry-type'], 'LineString']],
+                minzoom: 12,
+                layout: { 'line-cap': 'round' },
+                paint: { 'line-color': '#fff', 'line-width': 1, 'line-dasharray': [2, 2], 'line-opacity': 0.5 }
+            });
+
+            // 停止道线 (zoom >= 11)
+            map.addLayer({
+                id: 'stopway-line',
+                type: 'line',
+                source: 'ground',
+                filter: ['all', ['==', ['get', 'aeroway'], 'stopway'], ['==', ['geometry-type'], 'LineString']],
+                minzoom: 11,
+                layout: { 'line-cap': 'round' },
+                paint: { 'line-color': '#ff8a65', 'line-width': 3, 'line-opacity': 0.6 }
+            });
+
+            // 滑行道线 (zoom >= 11)
+            map.addLayer({
+                id: 'taxiway-line',
+                type: 'line',
+                source: 'ground',
+                filter: ['all', ['==', ['get', 'aeroway'], 'taxiway'], ['==', ['geometry-type'], 'LineString']],
+                minzoom: 11,
+                layout: { 'line-cap': 'round', 'line-join': 'round' },
+                paint: {
+                    'line-color': '#757575',
+                    'line-width': ['interpolate', ['linear'], ['zoom'], 11, 1.5, 14, 3, 16, 5, 18, 7],
+                    'line-opacity': 0.8
+                }
+            });
+
+            // 滑行道中心线 (zoom >= 13)
+            map.addLayer({
+                id: 'taxiway-centerline',
+                type: 'line',
+                source: 'ground',
+                filter: ['all', ['==', ['get', 'aeroway'], 'taxiway'], ['==', ['geometry-type'], 'LineString']],
+                minzoom: 13,
+                layout: { 'line-cap': 'round' },
+                paint: { 'line-color': '#ffd54f', 'line-width': 1, 'line-dasharray': [3, 2], 'line-opacity': 0.4 }
+            });
+
+            // 登机桥线 (zoom >= 13)
+            map.addLayer({
+                id: 'jetbridge-line',
+                type: 'line',
+                source: 'ground',
+                filter: ['all', ['==', ['get', 'aeroway'], 'jet_bridge'], ['==', ['geometry-type'], 'LineString']],
+                minzoom: 13,
+                layout: { 'line-cap': 'round' },
+                paint: { 'line-color': '#ba68c8', 'line-width': 1.5, 'line-opacity': 0.7 }
+            });
+
+            // 机位点 (zoom >= 12)
+            map.addLayer({
+                id: 'parking-point',
+                type: 'circle',
+                source: 'ground',
+                filter: ['all', ['==', ['get', 'aeroway'], 'parking_position'], ['==', ['geometry-type'], 'Point']],
+                minzoom: 12,
+                paint: {
+                    'circle-radius': ['interpolate', ['linear'], ['zoom'], 12, 1.5, 14, 3, 16, 4.5, 18, 6],
+                    'circle-color': [
+                        'match', ['get', 'aircraft'],
+                        'heavy', '#ef5350',
+                        'medium', '#ffb74d',
+                        'light', '#81c784',
+                        '#64b5f6'
+                    ],
+                    'circle-stroke-color': '#fff',
+                    'circle-stroke-width': 0.3,
+                    'circle-opacity': 0.85
+                }
+            });
+
+            // 登机口点 (zoom >= 12)
+            map.addLayer({
+                id: 'gate-point',
+                type: 'circle',
+                source: 'ground',
+                filter: ['all', ['==', ['get', 'aeroway'], 'gate'], ['==', ['geometry-type'], 'Point']],
+                minzoom: 12,
+                paint: {
+                    'circle-radius': ['interpolate', ['linear'], ['zoom'], 12, 1.5, 14, 2.5, 16, 4],
+                    'circle-color': '#81c784',
+                    'circle-stroke-color': '#fff',
+                    'circle-stroke-width': 0.3,
+                    'circle-opacity': 0.85
+                }
+            });
+
+            // 导航设施点(OSM) (zoom >= 11)
+            map.addLayer({
+                id: 'navaid-ground-point',
+                type: 'circle',
+                source: 'ground',
+                filter: ['all', ['==', ['get', 'aeroway'], 'navigationaid'], ['==', ['geometry-type'], 'Point']],
+                minzoom: 11,
+                paint: { 'circle-radius': 4, 'circle-color': '#ffd54f', 'circle-stroke-color': '#000', 'circle-stroke-width': 1 }
+            });
+
+            // ===== 标注文字 =====
+            // 跑道标注 (zoom >= 11)
+            map.addLayer({
+                id: 'runway-label',
+                type: 'symbol',
+                source: 'ground',
+                filter: ['all', ['==', ['get', 'aeroway'], 'runway'], ['==', ['geometry-type'], 'LineString'], ['has', 'ref']],
+                minzoom: 11,
+                layout: {
+                    'text-field': ['get', 'ref'],
+                    'text-size': ['interpolate', ['linear'], ['zoom'], 11, 9, 14, 11],
+                    'text-font': ['Noto Sans Regular'],
+                    'text-offset': [0, -0.5],
+                    'text-allow-overlap': false
+                },
+                paint: { 'text-color': '#fff', 'text-halo-color': '#000', 'text-halo-width': 1.5 }
+            });
+
+            // 滑行道标注 (zoom >= 13)
+            map.addLayer({
+                id: 'taxiway-label',
+                type: 'symbol',
+                source: 'ground',
+                filter: ['all', ['==', ['get', 'aeroway'], 'taxiway'], ['==', ['geometry-type'], 'LineString'], ['has', 'ref']],
+                minzoom: 13,
+                layout: {
+                    'text-field': ['get', 'ref'],
+                    'text-size': 8,
+                    'text-font': ['Noto Sans Regular'],
+                    'text-offset': [0, -0.3],
+                    'text-allow-overlap': false
+                },
+                paint: { 'text-color': '#9e9e9e', 'text-halo-color': '#000', 'text-halo-width': 1 }
+            });
+
+            // 登机口标注 (zoom >= 13)
+            map.addLayer({
+                id: 'gate-label',
+                type: 'symbol',
+                source: 'ground',
+                filter: ['all', ['==', ['get', 'aeroway'], 'gate'], ['==', ['geometry-type'], 'Point'], ['has', 'ref']],
+                minzoom: 13,
+                layout: {
+                    'text-field': ['get', 'ref'],
+                    'text-size': 8,
+                    'text-font': ['Noto Sans Regular'],
+                    'text-offset': [0.8, 0],
+                    'text-allow-overlap': false
+                },
+                paint: { 'text-color': '#a5d6a7', 'text-halo-color': '#000', 'text-halo-width': 1 }
+            });
+
+            // 机位标注 (zoom >= 14)
+            map.addLayer({
+                id: 'parking-label',
+                type: 'symbol',
+                source: 'ground',
+                filter: ['all', ['==', ['get', 'aeroway'], 'parking_position'], ['==', ['geometry-type'], 'Point'], ['has', 'ref']],
+                minzoom: 14,
+                layout: {
+                    'text-field': ['get', 'ref'],
+                    'text-size': 7,
+                    'text-font': ['Noto Sans Regular'],
+                    'text-offset': [0, 0.8],
+                    'text-allow-overlap': false
+                },
+                paint: { 'text-color': '#90caf9', 'text-halo-color': '#000', 'text-halo-width': 1 }
+            });
+
+            // 航站楼标注 (zoom >= 12)
+            map.addLayer({
+                id: 'terminal-label',
+                type: 'symbol',
+                source: 'ground',
+                filter: ['all', ['==', ['get', 'aeroway'], 'terminal'], ['==', ['geometry-type'], 'Polygon'], ['has', 'name']],
+                minzoom: 12,
+                layout: {
+                    'text-field': ['get', 'name'],
+                    'text-size': 10,
+                    'text-font': ['Noto Sans Regular'],
+                    'text-allow-overlap': false
+                },
+                paint: { 'text-color': '#ffcc80', 'text-halo-color': '#000', 'text-halo-width': 1.5 }
+            });
+
+            // ===== 交互事件 =====
+            const clickableLayers = ['airport-point', 'navaid-point', 'runway-real-line',
+                'runway-line', 'taxiway-line', 'apron-fill', 'parking-point',
+                'gate-point', 'terminal-fill', 'jetbridge-line', 'building-fill'];
+
+            map.on('click', (e) => {
+                const features = map.queryRenderedFeatures(e.point, { layers: clickableLayers });
+                if (features.length > 0) {
+                    showInfo(features[0]);
+                } else {
+                    document.getElementById('info-panel').style.display = 'none';
+                }
+            });
+
+            map.on('mousemove', (e) => {
+                const features = map.queryRenderedFeatures(e.point, { layers: clickableLayers });
+                map.getCanvas().style.cursor = features.length > 0 ? 'pointer' : '';
+                document.getElementById('mouse-coord').textContent =
+                    e.lngLat.lng.toFixed(5) + ', ' + e.lngLat.lat.toFixed(5);
+            });
+
+            map.on('zoomend', () => {
+                document.getElementById('zoom-level').textContent = map.getZoom().toFixed(1);
+                updateLOD();
+            });
+
+            updateLOD();
+        }
+
+        function showInfo(feature) {
+            const props = feature.properties;
+            const type = props.type || props.aeroway || 'unknown';
+            const name = props.name || props.icao || props.ref || props['name:en'] || type;
+
+            const typeNames = {
+                airport: '机场', navaid: '导航台', runway: '跑道',
+                taxiway: '滑行道', apron: '停机坪', parking_position: '机位',
+                gate: '登机口', jet_bridge: '登机桥', terminal: '航站楼',
+                hangar: '机库', tower: '塔台', navigationaid: '导航设施',
+                stopway: '停止道', windsock: '风向袋', aerodrome: '机场'
+            };
+
+            document.getElementById('info-title').textContent = (typeNames[type] || type) + ' - ' + name;
+
+            const rows = [];
+            const displayKeys = ['icao', 'name', 'name_cn', 'ref', 'type', 'aeroway',
+                'navaid_type', 'frequency', 'surface', 'length', 'width', 'elevation',
+                'aircraft', 'operator', 'airport', 'airport_name'];
+
+            for (const key of displayKeys) {
+                if (props[key] !== undefined && props[key] !== null && props[key] !== '') {
+                    rows.push([key, String(props[key])]);
+                }
+            }
+
+            if (feature.geometry.type === 'Point') {
+                rows.push(['坐标', feature.geometry.coordinates[0].toFixed(5) + ', ' + feature.geometry.coordinates[1].toFixed(5)]);
+            }
+
+            const content = document.getElementById('info-content');
+            content.innerHTML = rows.map(([k, v]) =>
+                '<div class="info-row"><span class="info-key">' + k + '</span><span class="info-val">' + v + '</span></div>'
+            ).join('');
+            document.getElementById('info-panel').style.display = 'block';
+        }
+
+        // 图层开关
+        function setupLayerToggles() {
+            const toggles = [
+                ['layer-airport', ['airport-point', 'airport-label']],
+                ['layer-navaid', ['navaid-point', 'navaid-label']],
+                ['layer-runway-real', ['runway-real-line']],
+                ['layer-apron', ['apron-fill']],
+                ['layer-runway', ['runway-line', 'runway-centerline', 'runway-label']],
+                ['layer-taxiway', ['taxiway-line', 'taxiway-centerline', 'taxiway-label']],
+                ['layer-parking', ['parking-point', 'parking-label']],
+                ['layer-gate', ['gate-point', 'gate-label']],
+                ['layer-terminal', ['terminal-fill', 'terminal-label']]
+            ];
+
+            toggles.forEach(([checkboxId, layerIds]) => {
+                document.getElementById(checkboxId).addEventListener('change', (e) => {
+                    const visible = e.target.checked;
+                    layerIds.forEach(id => {
+                        if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', visible ? 'visible' : 'none');
+                    });
+                });
+            });
+
+            document.getElementById('layer-labels').addEventListener('change', (e) => {
+                const visible = e.target.checked;
+                const labelLayers = ['airport-label', 'navaid-label', 'runway-label',
+                    'taxiway-label', 'gate-label', 'parking-label', 'terminal-label'];
+                labelLayers.forEach(id => {
+                    if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', visible ? 'visible' : 'none');
+                });
+            });
+        }
+
+        // 昼夜切换
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            isDark = !isDark;
+            document.body.classList.toggle('light', !isDark);
+            document.getElementById('theme-toggle').textContent = isDark ? '🌙 夜间模式' : '☀️ 日间模式';
+            map.setPaintProperty('background', 'background-color', isDark ? '#0a0e1a' : '#f0f0f0');
+        });
+
+        // 底图切换 (卫星图 / 简化海陆图)
+        document.getElementById('basemap-toggle').addEventListener('click', () => {
+            basemapMode = basemapMode === 'satellite' ? 'simple' : 'satellite';
+            const btn = document.getElementById('basemap-toggle');
+            if (basemapMode === 'simple') {
+                btn.textContent = '🗺️ 简化图';
+                // 隐藏卫星图
+                map.setLayoutProperty('basemap', 'visibility', 'none');
+                // 显示简化海陆图
+                map.setLayoutProperty('simple-land', 'visibility', 'visible');
+                map.setLayoutProperty('simple-borders', 'visibility', 'visible');
+                map.setLayoutProperty('simple-labels', 'visibility', 'visible');
+                // 海洋背景色 (中灰色)
+                map.setPaintProperty('background', 'background-color', '#2a2a2a');
+            } else {
+                btn.textContent = '🛰️ 卫星图';
+                // 显示卫星图
+                map.setLayoutProperty('basemap', 'visibility', 'visible');
+                // 隐藏简化海陆图
+                map.setLayoutProperty('simple-land', 'visibility', 'none');
+                map.setLayoutProperty('simple-borders', 'visibility', 'none');
+                map.setLayoutProperty('simple-labels', 'visibility', 'none');
+                // 恢复深色背景
+                map.setPaintProperty('background', 'background-color', isDark ? '#0a0e1a' : '#f0f0f0');
+            }
+        });
+
+        // 初始化
+        map.once('load', () => {
+            setupLayerToggles();
+            loadData();
+        });
+
+        if (map.loaded()) {
+            setupLayerToggles();
+            loadData();
+        }
+    </script>
+</body>
+</html>

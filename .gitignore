@@ -1,0 +1,19 @@
+# 大文件工具
+cloudflared.exe
+*.exe
+
+# 临时文件
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 原始OSM数据（较大，可重新生成）
+data/zbaa_osm_raw.json
+
+# vscode
+.vscode/

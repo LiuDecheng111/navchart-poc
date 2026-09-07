@@ -1,0 +1,88 @@
+S   PAZUUU            01625     N303442.60 E1035649.20                             09800     CHENGDU SHUANGLIU INTL                 
+S   PAZUCK            01350     N294309.12 E1063830.12                             09800     CHONGQING JIANGBEI INTL                
+S   PAZLXY            01572     N342649.56 E1084505.76                             09800     XI AN XIANYANG INTL                    
+S   DBDUMETZJ      E            N311160.00 E1043000.00                                                                              
+S   DBAGNAVZJ      E            N304800.00 E1044760.00                                                                              
+S   DBIGONOZJ      E            N301160.00 E1051200.00                                                                              
+S   DBOMBLIZJ      E            N293000.00 E1050000.00                                                                              
+S   DBBATULZJ      E            N294800.00 E1033000.00                                                                              
+S   DBNOPDAZJ      E            N300000.00 E1024760.00                                                                              
+S   DBGOSODZJ      E            N310000.00 E1031200.00                                                                              
+S   DBTARGOZJ      E            N313000.00 E1034760.00                                                                              
+S   DBWX203ZJ      E            N305360.00 E1041200.00                                                                              
+S   DBWX108ZJ      E            N301800.00 E1043560.00                                                                              
+S   EBP281 ZUUU                 N305100.00 E1035649.20                                                                              
+S   EBP282 ZUUU                 N301800.00 E1035649.20                                                                              
+S   EBP283 ZUUU                 N303442.60 E1042400.00                                                                              
+S   EBP284 ZUUU                 N303442.60 E1033000.00                                                                              
+S   EBIM02RZUUU                 N303860.00 E1035649.20                                                                              
+S   EBIM20LZUUU                 N303000.00 E1035649.20                                                                              
+S   EBFAF02ZUUU                 N303712.00 E1035649.20                                                                              
+S   EBFAF20ZUUU                 N303148.00 E1035649.20                                                                              
+S   EBMAP02ZUUU                 N303506.00 E1035649.20                                                                              
+S   EBMAP20ZUUU                 N303419.20 E1035649.20                                                                              
+S   H CTU          V  114.70    N303442.60 E1035649.20          01625                        CHENGDU VOR/DME                        
+S   H MIG          V  115.30    N312660.00 E1040900.00          02200                        MIANZHU VOR/DME                        
+S   H YIN          V  113.80    N284500.00 E1043260.00          01200                        YIBIN VOR/DME                          
+S   H LIA          V  112.50    N275360.00 E1021500.00          05000                        LIANGSHAN VOR                          
+S   H NQZ          N  355.0     N305100.00 E1060560.00          01200                        NANCHONG NDB                           
+S   R A593 0001TARGONH          N313000.00 E1034760.00 180.00.035.0      0780012500                                                 
+S   R A593 0002GOSODNH          N310000.00 E1031200.00 135.315.42.0      0780012500                                                 
+S   R A593 0003DUMETNH          N311160.00 E1043000.00 180.00.038.0      0780012500                                                 
+S   R A593 0004AGNAVNH          N304800.00 E1044760.00 180.00.036.0      0780012500                                                 
+S   R A593 0005IGONONH          N301160.00 E1051200.00 225.45.040.0      0780012500                                                 
+S   R B330 0001WX203NH          N305360.00 E1041200.00 180.00.025.0      0720012500                                                 
+S   R B330 0002WX108NH          N301800.00 E1043560.00 225.45.030.0      0720012500                                                 
+S   R B330 0003OMBLINH          N293000.00 E1050000.00 225.45.045.0      0720012500                                                 
+S   R W50  0001BATULNL          N294800.00 E1033000.00 00.0180.50.0      0300006000                                                 
+S   R W50  0002NOPDANL          N300000.00 E1024760.00 45.0225.40.0      0300006000                                                 
+S   R W50  0003GOSODNL          N310000.00 E1031200.00 90.0270.55.0      0300006000                                                 
+S   TDZUUUCTU2DDUME001IFCTU     N303442.60 E1035649.20 00.0          0162500000000     000                                          
+S   TDZUUUCTU2DDUME002CFP281 CTUN305100.00 E1035649.20 00.0          0500000000220     000                                          
+S   TDZUUUCTU2DDUME003TFDUMET   N311160.00 E1043000.00 45.0          0800000000000     000                                          
+S   TDZUUUCTU2DDUME004TFAGNAV   N304800.00 E1044760.00 135.0         1000000000000     000                                          
+S   TDZUUUBATU1BATU001IFCTU     N303442.60 E1035649.20 00.0          0162500000000                                                  
+S   TDZUUUBATU1BATU002CFP284 CTUN303442.60 E1033000.00 270.0         0500000000220                                                  
+S   TDZUUUBATU1BATU003TFBATUL   N294800.00 E1033000.00 180.0         0800000000000                                                  
+S   TDZUUUBATU1BATU004TFNOPDA   N300000.00 E1024760.00 270.0         1000000000000                                                  
+S   TEZUUUDUM1ADUME001IFDUMET   N311160.00 E1043000.00 00.0          1250000000000                                                  
+S   TEZUUUDUM1ADUME002TFAGNAV   N304800.00 E1044760.00 180.0         1000000000000                                                  
+S   TEZUUUDUM1ADUME003TFWX203   N305360.00 E1041200.00 270.0         0800000000000                                                  
+S   TEZUUUDUM1ADUME004CFP281 CTUN305100.00 E1035649.20 225.0         0600000000250                                                  
+S   TEZUUUDUM1ADUME005TFIM02R   N303860.00 E1035649.20 180.0         0400000000220                                                  
+S   TEZUUUBAT1BBATU001IFBATUL   N294800.00 E1033000.00 00.0          1250000000000                                                  
+S   TEZUUUBAT1BBATU002TFNOPDA   N300000.00 E1024760.00 00.0          1000000000000                                                  
+S   TEZUUUBAT1BBATU003CFP282 CTUN301800.00 E1035649.20 45.0          0600000000250                                                  
+S   TEZUUUBAT1BBATU004TFIM20L   N303000.00 E1035649.20 00.0          0400000000220                                                  
+S   TFZUUUILS02    001IFIM02R   N303860.00 E1035649.20 00.0          0400000000220                                                  
+S   TFZUUUILS02    002CFFAF02CTUN303712.00 E1035649.20 180.0         0300000000180                                                  
+S   TFZUUUILS02    003FAMAP02CTUN303506.00 E1035649.20 180.0         0162500000000                                                  
+S   TFZUUUILS02    004CAMAP02CTUN303506.00 E1035649.20 180.0         0162500000000                                                  
+S   TFZUUUILS02    005TFP281    N305100.00 E1035649.20 00.0          0500000000000                                                  
+S   TFZUUUILS20    001IFIM20L   N303000.00 E1035649.20 00.0          0400000000220                                                  
+S   TFZUUUILS20    002CFFAF20CTUN303148.00 E1035649.20 00.0          0300000000180                                                  
+S   TFZUUUILS20    003FAMAP20CTUN303419.20 E1035649.20 00.0          0162500000000                                                  
+S   TFZUUUILS20    004CAMAP20CTUN303419.20 E1035649.20 00.0          0162500000000                                                  
+S   TFZUUUILS20    005TFP282    N301800.00 E1035649.20 180.0         0500000000000                                                  
+S   U ZUUUTCHENGDU TMA         001N311440.98 E1035649.20       0100000000                                                           
+S   U ZUUUTCHENGDU TMA         002N310917.58 E1042010.48       0100000000                                                           
+S   U ZUUUTCHENGDU TMA         003N305435.57 E1043710.08       0100000000                                                           
+S   U ZUUUTCHENGDU TMA         004N303434.36 E1044314.95       0100000000                                                           
+S   U ZUUUTCHENGDU TMA         005N301437.27 E1043653.51       0100000000                                                           
+S   U ZUUUTCHENGDU TMA         006N300003.50 E1041953.90       0100000000                                                           
+S   U ZUUUTCHENGDU TMA         007N295444.22 E1035649.20       0100000000                                                           
+S   U ZUUUTCHENGDU TMA         008N300003.50 E1033344.50       0100000000                                                           
+S   U ZUUUTCHENGDU TMA         009N301437.27 E1031644.89       0100000000                                                           
+S   U ZUUUTCHENGDU TMA         010N303434.36 E1031023.45       0100000000                                                           
+S   U ZUUUTCHENGDU TMA         011N305435.57 E1031628.32       0100000000                                                           
+S   U ZUUUTCHENGDU TMA         012N310917.58 E1033327.92       0100000000                                                           
+S   U ZJFIFCHENGDU FIR         001N330000.00 E1000000.00       0600000000                                                           
+S   U ZJFIFCHENGDU FIR         002N330000.00 E1080000.00       0600000000                                                           
+S   U ZJFIFCHENGDU FIR         003N300000.00 E1100000.00       0600000000                                                           
+S   U ZJFIFCHENGDU FIR         004N270000.00 E1080000.00       0600000000                                                           
+S   U ZJFIFCHENGDU FIR         005N260000.00 E1030000.00       0600000000                                                           
+S   U ZJFIFCHENGDU FIR         006N280000.00 E0990000.00       0600000000                                                           
+S   U R201RRESTRICTED AREA 201 001N310000.00 E1040000.00       0200000000                                                           
+S   U R201RRESTRICTED AREA 201 002N313000.00 E1043000.00       0200000000                                                           
+S   U R201RRESTRICTED AREA 201 003N311160.00 E1050000.00       0200000000                                                           
+S   U R201RRESTRICTED AREA 201 004N304800.00 E1044760.00       0200000000                                                           

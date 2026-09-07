@@ -1,0 +1,1355 @@
+S   PAZBAA            01165     N400447.64 E1163611.16                             09800     BEIJING CAPITAL INTL                   
+S   PAZSPD            00013     N310839.48 E1214829.88                             09800     SHANGHAI PUDONG INTL                   
+S   PAZGGG            00036     N232332.64 E1131755.68                             09800     GUANGZHOU BAIYUN INTL                  
+S   PAZUUU            01625     N303442.60 E1035649.20                             09800     CHENGDU SHUANGLIU INTL                 
+S   PAZSSS            00010     N311152.44 E1212010.68                             09800     SHANGHAI HONGQIAO INTL                 
+S   PAZLXY            01572     N342649.56 E1084505.76                             09800     XI AN XIANYANG INTL                    
+S   PARJTT            00021     N353257.84 E1394647.28                             09800     TOKYO HANEDA INTL                      
+S   PARJBB            00026     N342604.92 E1351358.80                             09800     OSAKA KANSAI INTL                      
+S   PARKSI            00023     N372736.72 E1262626.52                             09800     SEOUL INCHEON INTL                     
+S   PAVHHH            00028     N221828.80 E1135506.60                             09800     HONG KONG INTL                         
+S   PAWSSS            00022     N012151.84 E1035929.40                             09800     SINGAPORE CHANGI INTL                  
+S   PAVTBS            00005     N134124.00 E1004500.36                             09800     BANGKOK SUVARNABHUMI                   
+S   PAWMKK            00070     N024444.16 E1014235.64                             09800     KUALA LUMPUR INTL                      
+S   PARPLL            00075     N143030.96 E1210110.20                             09800     MANILA NINOY AQUINO INTL               
+S   PAVIDP            00776     N283322.32 E0770560.00                             09800     DELHI INDIRA GANDHI INTL               
+S   PAVABB            00010     N190522.56 E0725156.16                             09800     MUMBAI CHHATRAPATI SHIVAJI             
+S   PAOMDB            00062     N251511.52 E0552156.52                             09800     DUBAI INTL                             
+S   PAOTHH            00013     N251623.16 E0513628.80                             09800     DOHA HAMAD INTL                        
+S   PAOERK            02050     N245727.72 E0464157.12                             09800     RIYADH KING KHALID INTL                
+S   PAEGLL            00083     N512812.00 W0002715.48                             09800     LONDON HEATHROW                        
+S   PALFPG            00392     N490034.92 E0023252.44                             09800     PARIS CHARLES DE GAULLE                
+S   PAEDDF            00364     N500216.44 E0083343.92                             09800     FRANKFURT AM MAIN                      
+S   PAEHAM            -0011     N521837.80 E0044605.88                             09800     AMSTERDAM SCHIPHOL                     
+S   PAUUEE            00748     N555821.36 E0372452.56                             09800     MOSCOW SHEREMETYEVO                    
+S   PALIRF            00008     N414801.08 E0121420.04                             09800     ROME FIUMICINO                         
+S   PALEMD            01998     N402818.84 W0033345.36                             09800     MADRID BARAJAS                         
+S   PAEDDM            01487     N482113.32 E0114709.96                             09800     MUNICH FRANZ JOSEF STRAUSS             
+S   PAEGKK            00202     N510853.16 W0001125.08                             09800     LONDON GATWICK                         
+S   PALFPO            00290     N484323.88 E0022245.84                             09800     PARIS ORLY                             
+S   PAKJFK            00013     N403828.68 W0734641.16                             09800     NEW YORK JOHN F KENNEDY INTL           
+S   PAKLAX            00126     N335629.76 W1182430.60                             09800     LOS ANGELES INTL                       
+S   PAKORD            00668     N415827.12 W0875426.28                             09800     CHICAGO OHARE INTL                     
+S   PAKSFO            00013     N373716.68 W1222244.40                             09800     SAN FRANCISCO INTL                     
+S   PAKATL            01026     N333826.52 W0842539.72                             09800     ATLANTA HARTSFIELD JACKSON             
+S   PAKDFW            00607     N325359.28 W0970225.08                             09800     DALLAS FORT WORTH INTL                 
+S   PACYVR            00013     N491140.92 W1231102.04                             09800     VANCOUVER INTL                         
+S   PACYYZ            00569     N434039.72 W0793729.28                             09800     TORONTO PEARSON INTL                   
+S   PAYSSY            00021     S335645.96 E1511037.92                             09800     SYDNEY KINGSFORD SMITH                 
+S   PAYMML            00434     S374008.40 E1445027.60                             09800     MELBOURNE TULLAMARINE                  
+S   PANZAA            00023     S370029.52 E1744706.00                             09800     AUCKLAND INTL                          
+S   PAHECA            00389     N300718.84 E0312420.16                             09800     CAIRO INTL                             
+S   PAFAOR            05558     S260821.12 E0281445.60                             09800     JOHANNESBURG OR TAMBO INTL             
+S   PAHKJK            05327     S011909.12 E0365540.08                             09800     NAIROBI JOMO KENYATTA INTL             
+S   PASBGR            02451     S232608.16 W0462823.16                             09800     SAO PAULO GUARULHOS INTL               
+S   PASAEZ            00067     S344919.92 W0583208.88                             09800     BUENOS AIRES EZEIZA INTL               
+S   PAMMMX            07316     N192609.96 W0990418.84                             09800     MEXICO CITY BENITO JUAREZ INTL         
+S   H CTU          V  114.70    N303442.60 E1035649.20          01625                        CHENGDU VOR/DME                        
+S   H PEK          V  114.10    N400447.64 E1163611.16          01165                        BEIJING VOR/DME                        
+S   H PVG          V  115.50    N310839.48 E1214829.88          00013                        SHANGHAI VOR/DME                       
+S   H CAN          V  113.20    N232332.64 E1131755.68          00036                        GUANGZHOU VOR/DME                      
+S   H HND          V  115.10    N353257.84 E1394647.28          00021                        TOKYO VOR/DME                          
+S   H KIX          V  114.30    N342604.92 E1351358.80          00026                        OSAKA VOR/DME                          
+S   H ICN          V  113.90    N372736.72 E1262626.52          00023                        SEOUL VOR/DME                          
+S   H HKG          V  114.50    N221828.80 E1135506.60          00028                        HONG KONG VOR/DME                      
+S   H SIN          V  115.70    N012151.84 E1035929.40          00022                        SINGAPORE VOR/DME                      
+S   H BKK          V  114.90    N134124.00 E1004500.36          00005                        BANGKOK VOR/DME                        
+S   H DEL          V  112.80    N283322.32 E0770560.00          00776                        DELHI VOR/DME                          
+S   H BOM          V  113.50    N190522.56 E0725156.16          00010                        MUMBAI VOR/DME                         
+S   H DXB          V  114.80    N251511.52 E0552156.52          00062                        DUBAI VOR/DME                          
+S   H DOH          V  113.10    N251623.16 E0513628.80          00013                        DOHA VOR/DME                           
+S   H LHR          V  115.30    N512812.00 W0002715.48          00083                        LONDON VOR/DME                         
+S   H CDG          V  114.20    N490034.92 E0023252.44          00392                        PARIS VOR/DME                          
+S   H FRA          V  114.40    N500216.44 E0083343.92          00364                        FRANKFURT VOR/DME                      
+S   H AMS          V  113.70    N521837.80 E0044605.88          -0011                        AMSTERDAM VOR/DME                      
+S   H SVO          V  114.60    N555821.36 E0372452.56          00748                        MOSCOW VOR/DME                         
+S   H FCO          V  115.20    N414801.08 E0121420.04          00008                        ROME VOR/DME                           
+S   H JFK          V  115.90    N403828.68 W0734641.16          00013                        NEW YORK VOR/DME                       
+S   H LAX          V  113.60    N335629.76 W1182430.60          00126                        LOS ANGELES VOR/DME                    
+S   H ORD          V  113.40    N415827.12 W0875426.28          00668                        CHICAGO VOR/DME                        
+S   H SFO          V  115.60    N373716.68 W1222244.40          00013                        SAN FRANCISCO VOR/DME                  
+S   H ATL          V  114.00    N333826.52 W0842539.72          01026                        ATLANTA VOR/DME                        
+S   H YVR          V  112.90    N491140.92 W1231102.04          00013                        VANCOUVER VOR/DME                      
+S   H YYZ          V  113.30    N434039.72 W0793729.28          00569                        TORONTO VOR/DME                        
+S   H SYD          V  114.10    S335645.96 E1511037.92          00021                        SYDNEY VOR/DME                         
+S   H MEL          V  115.40    S374008.40 E1445027.60          00434                        MELBOURNE VOR/DME                      
+S   H AKL          V  113.80    S370029.52 E1744706.00          00023                        AUCKLAND VOR/DME                       
+S   H CAI          V  112.70    N300718.84 E0312420.16          00389                        CAIRO VOR/DME                          
+S   H JNB          V  114.50    S260821.12 E0281445.60          05558                        JOHANNESBURG VOR/DME                   
+S   H NBO          V  113.10    S011909.12 E0365540.08          05327                        NAIROBI VOR/DME                        
+S   H GRU          V  115.20    S232608.16 W0462823.16          02451                        SAO PAULO VOR/DME                      
+S   H EZE          V  114.30    S344919.92 W0583208.88          00067                        BUENOS AIRES VOR/DME                   
+S   H MEX          V  113.70    N192609.96 W0990418.84          07316                        MEXICO CITY VOR/DME                    
+S   DBTARGOZZ      E            N313000.00 E1034760.00                                                                              
+S   DBGOSODZZ      E            N310000.00 E1031200.00                                                                              
+S   DBDUMETZZ      E            N311160.00 E1043000.00                                                                              
+S   DBAGNAVZZ      E            N304800.00 E1044760.00                                                                              
+S   DBIGONOZZ      E            N301160.00 E1051200.00                                                                              
+S   DBOMBLIZZ      E            N293000.00 E1050000.00                                                                              
+S   DBWX203ZZ      E            N305360.00 E1041200.00                                                                              
+S   DBWX108ZZ      E            N301800.00 E1043560.00                                                                              
+S   DBSADERZZ      E            N283000.00 E1060000.00                                                                              
+S   DBKMR  ZZ      E            N273000.00 E1070000.00                                                                              
+S   DBPEK  ZZ      E            N400448.00 E1163560.00                                                                              
+S   DBDALIMZZ      E            N383000.00 E1180000.00                                                                              
+S   DBTNA  ZZ      E            N364760.00 E1173000.00                                                                              
+S   DBPVG  ZZ      E            N310824.00 E1214836.00                                                                              
+S   DBNIBOGZZ      E            N290000.00 E1230000.00                                                                              
+S   DBHND  ZZ      E            N353260.00 E1394648.00                                                                              
+S   DBKIX  ZZ      E            N342548.00 E1351348.00                                                                              
+S   DBICN  ZZ      E            N372736.00 E1262624.00                                                                              
+S   DBHKG  ZZ      E            N221836.00 E1135512.00                                                                              
+S   DBSIN  ZZ      E            N012136.00 E1035924.00                                                                              
+S   DBBKK  ZZ      E            N134124.00 E1004500.00                                                                              
+S   DBBATULZZ      E            N294800.00 E1033000.00                                                                              
+S   DBNOPDAZZ      E            N300000.00 E1024760.00                                                                              
+S   DBDEL  ZZ      E            N283336.00 E0770560.00                                                                              
+S   DBDXB  ZZ      E            N251500.00 E0552212.00                                                                              
+S   DBCAI  ZZ      E            N300712.00 E0312436.00                                                                              
+S   DBDOH  ZZ      E            N251612.00 E0513636.00                                                                              
+S   DBBAH  ZZ      E            N261612.00 E0503748.00                                                                              
+S   DBFRA  ZZ      E            N500224.00 E0083336.00                                                                              
+S   DBCDG  ZZ      E            N490036.00 E0023260.00                                                                              
+S   DBLHR  ZZ      E            N512812.00 W0002700.00                                                                              
+S   DBSVO  ZZ      E            N555812.00 E0372436.00                                                                              
+S   DBAMS  ZZ      E            N521836.00 E0044612.00                                                                              
+S   DBBOMRAZZ      E            N520000.00 W0200000.00                                                                              
+S   DBGANDEZZ      E            N490000.00 W0450000.00                                                                              
+S   DBJFK  ZZ      E            N403824.00 W0734648.00                                                                              
+S   DBMALOTZZ      E            N500000.00 W0250000.00                                                                              
+S   DBSTEPTZZ      E            N470000.00 W0500000.00                                                                              
+S   DBYYZ  ZZ      E            N434048.00 W0793712.00                                                                              
+S   DBORD  ZZ      E            N415812.00 W0875436.00                                                                              
+S   DBMSP  ZZ      E            N445248.00 W0931312.00                                                                              
+S   DBYVR  ZZ      E            N491124.00 W1231048.00                                                                              
+S   DBLAX  ZZ      E            N335624.00 W1182436.00                                                                              
+S   DBSFO  ZZ      E            N373712.00 W1222248.00                                                                              
+S   DBSEA  ZZ      E            N472700.00 W1221836.00                                                                              
+S   DBATL  ZZ      E            N333824.00 W0842548.00                                                                              
+S   DBDFW  ZZ      E            N325360.00 W0970224.00                                                                              
+S   DBMIA  ZZ      E            N254724.00 W0801724.00                                                                              
+S   DBHNL  ZZ      E            N211912.00 W1575512.00                                                                              
+S   DBMAJ  ZZ      E            N070000.00 E1710000.00                                                                              
+S   DBGUM  ZZ      E            N132848.00 E1444800.00                                                                              
+S   DBSYD  ZZ      E            S335700.00 E1511048.00                                                                              
+S   DBMEL  ZZ      E            S374012.00 E1445024.00                                                                              
+S   DBAKL  ZZ      E            S370036.00 E1744724.00                                                                              
+S   DBJKT  ZZ      E            S060748.00 E1063936.00                                                                              
+S   DBPER  ZZ      E            S315624.00 E1155812.00                                                                              
+S   DBJNB  ZZ      E            S260824.00 E0281500.00                                                                              
+S   DBNBO  ZZ      E            S011912.00 E0365548.00                                                                              
+S   DBGRU  ZZ      E            S232624.00 W0462812.00                                                                              
+S   DBEZE  ZZ      E            S344912.00 W0583224.00                                                                              
+S   DBSCL  ZZ      E            S332324.00 W0704724.00                                                                              
+S   DBMEX  ZZ      E            N192624.00 W0990412.00                                                                              
+S   R A593 0001TARGONH          N313000.00 E1034760.00 00.000.000.0      0780012500                                                 
+S   R A593 0002GOSODNH          N310000.00 E1031200.00 225.45.943.0      0780012500                                                 
+S   R A593 0003DUMETNH          N311160.00 E1043000.00 79.5259.67.9      0780012500                                                 
+S   R A593 0004AGNAVNH          N304800.00 E1044760.00 147.327.28.6      0780012500                                                 
+S   R A593 0005IGONONH          N301160.00 E1051200.00 150.330.41.5      0780012500                                                 
+S   R A593 0006OMBLINH          N293000.00 E1050000.00 194.14.043.3      0780012500                                                 
+S   R B330 0001WX203NH          N305360.00 E1041200.00 00.000.000.0      0780012500                                                 
+S   R B330 0002WX108NH          N301800.00 E1043560.00 150.330.41.5      0780012500                                                 
+S   R B330 0003OMBLINH          N293000.00 E1050000.00 156.336.52.4      0780012500                                                 
+S   R B330 0004SADERNH          N283000.00 E1060000.00 138.318.79.8      0780012500                                                 
+S   R B330 0005KMR  NH          N273000.00 E1070000.00 138.318.80.1      0780012500                                                 
+S   R A461 0001PEK  NH          N400448.00 E1163560.00 00.000.000.0      0780012500                                                 
+S   R A461 0002DALIMNH          N383000.00 E1180000.00 145.325.115.0     0780012500                                                 
+S   R A461 0003TNA  NH          N364760.00 E1173000.00 193.13.3104.8     0780012500                                                 
+S   R A461 0004PVG  NH          N310824.00 E1214836.00 146.326.401.8     0780012500                                                 
+S   R A599 0001PVG  NH          N310824.00 E1214836.00 00.000.000.0      0780012500                                                 
+S   R A599 0002NIBOGNH          N290000.00 E1230000.00 154.334.142.6     0780012500                                                 
+S   R A599 0003HND  NH          N353260.00 E1394648.00 60.9240.936.5     0780012500                                                 
+S   R R460 0001HND  NH          N353260.00 E1394648.00 00.000.000.0      0780012500                                                 
+S   R R460 0002KIX  NH          N342548.00 E1351348.00 254.74.6233.7     0780012500                                                 
+S   R R460 0003ICN  NH          N372736.00 E1262624.00 295.115.464.1     0780012500                                                 
+S   R B458 0001HKG  NH          N221836.00 E1135512.00 00.000.000.0      0780012500                                                 
+S   R B458 0002SIN  NH          N012136.00 E1035924.00 206.26.11385.0    0780012500                                                 
+S   R B458 0003BKK  NH          N134124.00 E1004500.00 345.165.764.9     0780012500                                                 
+S   R W50  0001BATULNH          N294800.00 E1033000.00 00.000.000.0      0780012500                                                 
+S   R W50  0002NOPDANH          N300000.00 E1024760.00 288.108.38.4      0780012500                                                 
+S   R W50  0003GOSODNH          N310000.00 E1031200.00 18.9198.63.5      0780012500                                                 
+S   R A326 0001DEL  NH          N283336.00 E0770560.00 00.000.000.0      0780012500                                                 
+S   R A326 0002DXB  NH          N251500.00 E0552212.00 265.85.41178.6    0780012500                                                 
+S   R A326 0003CAI  NH          N300712.00 E0312436.00 288.108.1304.3    0780012500                                                 
+S   R M735 0001DXB  NH          N251500.00 E0552212.00 00.000.000.0      0780012500                                                 
+S   R M735 0002DOH  NH          N251612.00 E0513636.00 271.91.1204.2     0780012500                                                 
+S   R M735 0003BAH  NH          N261612.00 E0503748.00 318.138.80.1      0780012500                                                 
+S   R M735 0004FRA  NH          N500224.00 E0083336.00 317.137.2397.7    0780012500                                                 
+S   R L888 0001FRA  NH          N500224.00 E0083336.00 00.000.000.0      0780012500                                                 
+S   R L888 0002CDG  NH          N490036.00 E0023260.00 257.77.5242.2     0780012500                                                 
+S   R L888 0003LHR  NH          N512812.00 W0002700.00 323.143.187.3     0780012500                                                 
+S   R B900 0001SVO  NH          N555812.00 E0372436.00 00.000.000.0      0780012500                                                 
+S   R B900 0002FRA  NH          N500224.00 E0083336.00 263.83.11092.0    0780012500                                                 
+S   R B900 0003AMS  NH          N521836.00 E0044612.00 315.135.197.3     0780012500                                                 
+S   R NAT-A0001LHR  NH          N512812.00 W0002700.00 00.000.000.0      0780012500                                                 
+S   R NAT-A0002BOMRANH          N520000.00 W0200000.00 280.100.725.4     0780012500                                                 
+S   R NAT-A0003GANDENH          N490000.00 W0450000.00 269.89.2966.6     0780012500                                                 
+S   R NAT-A0004JFK  NH          N403824.00 W0734648.00 258.78.51314.5    0780012500                                                 
+S   R NAT-B0001CDG  NH          N490036.00 E0023260.00 00.000.000.0      0780012500                                                 
+S   R NAT-B0002MALOTNH          N500000.00 W0250000.00 283.103.1069.7    0780012500                                                 
+S   R NAT-B0003STEPTNH          N470000.00 W0500000.00 269.89.31005.9    0780012500                                                 
+S   R NAT-B0004YYZ  NH          N434048.00 W0793712.00 271.91.81258.1    0780012500                                                 
+S   R J80  0001JFK  NH          N403824.00 W0734648.00 00.000.000.0      0780012500                                                 
+S   R J80  0002ORD  NH          N415812.00 W0875436.00 281.101.641.5     0780012500                                                 
+S   R J80  0003MSP  NH          N445248.00 W0931312.00 308.128.290.0     0780012500                                                 
+S   R J80  0004YVR  NH          N491124.00 W1231048.00 292.112.1244.3    0780012500                                                 
+S   R J6   0001LAX  NH          N335624.00 W1182436.00 00.000.000.0      0780012500                                                 
+S   R J6   0002SFO  NH          N373712.00 W1222248.00 320.140.293.6     0780012500                                                 
+S   R J6   0003SEA  NH          N472700.00 W1221836.00 00.3180.590.2     0780012500                                                 
+S   R J6   0004YVR  NH          N491124.00 W1231048.00 341.161.110.1     0780012500                                                 
+S   R J54  0001ATL  NH          N333824.00 W0842548.00 00.000.000.0      0780012500                                                 
+S   R J54  0002DFW  NH          N325360.00 W0970224.00 269.89.5634.2     0780012500                                                 
+S   R J54  0003LAX  NH          N335624.00 W1182436.00 279.99.21070.8    0780012500                                                 
+S   R J174 0001JFK  NH          N403824.00 W0734648.00 00.000.000.0      0780012500                                                 
+S   R J174 0002ATL  NH          N333824.00 W0842548.00 233.53.8659.8     0780012500                                                 
+S   R J174 0003MIA  NH          N254724.00 W0801724.00 154.334.518.3     0780012500                                                 
+S   R PAC-A0001LAX  NH          N335624.00 W1182436.00 00.000.000.0      0780012500                                                 
+S   R PAC-A0002HNL  NH          N211912.00 W1575512.00 260.80.52218.0    0780012500                                                 
+S   R PAC-A0003MAJ  NH          N070000.00 E1710000.00 249.69.11996.9    0780012500                                                 
+S   R PAC-A0004HND  NH          N353260.00 E1394648.00 319.139.2426.1    0780012500                                                 
+S   R PAC-B0001SFO  NH          N373712.00 W1222248.00 00.000.000.0      0780012500                                                 
+S   R PAC-B0002HNL  NH          N211912.00 W1575512.00 252.72.12082.2    0780012500                                                 
+S   R PAC-B0003GUM  NH          N132848.00 E1444800.00 271.91.83298.7    0780012500                                                 
+S   R PAC-B0004PVG  NH          N310824.00 E1214836.00 313.133.1652.9    0780012500                                                 
+S   R A460 0001SYD  NH          S335700.00 E1511048.00 00.000.000.0      0780012500                                                 
+S   R A460 0002MEL  NH          S374012.00 E1445024.00 232.52.3380.9     0780012500                                                 
+S   R A460 0003AKL  NH          S370036.00 E1744724.00 97.7277.1424.1    0780012500                                                 
+S   R R590 0001SIN  NH          N012136.00 E1035924.00 00.000.000.0      0780012500                                                 
+S   R R590 0002JKT  NH          S060748.00 E1063936.00 160.340.477.3     0780012500                                                 
+S   R R590 0003PER  NH          S315624.00 E1155812.00 162.342.1635.3    0780012500                                                 
+S   R R590 0004SYD  NH          S335700.00 E1511048.00 103.283.1769.5    0780012500                                                 
+S   R UY1000001CAI  NH          N300712.00 E0312436.00 00.000.000.0      0780012500                                                 
+S   R UY1000002JNB  NH          S260824.00 E0281500.00 183.03.43382.8    0780012500                                                 
+S   R UY1000003NBO  NH          S011912.00 E0365548.00 20.0200.1572.3    0780012500                                                 
+S   R UW5000001GRU  NH          S232624.00 W0462812.00 00.000.000.0      0780012500                                                 
+S   R UW5000002EZE  NH          S344912.00 W0583224.00 220.40.0929.9     0780012500                                                 
+S   R UW5000003SCL  NH          S332324.00 W0704724.00 274.94.6614.6     0780012500                                                 
+S   R UM7700001MEX  NH          N192624.00 W0990412.00 00.000.000.0      0780012500                                                 
+S   R UM7700002GRU  NH          S232624.00 W0462812.00 127.307.4013.9    0780012500                                                 
+S   EBZBAANZBAA                 N403446.42 E1163611.16                                                                              
+S   EBZBAASZBAA                 N393448.86 E1163611.16                                                                              
+S   EBZBAAEZBAA                 N400441.05 E1171522.03                                                                              
+S   EBZBAAWZBAA                 N400441.05 E1155700.29                                                                              
+S   EBZBAAIZBAA                 N401647.17 E1163611.16                                                                              
+S   EBZBAAIZBAA                 N395248.11 E1163611.16                                                                              
+S   EBZBAAFZBAA                 N401047.39 E1163611.16                                                                              
+S   EBZBAAFZBAA                 N395847.89 E1163611.16                                                                              
+S   TDZBAAZBAA1ZBAA001IFZBAA    N400447.64 E1163611.16 00.0          01165     000                                                  
+S   TDZBAAZBAA1ZBAA002CFZBAAN   N403446.42 E1163611.16 00.0          05000     220                                                  
+S   TDZBAAZBAA1ZBAA003TFZBAAI   N401647.17 E1163611.16 00.0          08000     000                                                  
+S   TEZBAAZBAA1ZBAA001IFZBAAN   N403446.42 E1163611.16 00.0          12500     000                                                  
+S   TEZBAAZBAA1ZBAA002TFZBAAI   N401647.17 E1163611.16 180.0         10000     000                                                  
+S   TEZBAAZBAA1ZBAA003CFZBAAF   N401047.39 E1163611.16 180.0         06000     250                                                  
+S   TEZBAAZBAA1ZBAA004TFZBAA    N400447.64 E1163611.16 180.0         04000     220                                                  
+S   TFZBAAILS36    001IFZBAAI   N401647.17 E1163611.16 00.0          04000     220                                                  
+S   TFZBAAILS36    002CFZBAAF   N401047.39 E1163611.16 180.0         03000     180                                                  
+S   TFZBAAILS36    003FAZBAA    N400447.64 E1163611.16 180.0         01165     000                                                  
+S   TFZBAAILS36    004CAZBAA    N400447.64 E1163611.16 180.0         01165     000                                                  
+S   TFZBAAILS36    005TFZBAAN   N403446.42 E1163611.16 00.0          05000     000                                                  
+S   EBZSPDNZSPD                 N313838.26 E1214829.88                                                                              
+S   EBZSPDSZSPD                 N303840.70 E1214829.88                                                                              
+S   EBZSPDEZSPD                 N310834.73 E1222331.56                                                                              
+S   EBZSPDWZSPD                 N310834.73 E1211328.20                                                                              
+S   EBZSPDIZSPD                 N312039.01 E1214829.88                                                                              
+S   EBZSPDIZSPD                 N305639.95 E1214829.88                                                                              
+S   EBZSPDFZSPD                 N311439.23 E1214829.88                                                                              
+S   EBZSPDFZSPD                 N310239.73 E1214829.88                                                                              
+S   TDZSPDZSPD1ZSPD001IFZSPD    N310839.48 E1214829.88 00.0          00013     000                                                  
+S   TDZSPDZSPD1ZSPD002CFZSPDN   N313838.26 E1214829.88 00.0          05000     220                                                  
+S   TDZSPDZSPD1ZSPD003TFZSPDI   N312039.01 E1214829.88 00.0          08000     000                                                  
+S   TEZSPDZSPD1ZSPD001IFZSPDN   N313838.26 E1214829.88 00.0          12500     000                                                  
+S   TEZSPDZSPD1ZSPD002TFZSPDI   N312039.01 E1214829.88 180.0         10000     000                                                  
+S   TEZSPDZSPD1ZSPD003CFZSPDF   N311439.23 E1214829.88 180.0         06000     250                                                  
+S   TEZSPDZSPD1ZSPD004TFZSPD    N310839.48 E1214829.88 180.0         04000     220                                                  
+S   TFZSPDILS36    001IFZSPDI   N312039.01 E1214829.88 00.0          04000     220                                                  
+S   TFZSPDILS36    002CFZSPDF   N311439.23 E1214829.88 180.0         03000     180                                                  
+S   TFZSPDILS36    003FAZSPD    N310839.48 E1214829.88 180.0         00013     000                                                  
+S   TFZSPDILS36    004CAZSPD    N310839.48 E1214829.88 180.0         00013     000                                                  
+S   TFZSPDILS36    005TFZSPDN   N313838.26 E1214829.88 00.0          05000     000                                                  
+S   EBZGGGNZGGG                 N235331.42 E1131755.68                                                                              
+S   EBZGGGSZGGG                 N225333.86 E1131755.68                                                                              
+S   EBZGGGEZGGG                 N232329.26 E1135035.56                                                                              
+S   EBZGGGWZGGG                 N232329.26 E1124515.80                                                                              
+S   EBZGGGIZGGG                 N233532.17 E1131755.68                                                                              
+S   EBZGGGIZGGG                 N231133.11 E1131755.68                                                                              
+S   EBZGGGFZGGG                 N232932.39 E1131755.68                                                                              
+S   EBZGGGFZGGG                 N231732.89 E1131755.68                                                                              
+S   TDZGGGZGGG1ZGGG001IFZGGG    N232332.64 E1131755.68 00.0          00036     000                                                  
+S   TDZGGGZGGG1ZGGG002CFZGGGN   N235331.42 E1131755.68 00.0          05000     220                                                  
+S   TDZGGGZGGG1ZGGG003TFZGGGI   N233532.17 E1131755.68 00.0          08000     000                                                  
+S   TEZGGGZGGG1ZGGG001IFZGGGN   N235331.42 E1131755.68 00.0          12500     000                                                  
+S   TEZGGGZGGG1ZGGG002TFZGGGI   N233532.17 E1131755.68 180.0         10000     000                                                  
+S   TEZGGGZGGG1ZGGG003CFZGGGF   N232932.39 E1131755.68 180.0         06000     250                                                  
+S   TEZGGGZGGG1ZGGG004TFZGGG    N232332.64 E1131755.68 180.0         04000     220                                                  
+S   TFZGGGILS36    001IFZGGGI   N233532.17 E1131755.68 00.0          04000     220                                                  
+S   TFZGGGILS36    002CFZGGGF   N232932.39 E1131755.68 180.0         03000     180                                                  
+S   TFZGGGILS36    003FAZGGG    N232332.64 E1131755.68 180.0         00036     000                                                  
+S   TFZGGGILS36    004CAZGGG    N232332.64 E1131755.68 180.0         00036     000                                                  
+S   TFZGGGILS36    005TFZGGGN   N235331.42 E1131755.68 00.0          05000     000                                                  
+S   EBZUUUNZUUU                 N310441.38 E1035649.20                                                                              
+S   EBZUUUSZUUU                 N300443.82 E1035649.20                                                                              
+S   EBZUUUEZUUU                 N303437.96 E1043138.53                                                                              
+S   EBZUUUWZUUU                 N303437.96 E1032159.87                                                                              
+S   EBZUUUIZUUU                 N304642.13 E1035649.20                                                                              
+S   EBZUUUIZUUU                 N302243.07 E1035649.20                                                                              
+S   EBZUUUFZUUU                 N304042.35 E1035649.20                                                                              
+S   EBZUUUFZUUU                 N302842.85 E1035649.20                                                                              
+S   TDZUUUZUUU1ZUUU001IFZUUU    N303442.60 E1035649.20 00.0          01625     000                                                  
+S   TDZUUUZUUU1ZUUU002CFZUUUN   N310441.38 E1035649.20 00.0          05000     220                                                  
+S   TDZUUUZUUU1ZUUU003TFZUUUI   N304642.13 E1035649.20 00.0          08000     000                                                  
+S   TEZUUUZUUU1ZUUU001IFZUUUN   N310441.38 E1035649.20 00.0          12500     000                                                  
+S   TEZUUUZUUU1ZUUU002TFZUUUI   N304642.13 E1035649.20 180.0         10000     000                                                  
+S   TEZUUUZUUU1ZUUU003CFZUUUF   N304042.35 E1035649.20 180.0         06000     250                                                  
+S   TEZUUUZUUU1ZUUU004TFZUUU    N303442.60 E1035649.20 180.0         04000     220                                                  
+S   TFZUUUILS36    001IFZUUUI   N304642.13 E1035649.20 00.0          04000     220                                                  
+S   TFZUUUILS36    002CFZUUUF   N304042.35 E1035649.20 180.0         03000     180                                                  
+S   TFZUUUILS36    003FAZUUU    N303442.60 E1035649.20 180.0         01625     000                                                  
+S   TFZUUUILS36    004CAZUUU    N303442.60 E1035649.20 180.0         01625     000                                                  
+S   TFZUUUILS36    005TFZUUUN   N310441.38 E1035649.20 00.0          05000     000                                                  
+S   EBZSSSNZSSS                 N314151.22 E1212010.68                                                                              
+S   EBZSSSSZSSS                 N304153.66 E1212010.68                                                                              
+S   EBZSSSEZSSS                 N311147.69 E1215513.55                                                                              
+S   EBZSSSWZSSS                 N311147.69 E1204507.81                                                                              
+S   EBZSSSIZSSS                 N312351.97 E1212010.68                                                                              
+S   EBZSSSIZSSS                 N305952.91 E1212010.68                                                                              
+S   EBZSSSFZSSS                 N311752.19 E1212010.68                                                                              
+S   EBZSSSFZSSS                 N310552.69 E1212010.68                                                                              
+S   TDZSSSZSSS1ZSSS001IFZSSS    N311152.44 E1212010.68 00.0          00010     000                                                  
+S   TDZSSSZSSS1ZSSS002CFZSSSN   N314151.22 E1212010.68 00.0          05000     220                                                  
+S   TDZSSSZSSS1ZSSS003TFZSSSI   N312351.97 E1212010.68 00.0          08000     000                                                  
+S   TEZSSSZSSS1ZSSS001IFZSSSN   N314151.22 E1212010.68 00.0          12500     000                                                  
+S   TEZSSSZSSS1ZSSS002TFZSSSI   N312351.97 E1212010.68 180.0         10000     000                                                  
+S   TEZSSSZSSS1ZSSS003CFZSSSF   N311752.19 E1212010.68 180.0         06000     250                                                  
+S   TEZSSSZSSS1ZSSS004TFZSSS    N311152.44 E1212010.68 180.0         04000     220                                                  
+S   TFZSSSILS36    001IFZSSSI   N312351.97 E1212010.68 00.0          04000     220                                                  
+S   TFZSSSILS36    002CFZSSSF   N311752.19 E1212010.68 180.0         03000     180                                                  
+S   TFZSSSILS36    003FAZSSS    N311152.44 E1212010.68 180.0         00010     000                                                  
+S   TFZSSSILS36    004CAZSSS    N311152.44 E1212010.68 180.0         00010     000                                                  
+S   TFZSSSILS36    005TFZSSSN   N314151.22 E1212010.68 00.0          05000     000                                                  
+S   EBZLXYNZLXY                 N345648.34 E1084505.76                                                                              
+S   EBZLXYSZLXY                 N335650.78 E1084505.76                                                                              
+S   EBZLXYEZLXY                 N342644.20 E1092127.00                                                                              
+S   EBZLXYWZLXY                 N342644.20 E1080844.52                                                                              
+S   EBZLXYIZLXY                 N343849.09 E1084505.76                                                                              
+S   EBZLXYIZLXY                 N341450.03 E1084505.76                                                                              
+S   EBZLXYFZLXY                 N343249.31 E1084505.76                                                                              
+S   EBZLXYFZLXY                 N342049.81 E1084505.76                                                                              
+S   TDZLXYZLXY1ZLXY001IFZLXY    N342649.56 E1084505.76 00.0          01572     000                                                  
+S   TDZLXYZLXY1ZLXY002CFZLXYN   N345648.34 E1084505.76 00.0          05000     220                                                  
+S   TDZLXYZLXY1ZLXY003TFZLXYI   N343849.09 E1084505.76 00.0          08000     000                                                  
+S   TEZLXYZLXY1ZLXY001IFZLXYN   N345648.34 E1084505.76 00.0          12500     000                                                  
+S   TEZLXYZLXY1ZLXY002TFZLXYI   N343849.09 E1084505.76 180.0         10000     000                                                  
+S   TEZLXYZLXY1ZLXY003CFZLXYF   N343249.31 E1084505.76 180.0         06000     250                                                  
+S   TEZLXYZLXY1ZLXY004TFZLXY    N342649.56 E1084505.76 180.0         04000     220                                                  
+S   TFZLXYILS36    001IFZLXYI   N343849.09 E1084505.76 00.0          04000     220                                                  
+S   TFZLXYILS36    002CFZLXYF   N343249.31 E1084505.76 180.0         03000     180                                                  
+S   TFZLXYILS36    003FAZLXY    N342649.56 E1084505.76 180.0         01572     000                                                  
+S   TFZLXYILS36    004CAZLXY    N342649.56 E1084505.76 180.0         01572     000                                                  
+S   TFZLXYILS36    005TFZLXYN   N345648.34 E1084505.76 00.0          05000     000                                                  
+S   EBRJTTNRJTT                 N360256.62 E1394647.28                                                                              
+S   EBRJTTSRJTT                 N350259.06 E1394647.28                                                                              
+S   EBRJTTERJTT                 N353252.22 E1402338.11                                                                              
+S   EBRJTTWRJTT                 N353252.22 E1390956.45                                                                              
+S   EBRJTTIRJTT                 N354457.37 E1394647.28                                                                              
+S   EBRJTTIRJTT                 N352058.31 E1394647.28                                                                              
+S   EBRJTTFRJTT                 N353857.59 E1394647.28                                                                              
+S   EBRJTTFRJTT                 N352658.09 E1394647.28                                                                              
+S   TDRJTTRJTT1RJTT001IFRJTT    N353257.84 E1394647.28 00.0          00021     000                                                  
+S   TDRJTTRJTT1RJTT002CFRJTTN   N360256.62 E1394647.28 00.0          05000     220                                                  
+S   TDRJTTRJTT1RJTT003TFRJTTI   N354457.37 E1394647.28 00.0          08000     000                                                  
+S   TERJTTRJTT1RJTT001IFRJTTN   N360256.62 E1394647.28 00.0          12500     000                                                  
+S   TERJTTRJTT1RJTT002TFRJTTI   N354457.37 E1394647.28 180.0         10000     000                                                  
+S   TERJTTRJTT1RJTT003CFRJTTF   N353857.59 E1394647.28 180.0         06000     250                                                  
+S   TERJTTRJTT1RJTT004TFRJTT    N353257.84 E1394647.28 180.0         04000     220                                                  
+S   TFRJTTILS36    001IFRJTTI   N354457.37 E1394647.28 00.0          04000     220                                                  
+S   TFRJTTILS36    002CFRJTTF   N353857.59 E1394647.28 180.0         03000     180                                                  
+S   TFRJTTILS36    003FARJTT    N353257.84 E1394647.28 180.0         00021     000                                                  
+S   TFRJTTILS36    004CARJTT    N353257.84 E1394647.28 180.0         00021     000                                                  
+S   TFRJTTILS36    005TFRJTTN   N360256.62 E1394647.28 00.0          05000     000                                                  
+S   EBRJBBNRJBB                 N345603.70 E1351358.80                                                                              
+S   EBRJBBSRJBB                 N335606.14 E1351358.80                                                                              
+S   EBRJBBERJBB                 N342559.56 E1355019.72                                                                              
+S   EBRJBBWRJBB                 N342559.56 E1343737.88                                                                              
+S   EBRJBBIRJBB                 N343804.45 E1351358.80                                                                              
+S   EBRJBBIRJBB                 N341405.39 E1351358.80                                                                              
+S   EBRJBBFRJBB                 N343204.67 E1351358.80                                                                              
+S   EBRJBBFRJBB                 N342005.17 E1351358.80                                                                              
+S   TDRJBBRJBB1RJBB001IFRJBB    N342604.92 E1351358.80 00.0          00026     000                                                  
+S   TDRJBBRJBB1RJBB002CFRJBBN   N345603.70 E1351358.80 00.0          05000     220                                                  
+S   TDRJBBRJBB1RJBB003TFRJBBI   N343804.45 E1351358.80 00.0          08000     000                                                  
+S   TERJBBRJBB1RJBB001IFRJBBN   N345603.70 E1351358.80 00.0          12500     000                                                  
+S   TERJBBRJBB1RJBB002TFRJBBI   N343804.45 E1351358.80 180.0         10000     000                                                  
+S   TERJBBRJBB1RJBB003CFRJBBF   N343204.67 E1351358.80 180.0         06000     250                                                  
+S   TERJBBRJBB1RJBB004TFRJBB    N342604.92 E1351358.80 180.0         04000     220                                                  
+S   TFRJBBILS36    001IFRJBBI   N343804.45 E1351358.80 00.0          04000     220                                                  
+S   TFRJBBILS36    002CFRJBBF   N343204.67 E1351358.80 180.0         03000     180                                                  
+S   TFRJBBILS36    003FARJBB    N342604.92 E1351358.80 180.0         00026     000                                                  
+S   TFRJBBILS36    004CARJBB    N342604.92 E1351358.80 180.0         00026     000                                                  
+S   TFRJBBILS36    005TFRJBBN   N345603.70 E1351358.80 00.0          05000     000                                                  
+S   EBRKSINRKSI                 N375735.50 E1262626.52                                                                              
+S   EBRKSISRKSI                 N365737.94 E1262626.52                                                                              
+S   EBRKSIERKSI                 N372730.71 E1270412.61                                                                              
+S   EBRKSIWRKSI                 N372730.71 E1254840.43                                                                              
+S   EBRKSIIRKSI                 N373936.25 E1262626.52                                                                              
+S   EBRKSIIRKSI                 N371537.19 E1262626.52                                                                              
+S   EBRKSIFRKSI                 N373336.47 E1262626.52                                                                              
+S   EBRKSIFRKSI                 N372136.97 E1262626.52                                                                              
+S   TDRKSIRKSI1RKSI001IFRKSI    N372736.72 E1262626.52 00.0          00023     000                                                  
+S   TDRKSIRKSI1RKSI002CFRKSIN   N375735.50 E1262626.52 00.0          05000     220                                                  
+S   TDRKSIRKSI1RKSI003TFRKSII   N373936.25 E1262626.52 00.0          08000     000                                                  
+S   TERKSIRKSI1RKSI001IFRKSIN   N375735.50 E1262626.52 00.0          12500     000                                                  
+S   TERKSIRKSI1RKSI002TFRKSII   N373936.25 E1262626.52 180.0         10000     000                                                  
+S   TERKSIRKSI1RKSI003CFRKSIF   N373336.47 E1262626.52 180.0         06000     250                                                  
+S   TERKSIRKSI1RKSI004TFRKSI    N372736.72 E1262626.52 180.0         04000     220                                                  
+S   TFRKSIILS36    001IFRKSII   N373936.25 E1262626.52 00.0          04000     220                                                  
+S   TFRKSIILS36    002CFRKSIF   N373336.47 E1262626.52 180.0         03000     180                                                  
+S   TFRKSIILS36    003FARKSI    N372736.72 E1262626.52 180.0         00023     000                                                  
+S   TFRKSIILS36    004CARKSI    N372736.72 E1262626.52 180.0         00023     000                                                  
+S   TFRKSIILS36    005TFRKSIN   N375735.50 E1262626.52 00.0          05000     000                                                  
+S   EBVHHHNVHHH                 N224827.58 E1135506.60                                                                              
+S   EBVHHHSVHHH                 N214830.02 E1135506.60                                                                              
+S   EBVHHHEVHHH                 N221825.60 E1142730.89                                                                              
+S   EBVHHHWVHHH                 N221825.60 E1132242.31                                                                              
+S   EBVHHHIVHHH                 N223028.33 E1135506.60                                                                              
+S   EBVHHHIVHHH                 N220629.27 E1135506.60                                                                              
+S   EBVHHHFVHHH                 N222428.55 E1135506.60                                                                              
+S   EBVHHHFVHHH                 N221229.05 E1135506.60                                                                              
+S   TDVHHHVHHH1VHHH001IFVHHH    N221828.80 E1135506.60 00.0          00028     000                                                  
+S   TDVHHHVHHH1VHHH002CFVHHHN   N224827.58 E1135506.60 00.0          05000     220                                                  
+S   TDVHHHVHHH1VHHH003TFVHHHI   N223028.33 E1135506.60 00.0          08000     000                                                  
+S   TEVHHHVHHH1VHHH001IFVHHHN   N224827.58 E1135506.60 00.0          12500     000                                                  
+S   TEVHHHVHHH1VHHH002TFVHHHI   N223028.33 E1135506.60 180.0         10000     000                                                  
+S   TEVHHHVHHH1VHHH003CFVHHHF   N222428.55 E1135506.60 180.0         06000     250                                                  
+S   TEVHHHVHHH1VHHH004TFVHHH    N221828.80 E1135506.60 180.0         04000     220                                                  
+S   TFVHHHILS36    001IFVHHHI   N223028.33 E1135506.60 00.0          04000     220                                                  
+S   TFVHHHILS36    002CFVHHHF   N222428.55 E1135506.60 180.0         03000     180                                                  
+S   TFVHHHILS36    003FAVHHH    N221828.80 E1135506.60 180.0         00028     000                                                  
+S   TFVHHHILS36    004CAVHHH    N221828.80 E1135506.60 180.0         00028     000                                                  
+S   TFVHHHILS36    005TFVHHHN   N224827.58 E1135506.60 00.0          05000     000                                                  
+S   EBWSSSNWSSS                 N015150.62 E1035929.40                                                                              
+S   EBWSSSSWSSS                 N005153.06 E1035929.40                                                                              
+S   EBWSSSEWSSS                 N012151.66 E1042928.68                                                                              
+S   EBWSSSWWSSS                 N012151.66 E1032930.12                                                                              
+S   EBWSSSIWSSS                 N013351.37 E1035929.40                                                                              
+S   EBWSSSIWSSS                 N010952.31 E1035929.40                                                                              
+S   EBWSSSFWSSS                 N012751.59 E1035929.40                                                                              
+S   EBWSSSFWSSS                 N011552.09 E1035929.40                                                                              
+S   TDWSSSWSSS1WSSS001IFWSSS    N012151.84 E1035929.40 00.0          00022     000                                                  
+S   TDWSSSWSSS1WSSS002CFWSSSN   N015150.62 E1035929.40 00.0          05000     220                                                  
+S   TDWSSSWSSS1WSSS003TFWSSSI   N013351.37 E1035929.40 00.0          08000     000                                                  
+S   TEWSSSWSSS1WSSS001IFWSSSN   N015150.62 E1035929.40 00.0          12500     000                                                  
+S   TEWSSSWSSS1WSSS002TFWSSSI   N013351.37 E1035929.40 180.0         10000     000                                                  
+S   TEWSSSWSSS1WSSS003CFWSSSF   N012751.59 E1035929.40 180.0         06000     250                                                  
+S   TEWSSSWSSS1WSSS004TFWSSS    N012151.84 E1035929.40 180.0         04000     220                                                  
+S   TFWSSSILS36    001IFWSSSI   N013351.37 E1035929.40 00.0          04000     220                                                  
+S   TFWSSSILS36    002CFWSSSF   N012751.59 E1035929.40 180.0         03000     180                                                  
+S   TFWSSSILS36    003FAWSSS    N012151.84 E1035929.40 180.0         00022     000                                                  
+S   TFWSSSILS36    004CAWSSS    N012151.84 E1035929.40 180.0         00022     000                                                  
+S   TFWSSSILS36    005TFWSSSN   N015150.62 E1035929.40 00.0          05000     000                                                  
+S   EBVTBSNVTBS                 N141122.78 E1004500.36                                                                              
+S   EBVTBSSVTBS                 N131125.22 E1004500.36                                                                              
+S   EBVTBSEVTBS                 N134122.09 E1011551.73                                                                              
+S   EBVTBSWVTBS                 N134122.09 E1001408.99                                                                              
+S   EBVTBSIVTBS                 N135323.53 E1004500.36                                                                              
+S   EBVTBSIVTBS                 N132924.47 E1004500.36                                                                              
+S   EBVTBSFVTBS                 N134723.75 E1004500.36                                                                              
+S   EBVTBSFVTBS                 N133524.25 E1004500.36                                                                              
+S   TDVTBSVTBS1VTBS001IFVTBS    N134124.00 E1004500.36 00.0          00005     000                                                  
+S   TDVTBSVTBS1VTBS002CFVTBSN   N141122.78 E1004500.36 00.0          05000     220                                                  
+S   TDVTBSVTBS1VTBS003TFVTBSI   N135323.53 E1004500.36 00.0          08000     000                                                  
+S   TEVTBSVTBS1VTBS001IFVTBSN   N141122.78 E1004500.36 00.0          12500     000                                                  
+S   TEVTBSVTBS1VTBS002TFVTBSI   N135323.53 E1004500.36 180.0         10000     000                                                  
+S   TEVTBSVTBS1VTBS003CFVTBSF   N134723.75 E1004500.36 180.0         06000     250                                                  
+S   TEVTBSVTBS1VTBS004TFVTBS    N134124.00 E1004500.36 180.0         04000     220                                                  
+S   TFVTBSILS36    001IFVTBSI   N135323.53 E1004500.36 00.0          04000     220                                                  
+S   TFVTBSILS36    002CFVTBSF   N134723.75 E1004500.36 180.0         03000     180                                                  
+S   TFVTBSILS36    003FAVTBS    N134124.00 E1004500.36 180.0         00005     000                                                  
+S   TFVTBSILS36    004CAVTBS    N134124.00 E1004500.36 180.0         00005     000                                                  
+S   TFVTBSILS36    005TFVTBSN   N141122.78 E1004500.36 00.0          05000     000                                                  
+S   EBWMKKNWMKK                 N031442.94 E1014235.64                                                                              
+S   EBWMKKSWMKK                 N021445.38 E1014235.64                                                                              
+S   EBWMKKEWMKK                 N024443.80 E1021236.50                                                                              
+S   EBWMKKWWMKK                 N024443.80 E1011234.78                                                                              
+S   EBWMKKIWMKK                 N025643.69 E1014235.64                                                                              
+S   EBWMKKIWMKK                 N023244.63 E1014235.64                                                                              
+S   EBWMKKFWMKK                 N025043.91 E1014235.64                                                                              
+S   EBWMKKFWMKK                 N023844.41 E1014235.64                                                                              
+S   TDWMKKWMKK1WMKK001IFWMKK    N024444.16 E1014235.64 00.0          00070     000                                                  
+S   TDWMKKWMKK1WMKK002CFWMKKN   N031442.94 E1014235.64 00.0          05000     220                                                  
+S   TDWMKKWMKK1WMKK003TFWMKKI   N025643.69 E1014235.64 00.0          08000     000                                                  
+S   TEWMKKWMKK1WMKK001IFWMKKN   N031442.94 E1014235.64 00.0          12500     000                                                  
+S   TEWMKKWMKK1WMKK002TFWMKKI   N025643.69 E1014235.64 180.0         10000     000                                                  
+S   TEWMKKWMKK1WMKK003CFWMKKF   N025043.91 E1014235.64 180.0         06000     250                                                  
+S   TEWMKKWMKK1WMKK004TFWMKK    N024444.16 E1014235.64 180.0         04000     220                                                  
+S   TFWMKKILS36    001IFWMKKI   N025643.69 E1014235.64 00.0          04000     220                                                  
+S   TFWMKKILS36    002CFWMKKF   N025043.91 E1014235.64 180.0         03000     180                                                  
+S   TFWMKKILS36    003FAWMKK    N024444.16 E1014235.64 180.0         00070     000                                                  
+S   TFWMKKILS36    004CAWMKK    N024444.16 E1014235.64 180.0         00070     000                                                  
+S   TFWMKKILS36    005TFWMKKN   N031442.94 E1014235.64 00.0          05000     000                                                  
+S   EBRPLLNRPLL                 N150029.74 E1210110.20                                                                              
+S   EBRPLLSRPLL                 N140032.18 E1210110.20                                                                              
+S   EBRPLLERPLL                 N143028.94 E1213208.23                                                                              
+S   EBRPLLWRPLL                 N143028.94 E1203012.17                                                                              
+S   EBRPLLIRPLL                 N144230.49 E1210110.20                                                                              
+S   EBRPLLIRPLL                 N141831.43 E1210110.20                                                                              
+S   EBRPLLFRPLL                 N143630.71 E1210110.20                                                                              
+S   EBRPLLFRPLL                 N142431.21 E1210110.20                                                                              
+S   TDRPLLRPLL1RPLL001IFRPLL    N143030.96 E1210110.20 00.0          00075     000                                                  
+S   TDRPLLRPLL1RPLL002CFRPLLN   N150029.74 E1210110.20 00.0          05000     220                                                  
+S   TDRPLLRPLL1RPLL003TFRPLLI   N144230.49 E1210110.20 00.0          08000     000                                                  
+S   TERPLLRPLL1RPLL001IFRPLLN   N150029.74 E1210110.20 00.0          12500     000                                                  
+S   TERPLLRPLL1RPLL002TFRPLLI   N144230.49 E1210110.20 180.0         10000     000                                                  
+S   TERPLLRPLL1RPLL003CFRPLLF   N143630.71 E1210110.20 180.0         06000     250                                                  
+S   TERPLLRPLL1RPLL004TFRPLL    N143030.96 E1210110.20 180.0         04000     220                                                  
+S   TFRPLLILS36    001IFRPLLI   N144230.49 E1210110.20 00.0          04000     220                                                  
+S   TFRPLLILS36    002CFRPLLF   N143630.71 E1210110.20 180.0         03000     180                                                  
+S   TFRPLLILS36    003FARPLL    N143030.96 E1210110.20 180.0         00075     000                                                  
+S   TFRPLLILS36    004CARPLL    N143030.96 E1210110.20 180.0         00075     000                                                  
+S   TFRPLLILS36    005TFRPLLN   N150029.74 E1210110.20 00.0          05000     000                                                  
+S   EBVIDPNVIDP                 N290321.10 E0770560.00                                                                              
+S   EBVIDPSVIDP                 N280323.54 E0770560.00                                                                              
+S   EBVIDPEVIDP                 N283318.04 E0774007.90                                                                              
+S   EBVIDPWVIDP                 N283318.04 E0763152.10                                                                              
+S   EBVIDPIVIDP                 N284521.85 E0770560.00                                                                              
+S   EBVIDPIVIDP                 N282122.79 E0770560.00                                                                              
+S   EBVIDPFVIDP                 N283922.07 E0770560.00                                                                              
+S   EBVIDPFVIDP                 N282722.57 E0770560.00                                                                              
+S   TDVIDPVIDP1VIDP001IFVIDP    N283322.32 E0770560.00 00.0          00776     000                                                  
+S   TDVIDPVIDP1VIDP002CFVIDPN   N290321.10 E0770560.00 00.0          05000     220                                                  
+S   TDVIDPVIDP1VIDP003TFVIDPI   N284521.85 E0770560.00 00.0          08000     000                                                  
+S   TEVIDPVIDP1VIDP001IFVIDPN   N290321.10 E0770560.00 00.0          12500     000                                                  
+S   TEVIDPVIDP1VIDP002TFVIDPI   N284521.85 E0770560.00 180.0         10000     000                                                  
+S   TEVIDPVIDP1VIDP003CFVIDPF   N283922.07 E0770560.00 180.0         06000     250                                                  
+S   TEVIDPVIDP1VIDP004TFVIDP    N283322.32 E0770560.00 180.0         04000     220                                                  
+S   TFVIDPILS36    001IFVIDPI   N284521.85 E0770560.00 00.0          04000     220                                                  
+S   TFVIDPILS36    002CFVIDPF   N283922.07 E0770560.00 180.0         03000     180                                                  
+S   TFVIDPILS36    003FAVIDP    N283322.32 E0770560.00 180.0         00776     000                                                  
+S   TFVIDPILS36    004CAVIDP    N283322.32 E0770560.00 180.0         00776     000                                                  
+S   TFVIDPILS36    005TFVIDPN   N290321.10 E0770560.00 00.0          05000     000                                                  
+S   EBVABBNVABB                 N193521.34 E0725156.16                                                                              
+S   EBVABBSVABB                 N183523.78 E0725156.16                                                                              
+S   EBVABBEVABB                 N190519.86 E0732339.62                                                                              
+S   EBVABBWVABB                 N190519.86 E0722012.70                                                                              
+S   EBVABBIVABB                 N191722.09 E0725156.16                                                                              
+S   EBVABBIVABB                 N185323.03 E0725156.16                                                                              
+S   EBVABBFVABB                 N191122.31 E0725156.16                                                                              
+S   EBVABBFVABB                 N185922.81 E0725156.16                                                                              
+S   TDVABBVABB1VABB001IFVABB    N190522.56 E0725156.16 00.0          00010     000                                                  
+S   TDVABBVABB1VABB002CFVABBN   N193521.34 E0725156.16 00.0          05000     220                                                  
+S   TDVABBVABB1VABB003TFVABBI   N191722.09 E0725156.16 00.0          08000     000                                                  
+S   TEVABBVABB1VABB001IFVABBN   N193521.34 E0725156.16 00.0          12500     000                                                  
+S   TEVABBVABB1VABB002TFVABBI   N191722.09 E0725156.16 180.0         10000     000                                                  
+S   TEVABBVABB1VABB003CFVABBF   N191122.31 E0725156.16 180.0         06000     250                                                  
+S   TEVABBVABB1VABB004TFVABB    N190522.56 E0725156.16 180.0         04000     220                                                  
+S   TFVABBILS36    001IFVABBI   N191722.09 E0725156.16 00.0          04000     220                                                  
+S   TFVABBILS36    002CFVABBF   N191122.31 E0725156.16 180.0         03000     180                                                  
+S   TFVABBILS36    003FAVABB    N190522.56 E0725156.16 180.0         00010     000                                                  
+S   TFVABBILS36    004CAVABB    N190522.56 E0725156.16 180.0         00010     000                                                  
+S   TFVABBILS36    005TFVABBN   N193521.34 E0725156.16 00.0          05000     000                                                  
+S   EBOMDBNOMDB                 N254510.30 E0552156.52                                                                              
+S   EBOMDBSOMDB                 N244512.74 E0552156.52                                                                              
+S   EBOMDBEOMDB                 N251507.81 E0555505.38                                                                              
+S   EBOMDBWOMDB                 N251507.81 E0544847.66                                                                              
+S   EBOMDBIOMDB                 N252711.05 E0552156.52                                                                              
+S   EBOMDBIOMDB                 N250311.99 E0552156.52                                                                              
+S   EBOMDBFOMDB                 N252111.27 E0552156.52                                                                              
+S   EBOMDBFOMDB                 N250911.77 E0552156.52                                                                              
+S   TDOMDBOMDB1OMDB001IFOMDB    N251511.52 E0552156.52 00.0          00062     000                                                  
+S   TDOMDBOMDB1OMDB002CFOMDBN   N254510.30 E0552156.52 00.0          05000     220                                                  
+S   TDOMDBOMDB1OMDB003TFOMDBI   N252711.05 E0552156.52 00.0          08000     000                                                  
+S   TEOMDBOMDB1OMDB001IFOMDBN   N254510.30 E0552156.52 00.0          12500     000                                                  
+S   TEOMDBOMDB1OMDB002TFOMDBI   N252711.05 E0552156.52 180.0         10000     000                                                  
+S   TEOMDBOMDB1OMDB003CFOMDBF   N252111.27 E0552156.52 180.0         06000     250                                                  
+S   TEOMDBOMDB1OMDB004TFOMDB    N251511.52 E0552156.52 180.0         04000     220                                                  
+S   TFOMDBILS36    001IFOMDBI   N252711.05 E0552156.52 00.0          04000     220                                                  
+S   TFOMDBILS36    002CFOMDBF   N252111.27 E0552156.52 180.0         03000     180                                                  
+S   TFOMDBILS36    003FAOMDB    N251511.52 E0552156.52 180.0         00062     000                                                  
+S   TFOMDBILS36    004CAOMDB    N251511.52 E0552156.52 180.0         00062     000                                                  
+S   TFOMDBILS36    005TFOMDBN   N254510.30 E0552156.52 00.0          05000     000                                                  
+S   EBOTHHNOTHH                 N254621.94 E0513628.80                                                                              
+S   EBOTHHSOTHH                 N244624.38 E0513628.80                                                                              
+S   EBOTHHEOTHH                 N251619.45 E0520937.98                                                                              
+S   EBOTHHWOTHH                 N251619.45 E0510319.62                                                                              
+S   EBOTHHIOTHH                 N252822.69 E0513628.80                                                                              
+S   EBOTHHIOTHH                 N250423.63 E0513628.80                                                                              
+S   EBOTHHFOTHH                 N252222.91 E0513628.80                                                                              
+S   EBOTHHFOTHH                 N251023.41 E0513628.80                                                                              
+S   TDOTHHOTHH1OTHH001IFOTHH    N251623.16 E0513628.80 00.0          00013     000                                                  
+S   TDOTHHOTHH1OTHH002CFOTHHN   N254621.94 E0513628.80 00.0          05000     220                                                  
+S   TDOTHHOTHH1OTHH003TFOTHHI   N252822.69 E0513628.80 00.0          08000     000                                                  
+S   TEOTHHOTHH1OTHH001IFOTHHN   N254621.94 E0513628.80 00.0          12500     000                                                  
+S   TEOTHHOTHH1OTHH002TFOTHHI   N252822.69 E0513628.80 180.0         10000     000                                                  
+S   TEOTHHOTHH1OTHH003CFOTHHF   N252222.91 E0513628.80 180.0         06000     250                                                  
+S   TEOTHHOTHH1OTHH004TFOTHH    N251623.16 E0513628.80 180.0         04000     220                                                  
+S   TFOTHHILS36    001IFOTHHI   N252822.69 E0513628.80 00.0          04000     220                                                  
+S   TFOTHHILS36    002CFOTHHF   N252222.91 E0513628.80 180.0         03000     180                                                  
+S   TFOTHHILS36    003FAOTHH    N251623.16 E0513628.80 180.0         00013     000                                                  
+S   TFOTHHILS36    004CAOTHH    N251623.16 E0513628.80 180.0         00013     000                                                  
+S   TFOTHHILS36    005TFOTHHN   N254621.94 E0513628.80 00.0          05000     000                                                  
+S   EBOERKNOERK                 N252726.50 E0464157.12                                                                              
+S   EBOERKSOERK                 N242728.94 E0464157.12                                                                              
+S   EBOERKEOERK                 N245724.08 E0471501.15                                                                              
+S   EBOERKWOERK                 N245724.08 E0460853.09                                                                              
+S   EBOERKIOERK                 N250927.25 E0464157.12                                                                              
+S   EBOERKIOERK                 N244528.19 E0464157.12                                                                              
+S   EBOERKFOERK                 N250327.47 E0464157.12                                                                              
+S   EBOERKFOERK                 N245127.97 E0464157.12                                                                              
+S   TDOERKOERK1OERK001IFOERK    N245727.72 E0464157.12 00.0          02050     000                                                  
+S   TDOERKOERK1OERK002CFOERKN   N252726.50 E0464157.12 00.0          05000     220                                                  
+S   TDOERKOERK1OERK003TFOERKI   N250927.25 E0464157.12 00.0          08000     000                                                  
+S   TEOERKOERK1OERK001IFOERKN   N252726.50 E0464157.12 00.0          12500     000                                                  
+S   TEOERKOERK1OERK002TFOERKI   N250927.25 E0464157.12 180.0         10000     000                                                  
+S   TEOERKOERK1OERK003CFOERKF   N250327.47 E0464157.12 180.0         06000     250                                                  
+S   TEOERKOERK1OERK004TFOERK    N245727.72 E0464157.12 180.0         04000     220                                                  
+S   TFOERKILS36    001IFOERKI   N250927.25 E0464157.12 00.0          04000     220                                                  
+S   TFOERKILS36    002CFOERKF   N250327.47 E0464157.12 180.0         03000     180                                                  
+S   TFOERKILS36    003FAOERK    N245727.72 E0464157.12 180.0         02050     000                                                  
+S   TFOERKILS36    004CAOERK    N245727.72 E0464157.12 180.0         02050     000                                                  
+S   TFOERKILS36    005TFOERKN   N252726.50 E0464157.12 00.0          05000     000                                                  
+S   EBEGLLNEGLL                 N515810.78 W0002715.48                                                                              
+S   EBEGLLSEGLL                 N505813.22 W0002715.48                                                                              
+S   EBEGLLEEGLL                 N512802.14 E0002052.04                                                                              
+S   EBEGLLWEGLL                 N512802.14 W0011523.00                                                                              
+S   EBEGLLIEGLL                 N514011.53 W0002715.48                                                                              
+S   EBEGLLIEGLL                 N511612.47 W0002715.48                                                                              
+S   EBEGLLFEGLL                 N513411.75 W0002715.48                                                                              
+S   EBEGLLFEGLL                 N512212.25 W0002715.48                                                                              
+S   TDEGLLEGLL1EGLL001IFEGLL    N512812.00 W0002715.48 00.0          00083     000                                                  
+S   TDEGLLEGLL1EGLL002CFEGLLN   N515810.78 W0002715.48 00.0          05000     220                                                  
+S   TDEGLLEGLL1EGLL003TFEGLLI   N514011.53 W0002715.48 00.0          08000     000                                                  
+S   TEEGLLEGLL1EGLL001IFEGLLN   N515810.78 W0002715.48 00.0          12500     000                                                  
+S   TEEGLLEGLL1EGLL002TFEGLLI   N514011.53 W0002715.48 180.0         10000     000                                                  
+S   TEEGLLEGLL1EGLL003CFEGLLF   N513411.75 W0002715.48 180.0         06000     250                                                  
+S   TEEGLLEGLL1EGLL004TFEGLL    N512812.00 W0002715.48 180.0         04000     220                                                  
+S   TFEGLLILS36    001IFEGLLI   N514011.53 W0002715.48 00.0          04000     220                                                  
+S   TFEGLLILS36    002CFEGLLF   N513411.75 W0002715.48 180.0         03000     180                                                  
+S   TFEGLLILS36    003FAEGLL    N512812.00 W0002715.48 180.0         00083     000                                                  
+S   TFEGLLILS36    004CAEGLL    N512812.00 W0002715.48 180.0         00083     000                                                  
+S   TFEGLLILS36    005TFEGLLN   N515810.78 W0002715.48 00.0          05000     000                                                  
+S   EBLFPGNLFPG                 N493033.70 E0023252.44                                                                              
+S   EBLFPGSLFPG                 N483036.14 E0023252.44                                                                              
+S   EBLFPGELFPG                 N490025.88 E0031834.70                                                                              
+S   EBLFPGWLFPG                 N490025.88 E0014710.18                                                                              
+S   EBLFPGILFPG                 N491234.45 E0023252.44                                                                              
+S   EBLFPGILFPG                 N484835.39 E0023252.44                                                                              
+S   EBLFPGFLFPG                 N490634.67 E0023252.44                                                                              
+S   EBLFPGFLFPG                 N485435.17 E0023252.44                                                                              
+S   TDLFPGLFPG1LFPG001IFLFPG    N490034.92 E0023252.44 00.0          00392     000                                                  
+S   TDLFPGLFPG1LFPG002CFLFPGN   N493033.70 E0023252.44 00.0          05000     220                                                  
+S   TDLFPGLFPG1LFPG003TFLFPGI   N491234.45 E0023252.44 00.0          08000     000                                                  
+S   TELFPGLFPG1LFPG001IFLFPGN   N493033.70 E0023252.44 00.0          12500     000                                                  
+S   TELFPGLFPG1LFPG002TFLFPGI   N491234.45 E0023252.44 180.0         10000     000                                                  
+S   TELFPGLFPG1LFPG003CFLFPGF   N490634.67 E0023252.44 180.0         06000     250                                                  
+S   TELFPGLFPG1LFPG004TFLFPG    N490034.92 E0023252.44 180.0         04000     220                                                  
+S   TFLFPGILS36    001IFLFPGI   N491234.45 E0023252.44 00.0          04000     220                                                  
+S   TFLFPGILS36    002CFLFPGF   N490634.67 E0023252.44 180.0         03000     180                                                  
+S   TFLFPGILS36    003FALFPG    N490034.92 E0023252.44 180.0         00392     000                                                  
+S   TFLFPGILS36    004CALFPG    N490034.92 E0023252.44 180.0         00392     000                                                  
+S   TFLFPGILS36    005TFLFPGN   N493033.70 E0023252.44 00.0          05000     000                                                  
+S   EBEDDFNEDDF                 N503215.22 E0083343.92                                                                              
+S   EBEDDFSEDDF                 N493217.66 E0083343.92                                                                              
+S   EBEDDFEEDDF                 N500207.08 E0092024.43                                                                              
+S   EBEDDFWEDDF                 N500207.08 E0074703.41                                                                              
+S   EBEDDFIEDDF                 N501415.97 E0083343.92                                                                              
+S   EBEDDFIEDDF                 N495016.91 E0083343.92                                                                              
+S   EBEDDFFEDDF                 N500816.19 E0083343.92                                                                              
+S   EBEDDFFEDDF                 N495616.69 E0083343.92                                                                              
+S   TDEDDFEDDF1EDDF001IFEDDF    N500216.44 E0083343.92 00.0          00364     000                                                  
+S   TDEDDFEDDF1EDDF002CFEDDFN   N503215.22 E0083343.92 00.0          05000     220                                                  
+S   TDEDDFEDDF1EDDF003TFEDDFI   N501415.97 E0083343.92 00.0          08000     000                                                  
+S   TEEDDFEDDF1EDDF001IFEDDFN   N503215.22 E0083343.92 00.0          12500     000                                                  
+S   TEEDDFEDDF1EDDF002TFEDDFI   N501415.97 E0083343.92 180.0         10000     000                                                  
+S   TEEDDFEDDF1EDDF003CFEDDFF   N500816.19 E0083343.92 180.0         06000     250                                                  
+S   TEEDDFEDDF1EDDF004TFEDDF    N500216.44 E0083343.92 180.0         04000     220                                                  
+S   TFEDDFILS36    001IFEDDFI   N501415.97 E0083343.92 00.0          04000     220                                                  
+S   TFEDDFILS36    002CFEDDFF   N500816.19 E0083343.92 180.0         03000     180                                                  
+S   TFEDDFILS36    003FAEDDF    N500216.44 E0083343.92 180.0         00364     000                                                  
+S   TFEDDFILS36    004CAEDDF    N500216.44 E0083343.92 180.0         00364     000                                                  
+S   TFEDDFILS36    005TFEDDFN   N503215.22 E0083343.92 00.0          05000     000                                                  
+S   EBEHAMNEHAM                 N524836.58 E0044605.88                                                                              
+S   EBEHAMSEHAM                 N514839.02 E0044605.88                                                                              
+S   EBEHAMEEHAM                 N521827.65 E0053507.91                                                                              
+S   EBEHAMWEHAM                 N521827.65 E0035703.85                                                                              
+S   EBEHAMIEHAM                 N523037.33 E0044605.88                                                                              
+S   EBEHAMIEHAM                 N520638.27 E0044605.88                                                                              
+S   EBEHAMFEHAM                 N522437.55 E0044605.88                                                                              
+S   EBEHAMFEHAM                 N521238.05 E0044605.88                                                                              
+S   TDEHAMEHAM1EHAM001IFEHAM    N521837.80 E0044605.88 00.0          -0011     000                                                  
+S   TDEHAMEHAM1EHAM002CFEHAMN   N524836.58 E0044605.88 00.0          05000     220                                                  
+S   TDEHAMEHAM1EHAM003TFEHAMI   N523037.33 E0044605.88 00.0          08000     000                                                  
+S   TEEHAMEHAM1EHAM001IFEHAMN   N524836.58 E0044605.88 00.0          12500     000                                                  
+S   TEEHAMEHAM1EHAM002TFEHAMI   N523037.33 E0044605.88 180.0         10000     000                                                  
+S   TEEHAMEHAM1EHAM003CFEHAMF   N522437.55 E0044605.88 180.0         06000     250                                                  
+S   TEEHAMEHAM1EHAM004TFEHAM    N521837.80 E0044605.88 180.0         04000     220                                                  
+S   TFEHAMILS36    001IFEHAMI   N523037.33 E0044605.88 00.0          04000     220                                                  
+S   TFEHAMILS36    002CFEHAMF   N522437.55 E0044605.88 180.0         03000     180                                                  
+S   TFEHAMILS36    003FAEHAM    N521837.80 E0044605.88 180.0         -0011     000                                                  
+S   TFEHAMILS36    004CAEHAM    N521837.80 E0044605.88 180.0         -0011     000                                                  
+S   TFEHAMILS36    005TFEHAMN   N524836.58 E0044605.88 00.0          05000     000                                                  
+S   EBUUEENUUEE                 N562820.14 E0372452.56                                                                              
+S   EBUUEESUUEE                 N552822.58 E0372452.56                                                                              
+S   EBUUEEEUUEE                 N555809.73 E0381826.86                                                                              
+S   EBUUEEWUUEE                 N555809.73 E0363118.26                                                                              
+S   EBUUEEIUUEE                 N561020.89 E0372452.56                                                                              
+S   EBUUEEIUUEE                 N554621.83 E0372452.56                                                                              
+S   EBUUEEFUUEE                 N560421.11 E0372452.56                                                                              
+S   EBUUEEFUUEE                 N555221.61 E0372452.56                                                                              
+S   TDUUEEUUEE1UUEE001IFUUEE    N555821.36 E0372452.56 00.0          00748     000                                                  
+S   TDUUEEUUEE1UUEE002CFUUEEN   N562820.14 E0372452.56 00.0          05000     220                                                  
+S   TDUUEEUUEE1UUEE003TFUUEEI   N561020.89 E0372452.56 00.0          08000     000                                                  
+S   TEUUEEUUEE1UUEE001IFUUEEN   N562820.14 E0372452.56 00.0          12500     000                                                  
+S   TEUUEEUUEE1UUEE002TFUUEEI   N561020.89 E0372452.56 180.0         10000     000                                                  
+S   TEUUEEUUEE1UUEE003CFUUEEF   N560421.11 E0372452.56 180.0         06000     250                                                  
+S   TEUUEEUUEE1UUEE004TFUUEE    N555821.36 E0372452.56 180.0         04000     220                                                  
+S   TFUUEEILS36    001IFUUEEI   N561020.89 E0372452.56 00.0          04000     220                                                  
+S   TFUUEEILS36    002CFUUEEF   N560421.11 E0372452.56 180.0         03000     180                                                  
+S   TFUUEEILS36    003FAUUEE    N555821.36 E0372452.56 180.0         00748     000                                                  
+S   TFUUEEILS36    004CAUUEE    N555821.36 E0372452.56 180.0         00748     000                                                  
+S   TFUUEEILS36    005TFUUEEN   N562820.14 E0372452.56 00.0          05000     000                                                  
+S   EBLIRFNLIRF                 N421759.86 E0121420.04                                                                              
+S   EBLIRFSLIRF                 N411802.30 E0121420.04                                                                              
+S   EBLIRFELIRF                 N414754.06 E0125432.94                                                                              
+S   EBLIRFWLIRF                 N414754.06 E0113407.14                                                                              
+S   EBLIRFILIRF                 N420000.61 E0121420.04                                                                              
+S   EBLIRFILIRF                 N413601.55 E0121420.04                                                                              
+S   EBLIRFFLIRF                 N415400.83 E0121420.04                                                                              
+S   EBLIRFFLIRF                 N414201.33 E0121420.04                                                                              
+S   TDLIRFLIRF1LIRF001IFLIRF    N414801.08 E0121420.04 00.0          00008     000                                                  
+S   TDLIRFLIRF1LIRF002CFLIRFN   N421759.86 E0121420.04 00.0          05000     220                                                  
+S   TDLIRFLIRF1LIRF003TFLIRFI   N420000.61 E0121420.04 00.0          08000     000                                                  
+S   TELIRFLIRF1LIRF001IFLIRFN   N421759.86 E0121420.04 00.0          12500     000                                                  
+S   TELIRFLIRF1LIRF002TFLIRFI   N420000.61 E0121420.04 180.0         10000     000                                                  
+S   TELIRFLIRF1LIRF003CFLIRFF   N415400.83 E0121420.04 180.0         06000     250                                                  
+S   TELIRFLIRF1LIRF004TFLIRF    N414801.08 E0121420.04 180.0         04000     220                                                  
+S   TFLIRFILS36    001IFLIRFI   N420000.61 E0121420.04 00.0          04000     220                                                  
+S   TFLIRFILS36    002CFLIRFF   N415400.83 E0121420.04 180.0         03000     180                                                  
+S   TFLIRFILS36    003FALIRF    N414801.08 E0121420.04 180.0         00008     000                                                  
+S   TFLIRFILS36    004CALIRF    N414801.08 E0121420.04 180.0         00008     000                                                  
+S   TFLIRFILS36    005TFLIRFN   N421759.86 E0121420.04 00.0          05000     000                                                  
+S   EBLEMDNLEMD                 N405817.62 W0033345.36                                                                              
+S   EBLEMDSLEMD                 N395820.06 W0033345.36                                                                              
+S   EBLEMDELEMD                 N402812.14 W0025420.84                                                                              
+S   EBLEMDWLEMD                 N402812.14 W0041309.88                                                                              
+S   EBLEMDILEMD                 N404018.37 W0033345.36                                                                              
+S   EBLEMDILEMD                 N401619.31 W0033345.36                                                                              
+S   EBLEMDFLEMD                 N403418.59 W0033345.36                                                                              
+S   EBLEMDFLEMD                 N402219.09 W0033345.36                                                                              
+S   TDLEMDLEMD1LEMD001IFLEMD    N402818.84 W0033345.36 00.0          01998     000                                                  
+S   TDLEMDLEMD1LEMD002CFLEMDN   N405817.62 W0033345.36 00.0          05000     220                                                  
+S   TDLEMDLEMD1LEMD003TFLEMDI   N404018.37 W0033345.36 00.0          08000     000                                                  
+S   TELEMDLEMD1LEMD001IFLEMDN   N405817.62 W0033345.36 00.0          12500     000                                                  
+S   TELEMDLEMD1LEMD002TFLEMDI   N404018.37 W0033345.36 180.0         10000     000                                                  
+S   TELEMDLEMD1LEMD003CFLEMDF   N403418.59 W0033345.36 180.0         06000     250                                                  
+S   TELEMDLEMD1LEMD004TFLEMD    N402818.84 W0033345.36 180.0         04000     220                                                  
+S   TFLEMDILS36    001IFLEMDI   N404018.37 W0033345.36 00.0          04000     220                                                  
+S   TFLEMDILS36    002CFLEMDF   N403418.59 W0033345.36 180.0         03000     180                                                  
+S   TFLEMDILS36    003FALEMD    N402818.84 W0033345.36 180.0         01998     000                                                  
+S   TFLEMDILS36    004CALEMD    N402818.84 W0033345.36 180.0         01998     000                                                  
+S   TFLEMDILS36    005TFLEMDN   N405817.62 W0033345.36 00.0          05000     000                                                  
+S   EBEDDMNEDDM                 N485112.10 E0114709.96                                                                              
+S   EBEDDMSEDDM                 N475114.54 E0114709.96                                                                              
+S   EBEDDMEEDDM                 N482104.50 E0123216.73                                                                              
+S   EBEDDMWEDDM                 N482104.50 E0110203.19                                                                              
+S   EBEDDMIEDDM                 N483312.85 E0114709.96                                                                              
+S   EBEDDMIEDDM                 N480913.79 E0114709.96                                                                              
+S   EBEDDMFEDDM                 N482713.07 E0114709.96                                                                              
+S   EBEDDMFEDDM                 N481513.57 E0114709.96                                                                              
+S   TDEDDMEDDM1EDDM001IFEDDM    N482113.32 E0114709.96 00.0          01487     000                                                  
+S   TDEDDMEDDM1EDDM002CFEDDMN   N485112.10 E0114709.96 00.0          05000     220                                                  
+S   TDEDDMEDDM1EDDM003TFEDDMI   N483312.85 E0114709.96 00.0          08000     000                                                  
+S   TEEDDMEDDM1EDDM001IFEDDMN   N485112.10 E0114709.96 00.0          12500     000                                                  
+S   TEEDDMEDDM1EDDM002TFEDDMI   N483312.85 E0114709.96 180.0         10000     000                                                  
+S   TEEDDMEDDM1EDDM003CFEDDMF   N482713.07 E0114709.96 180.0         06000     250                                                  
+S   TEEDDMEDDM1EDDM004TFEDDM    N482113.32 E0114709.96 180.0         04000     220                                                  
+S   TFEDDMILS36    001IFEDDMI   N483312.85 E0114709.96 00.0          04000     220                                                  
+S   TFEDDMILS36    002CFEDDMF   N482713.07 E0114709.96 180.0         03000     180                                                  
+S   TFEDDMILS36    003FAEDDM    N482113.32 E0114709.96 180.0         01487     000                                                  
+S   TFEDDMILS36    004CAEDDM    N482113.32 E0114709.96 180.0         01487     000                                                  
+S   TFEDDMILS36    005TFEDDMN   N485112.10 E0114709.96 00.0          05000     000                                                  
+S   EBEGKKNEGKK                 N513851.94 W0001125.08                                                                              
+S   EBEGKKSEGKK                 N503854.38 W0001125.08                                                                              
+S   EBEGKKEEGKK                 N510843.44 E0003622.28                                                                              
+S   EBEGKKWEGKK                 N510843.44 W0005912.44                                                                              
+S   EBEGKKIEGKK                 N512052.69 W0001125.08                                                                              
+S   EBEGKKIEGKK                 N505653.63 W0001125.08                                                                              
+S   EBEGKKFEGKK                 N511452.91 W0001125.08                                                                              
+S   EBEGKKFEGKK                 N510253.41 W0001125.08                                                                              
+S   TDEGKKEGKK1EGKK001IFEGKK    N510853.16 W0001125.08 00.0          00202     000                                                  
+S   TDEGKKEGKK1EGKK002CFEGKKN   N513851.94 W0001125.08 00.0          05000     220                                                  
+S   TDEGKKEGKK1EGKK003TFEGKKI   N512052.69 W0001125.08 00.0          08000     000                                                  
+S   TEEGKKEGKK1EGKK001IFEGKKN   N513851.94 W0001125.08 00.0          12500     000                                                  
+S   TEEGKKEGKK1EGKK002TFEGKKI   N512052.69 W0001125.08 180.0         10000     000                                                  
+S   TEEGKKEGKK1EGKK003CFEGKKF   N511452.91 W0001125.08 180.0         06000     250                                                  
+S   TEEGKKEGKK1EGKK004TFEGKK    N510853.16 W0001125.08 180.0         04000     220                                                  
+S   TFEGKKILS36    001IFEGKKI   N512052.69 W0001125.08 00.0          04000     220                                                  
+S   TFEGKKILS36    002CFEGKKF   N511452.91 W0001125.08 180.0         03000     180                                                  
+S   TFEGKKILS36    003FAEGKK    N510853.16 W0001125.08 180.0         00202     000                                                  
+S   TFEGKKILS36    004CAEGKK    N510853.16 W0001125.08 180.0         00202     000                                                  
+S   TFEGKKILS36    005TFEGKKN   N513851.94 W0001125.08 00.0          05000     000                                                  
+S   EBLFPONLFPO                 N491322.66 E0022245.84                                                                              
+S   EBLFPOSLFPO                 N481325.10 E0022245.84                                                                              
+S   EBLFPOELFPO                 N484314.95 E0030812.44                                                                              
+S   EBLFPOWLFPO                 N484314.95 E0013719.24                                                                              
+S   EBLFPOILFPO                 N485523.41 E0022245.84                                                                              
+S   EBLFPOILFPO                 N483124.35 E0022245.84                                                                              
+S   EBLFPOFLFPO                 N484923.63 E0022245.84                                                                              
+S   EBLFPOFLFPO                 N483724.13 E0022245.84                                                                              
+S   TDLFPOLFPO1LFPO001IFLFPO    N484323.88 E0022245.84 00.0          00290     000                                                  
+S   TDLFPOLFPO1LFPO002CFLFPON   N491322.66 E0022245.84 00.0          05000     220                                                  
+S   TDLFPOLFPO1LFPO003TFLFPOI   N485523.41 E0022245.84 00.0          08000     000                                                  
+S   TELFPOLFPO1LFPO001IFLFPON   N491322.66 E0022245.84 00.0          12500     000                                                  
+S   TELFPOLFPO1LFPO002TFLFPOI   N485523.41 E0022245.84 180.0         10000     000                                                  
+S   TELFPOLFPO1LFPO003CFLFPOF   N484923.63 E0022245.84 180.0         06000     250                                                  
+S   TELFPOLFPO1LFPO004TFLFPO    N484323.88 E0022245.84 180.0         04000     220                                                  
+S   TFLFPOILS36    001IFLFPOI   N485523.41 E0022245.84 00.0          04000     220                                                  
+S   TFLFPOILS36    002CFLFPOF   N484923.63 E0022245.84 180.0         03000     180                                                  
+S   TFLFPOILS36    003FALFPO    N484323.88 E0022245.84 180.0         00290     000                                                  
+S   TFLFPOILS36    004CALFPO    N484323.88 E0022245.84 180.0         00290     000                                                  
+S   TFLFPOILS36    005TFLFPON   N491322.66 E0022245.84 00.0          05000     000                                                  
+S   EBKJFKNKJFK                 N410827.46 W0734641.16                                                                              
+S   EBKJFKSKJFK                 N400829.90 W0734641.16                                                                              
+S   EBKJFKEKJFK                 N403821.95 W0730710.63                                                                              
+S   EBKJFKWKJFK                 N403821.95 W0742611.69                                                                              
+S   EBKJFKIKJFK                 N405028.21 W0734641.16                                                                              
+S   EBKJFKIKJFK                 N402629.15 W0734641.16                                                                              
+S   EBKJFKFKJFK                 N404428.43 W0734641.16                                                                              
+S   EBKJFKFKJFK                 N403228.93 W0734641.16                                                                              
+S   TDKJFKKJFK1KJFK001IFKJFK    N403828.68 W0734641.16 00.0          00013     000                                                  
+S   TDKJFKKJFK1KJFK002CFKJFKN   N410827.46 W0734641.16 00.0          05000     220                                                  
+S   TDKJFKKJFK1KJFK003TFKJFKI   N405028.21 W0734641.16 00.0          08000     000                                                  
+S   TEKJFKKJFK1KJFK001IFKJFKN   N410827.46 W0734641.16 00.0          12500     000                                                  
+S   TEKJFKKJFK1KJFK002TFKJFKI   N405028.21 W0734641.16 180.0         10000     000                                                  
+S   TEKJFKKJFK1KJFK003CFKJFKF   N404428.43 W0734641.16 180.0         06000     250                                                  
+S   TEKJFKKJFK1KJFK004TFKJFK    N403828.68 W0734641.16 180.0         04000     220                                                  
+S   TFKJFKILS36    001IFKJFKI   N405028.21 W0734641.16 00.0          04000     220                                                  
+S   TFKJFKILS36    002CFKJFKF   N404428.43 W0734641.16 180.0         03000     180                                                  
+S   TFKJFKILS36    003FAKJFK    N403828.68 W0734641.16 180.0         00013     000                                                  
+S   TFKJFKILS36    004CAKJFK    N403828.68 W0734641.16 180.0         00013     000                                                  
+S   TFKJFKILS36    005TFKJFKN   N410827.46 W0734641.16 00.0          05000     000                                                  
+S   EBKLAXNKLAX                 N342628.54 W1182430.60                                                                              
+S   EBKLAXSKLAX                 N332630.98 W1182430.60                                                                              
+S   EBKLAXEKLAX                 N335624.47 W1174822.39                                                                              
+S   EBKLAXWKLAX                 N335624.47 W1190038.81                                                                              
+S   EBKLAXIKLAX                 N340829.29 W1182430.60                                                                              
+S   EBKLAXIKLAX                 N334430.23 W1182430.60                                                                              
+S   EBKLAXFKLAX                 N340229.51 W1182430.60                                                                              
+S   EBKLAXFKLAX                 N335030.01 W1182430.60                                                                              
+S   TDKLAXKLAX1KLAX001IFKLAX    N335629.76 W1182430.60 00.0          00126     000                                                  
+S   TDKLAXKLAX1KLAX002CFKLAXN   N342628.54 W1182430.60 00.0          05000     220                                                  
+S   TDKLAXKLAX1KLAX003TFKLAXI   N340829.29 W1182430.60 00.0          08000     000                                                  
+S   TEKLAXKLAX1KLAX001IFKLAXN   N342628.54 W1182430.60 00.0          12500     000                                                  
+S   TEKLAXKLAX1KLAX002TFKLAXI   N340829.29 W1182430.60 180.0         10000     000                                                  
+S   TEKLAXKLAX1KLAX003CFKLAXF   N340229.51 W1182430.60 180.0         06000     250                                                  
+S   TEKLAXKLAX1KLAX004TFKLAX    N335629.76 W1182430.60 180.0         04000     220                                                  
+S   TFKLAXILS36    001IFKLAXI   N340829.29 W1182430.60 00.0          04000     220                                                  
+S   TFKLAXILS36    002CFKLAXF   N340229.51 W1182430.60 180.0         03000     180                                                  
+S   TFKLAXILS36    003FAKLAX    N335629.76 W1182430.60 180.0         00126     000                                                  
+S   TFKLAXILS36    004CAKLAX    N335629.76 W1182430.60 180.0         00126     000                                                  
+S   TFKLAXILS36    005TFKLAXN   N342628.54 W1182430.60 00.0          05000     000                                                  
+S   EBKORDNKORD                 N422825.90 W0875426.28                                                                              
+S   EBKORDSKORD                 N412828.34 W0875426.28                                                                              
+S   EBKORDEKORD                 N415820.06 W0871406.79                                                                              
+S   EBKORDWKORD                 N415820.06 W0883445.77                                                                              
+S   EBKORDIKORD                 N421026.65 W0875426.28                                                                              
+S   EBKORDIKORD                 N414627.59 W0875426.28                                                                              
+S   EBKORDFKORD                 N420426.87 W0875426.28                                                                              
+S   EBKORDFKORD                 N415227.37 W0875426.28                                                                              
+S   TDKORDKORD1KORD001IFKORD    N415827.12 W0875426.28 00.0          00668     000                                                  
+S   TDKORDKORD1KORD002CFKORDN   N422825.90 W0875426.28 00.0          05000     220                                                  
+S   TDKORDKORD1KORD003TFKORDI   N421026.65 W0875426.28 00.0          08000     000                                                  
+S   TEKORDKORD1KORD001IFKORDN   N422825.90 W0875426.28 00.0          12500     000                                                  
+S   TEKORDKORD1KORD002TFKORDI   N421026.65 W0875426.28 180.0         10000     000                                                  
+S   TEKORDKORD1KORD003CFKORDF   N420426.87 W0875426.28 180.0         06000     250                                                  
+S   TEKORDKORD1KORD004TFKORD    N415827.12 W0875426.28 180.0         04000     220                                                  
+S   TFKORDILS36    001IFKORDI   N421026.65 W0875426.28 00.0          04000     220                                                  
+S   TFKORDILS36    002CFKORDF   N420426.87 W0875426.28 180.0         03000     180                                                  
+S   TFKORDILS36    003FAKORD    N415827.12 W0875426.28 180.0         00668     000                                                  
+S   TFKORDILS36    004CAKORD    N415827.12 W0875426.28 180.0         00668     000                                                  
+S   TFKORDILS36    005TFKORDN   N422825.90 W0875426.28 00.0          05000     000                                                  
+S   EBKSFONKSFO                 N380715.46 W1222244.40                                                                              
+S   EBKSFOSKSFO                 N370717.90 W1222244.40                                                                              
+S   EBKSFOEKSFO                 N373710.63 W1214453.41                                                                              
+S   EBKSFOWKSFO                 N373710.63 W1230035.39                                                                              
+S   EBKSFOIKSFO                 N374916.21 W1222244.40                                                                              
+S   EBKSFOIKSFO                 N372517.15 W1222244.40                                                                              
+S   EBKSFOFKSFO                 N374316.43 W1222244.40                                                                              
+S   EBKSFOFKSFO                 N373116.93 W1222244.40                                                                              
+S   TDKSFOKSFO1KSFO001IFKSFO    N373716.68 W1222244.40 00.0          00013     000                                                  
+S   TDKSFOKSFO1KSFO002CFKSFON   N380715.46 W1222244.40 00.0          05000     220                                                  
+S   TDKSFOKSFO1KSFO003TFKSFOI   N374916.21 W1222244.40 00.0          08000     000                                                  
+S   TEKSFOKSFO1KSFO001IFKSFON   N380715.46 W1222244.40 00.0          12500     000                                                  
+S   TEKSFOKSFO1KSFO002TFKSFOI   N374916.21 W1222244.40 180.0         10000     000                                                  
+S   TEKSFOKSFO1KSFO003CFKSFOF   N374316.43 W1222244.40 180.0         06000     250                                                  
+S   TEKSFOKSFO1KSFO004TFKSFO    N373716.68 W1222244.40 180.0         04000     220                                                  
+S   TFKSFOILS36    001IFKSFOI   N374916.21 W1222244.40 00.0          04000     220                                                  
+S   TFKSFOILS36    002CFKSFOF   N374316.43 W1222244.40 180.0         03000     180                                                  
+S   TFKSFOILS36    003FAKSFO    N373716.68 W1222244.40 180.0         00013     000                                                  
+S   TFKSFOILS36    004CAKSFO    N373716.68 W1222244.40 180.0         00013     000                                                  
+S   TFKSFOILS36    005TFKSFON   N380715.46 W1222244.40 00.0          05000     000                                                  
+S   EBKATLNKATL                 N340825.30 W0842539.72                                                                              
+S   EBKATLSKATL                 N330827.74 W0842539.72                                                                              
+S   EBKATLEKATL                 N333821.30 W0834939.11                                                                              
+S   EBKATLWKATL                 N333821.30 W0850140.33                                                                              
+S   EBKATLIKATL                 N335026.05 W0842539.72                                                                              
+S   EBKATLIKATL                 N332626.99 W0842539.72                                                                              
+S   EBKATLFKATL                 N334426.27 W0842539.72                                                                              
+S   EBKATLFKATL                 N333226.77 W0842539.72                                                                              
+S   TDKATLKATL1KATL001IFKATL    N333826.52 W0842539.72 00.0          01026     000                                                  
+S   TDKATLKATL1KATL002CFKATLN   N340825.30 W0842539.72 00.0          05000     220                                                  
+S   TDKATLKATL1KATL003TFKATLI   N335026.05 W0842539.72 00.0          08000     000                                                  
+S   TEKATLKATL1KATL001IFKATLN   N340825.30 W0842539.72 00.0          12500     000                                                  
+S   TEKATLKATL1KATL002TFKATLI   N335026.05 W0842539.72 180.0         10000     000                                                  
+S   TEKATLKATL1KATL003CFKATLF   N334426.27 W0842539.72 180.0         06000     250                                                  
+S   TEKATLKATL1KATL004TFKATL    N333826.52 W0842539.72 180.0         04000     220                                                  
+S   TFKATLILS36    001IFKATLI   N335026.05 W0842539.72 00.0          04000     220                                                  
+S   TFKATLILS36    002CFKATLF   N334426.27 W0842539.72 180.0         03000     180                                                  
+S   TFKATLILS36    003FAKATL    N333826.52 W0842539.72 180.0         01026     000                                                  
+S   TFKATLILS36    004CAKATL    N333826.52 W0842539.72 180.0         01026     000                                                  
+S   TFKATLILS36    005TFKATLN   N340825.30 W0842539.72 00.0          05000     000                                                  
+S   EBKDFWNKDFW                 N332358.06 W0970225.08                                                                              
+S   EBKDFWSKDFW                 N322400.50 W0970225.08                                                                              
+S   EBKDFWEKDFW                 N325354.20 W0962642.72                                                                              
+S   EBKDFWWKDFW                 N325354.20 W0973807.44                                                                              
+S   EBKDFWIKDFW                 N330558.81 W0970225.08                                                                              
+S   EBKDFWIKDFW                 N324159.75 W0970225.08                                                                              
+S   EBKDFWFKDFW                 N325959.03 W0970225.08                                                                              
+S   EBKDFWFKDFW                 N324759.53 W0970225.08                                                                              
+S   TDKDFWKDFW1KDFW001IFKDFW    N325359.28 W0970225.08 00.0          00607     000                                                  
+S   TDKDFWKDFW1KDFW002CFKDFWN   N332358.06 W0970225.08 00.0          05000     220                                                  
+S   TDKDFWKDFW1KDFW003TFKDFWI   N330558.81 W0970225.08 00.0          08000     000                                                  
+S   TEKDFWKDFW1KDFW001IFKDFWN   N332358.06 W0970225.08 00.0          12500     000                                                  
+S   TEKDFWKDFW1KDFW002TFKDFWI   N330558.81 W0970225.08 180.0         10000     000                                                  
+S   TEKDFWKDFW1KDFW003CFKDFWF   N325959.03 W0970225.08 180.0         06000     250                                                  
+S   TEKDFWKDFW1KDFW004TFKDFW    N325359.28 W0970225.08 180.0         04000     220                                                  
+S   TFKDFWILS36    001IFKDFWI   N330558.81 W0970225.08 00.0          04000     220                                                  
+S   TFKDFWILS36    002CFKDFWF   N325959.03 W0970225.08 180.0         03000     180                                                  
+S   TFKDFWILS36    003FAKDFW    N325359.28 W0970225.08 180.0         00607     000                                                  
+S   TFKDFWILS36    004CAKDFW    N325359.28 W0970225.08 180.0         00607     000                                                  
+S   TFKDFWILS36    005TFKDFWN   N332358.06 W0970225.08 00.0          05000     000                                                  
+S   EBCYVRNCYVR                 N494139.70 W1231102.04                                                                              
+S   EBCYVRSCYVR                 N484142.14 W1231102.04                                                                              
+S   EBCYVRECYVR                 N491131.85 W1222509.55                                                                              
+S   EBCYVRWCYVR                 N491131.85 W1235654.53                                                                              
+S   EBCYVRICYVR                 N492340.45 W1231102.04                                                                              
+S   EBCYVRICYVR                 N485941.39 W1231102.04                                                                              
+S   EBCYVRFCYVR                 N491740.67 W1231102.04                                                                              
+S   EBCYVRFCYVR                 N490541.17 W1231102.04                                                                              
+S   TDCYVRCYVR1CYVR001IFCYVR    N491140.92 W1231102.04 00.0          00013     000                                                  
+S   TDCYVRCYVR1CYVR002CFCYVRN   N494139.70 W1231102.04 00.0          05000     220                                                  
+S   TDCYVRCYVR1CYVR003TFCYVRI   N492340.45 W1231102.04 00.0          08000     000                                                  
+S   TECYVRCYVR1CYVR001IFCYVRN   N494139.70 W1231102.04 00.0          12500     000                                                  
+S   TECYVRCYVR1CYVR002TFCYVRI   N492340.45 W1231102.04 180.0         10000     000                                                  
+S   TECYVRCYVR1CYVR003CFCYVRF   N491740.67 W1231102.04 180.0         06000     250                                                  
+S   TECYVRCYVR1CYVR004TFCYVR    N491140.92 W1231102.04 180.0         04000     220                                                  
+S   TFCYVRILS36    001IFCYVRI   N492340.45 W1231102.04 00.0          04000     220                                                  
+S   TFCYVRILS36    002CFCYVRF   N491740.67 W1231102.04 180.0         03000     180                                                  
+S   TFCYVRILS36    003FACYVR    N491140.92 W1231102.04 180.0         00013     000                                                  
+S   TFCYVRILS36    004CACYVR    N491140.92 W1231102.04 180.0         00013     000                                                  
+S   TFCYVRILS36    005TFCYVRN   N494139.70 W1231102.04 00.0          05000     000                                                  
+S   EBCYYZNCYYZ                 N441038.50 W0793729.28                                                                              
+S   EBCYYZSCYYZ                 N431040.94 W0793729.28                                                                              
+S   EBCYYZECYYZ                 N434032.23 W0785602.18                                                                              
+S   EBCYYZWCYYZ                 N434032.23 W0801856.38                                                                              
+S   EBCYYZICYYZ                 N435239.25 W0793729.28                                                                              
+S   EBCYYZICYYZ                 N432840.19 W0793729.28                                                                              
+S   EBCYYZFCYYZ                 N434639.47 W0793729.28                                                                              
+S   EBCYYZFCYYZ                 N433439.97 W0793729.28                                                                              
+S   TDCYYZCYYZ1CYYZ001IFCYYZ    N434039.72 W0793729.28 00.0          00569     000                                                  
+S   TDCYYZCYYZ1CYYZ002CFCYYZN   N441038.50 W0793729.28 00.0          05000     220                                                  
+S   TDCYYZCYYZ1CYYZ003TFCYYZI   N435239.25 W0793729.28 00.0          08000     000                                                  
+S   TECYYZCYYZ1CYYZ001IFCYYZN   N441038.50 W0793729.28 00.0          12500     000                                                  
+S   TECYYZCYYZ1CYYZ002TFCYYZI   N435239.25 W0793729.28 180.0         10000     000                                                  
+S   TECYYZCYYZ1CYYZ003CFCYYZF   N434639.47 W0793729.28 180.0         06000     250                                                  
+S   TECYYZCYYZ1CYYZ004TFCYYZ    N434039.72 W0793729.28 180.0         04000     220                                                  
+S   TFCYYZILS36    001IFCYYZI   N435239.25 W0793729.28 00.0          04000     220                                                  
+S   TFCYYZILS36    002CFCYYZF   N434639.47 W0793729.28 180.0         03000     180                                                  
+S   TFCYYZILS36    003FACYYZ    N434039.72 W0793729.28 180.0         00569     000                                                  
+S   TFCYYZILS36    004CACYYZ    N434039.72 W0793729.28 180.0         00569     000                                                  
+S   TFCYYZILS36    005TFCYYZN   N441038.50 W0793729.28 00.0          05000     000                                                  
+S   EBYSSYNYSSY                 S332647.18 E1511037.92                                                                              
+S   EBYSSYSYSSY                 S342644.74 E1511037.92                                                                              
+S   EBYSSYEYSSY                 S335640.67 E1514646.24                                                                              
+S   EBYSSYWYSSY                 S335640.67 E1503429.60                                                                              
+S   EBYSSYIYSSY                 S334446.43 E1511037.92                                                                              
+S   EBYSSYIYSSY                 S340845.49 E1511037.92                                                                              
+S   EBYSSYFYSSY                 S335046.21 E1511037.92                                                                              
+S   EBYSSYFYSSY                 S340245.71 E1511037.92                                                                              
+S   TDYSSYYSSY1YSSY001IFYSSY    S335645.96 E1511037.92 00.0          00021     000                                                  
+S   TDYSSYYSSY1YSSY002CFYSSYN   S332647.18 E1511037.92 00.0          05000     220                                                  
+S   TDYSSYYSSY1YSSY003TFYSSYI   S334446.43 E1511037.92 00.0          08000     000                                                  
+S   TEYSSYYSSY1YSSY001IFYSSYN   S332647.18 E1511037.92 00.0          12500     000                                                  
+S   TEYSSYYSSY1YSSY002TFYSSYI   S334446.43 E1511037.92 180.0         10000     000                                                  
+S   TEYSSYYSSY1YSSY003CFYSSYF   S335046.21 E1511037.92 180.0         06000     250                                                  
+S   TEYSSYYSSY1YSSY004TFYSSY    S335645.96 E1511037.92 180.0         04000     220                                                  
+S   TFYSSYILS36    001IFYSSYI   S334446.43 E1511037.92 00.0          04000     220                                                  
+S   TFYSSYILS36    002CFYSSYF   S335046.21 E1511037.92 180.0         03000     180                                                  
+S   TFYSSYILS36    003FAYSSY    S335645.96 E1511037.92 180.0         00021     000                                                  
+S   TFYSSYILS36    004CAYSSY    S335645.96 E1511037.92 180.0         00021     000                                                  
+S   TFYSSYILS36    005TFYSSYN   S332647.18 E1511037.92 00.0          05000     000                                                  
+S   EBYMMLNYMML                 S371009.62 E1445027.60                                                                              
+S   EBYMMLSYMML                 S381007.18 E1445027.60                                                                              
+S   EBYMMLEYMML                 S374002.35 E1452820.03                                                                              
+S   EBYMMLWYMML                 S374002.35 E1441235.17                                                                              
+S   EBYMMLIYMML                 S372808.87 E1445027.60                                                                              
+S   EBYMMLIYMML                 S375207.93 E1445027.60                                                                              
+S   EBYMMLFYMML                 S373408.65 E1445027.60                                                                              
+S   EBYMMLFYMML                 S374608.15 E1445027.60                                                                              
+S   TDYMMLYMML1YMML001IFYMML    S374008.40 E1445027.60 00.0          00434     000                                                  
+S   TDYMMLYMML1YMML002CFYMMLN   S371009.62 E1445027.60 00.0          05000     220                                                  
+S   TDYMMLYMML1YMML003TFYMMLI   S372808.87 E1445027.60 00.0          08000     000                                                  
+S   TEYMMLYMML1YMML001IFYMMLN   S371009.62 E1445027.60 00.0          12500     000                                                  
+S   TEYMMLYMML1YMML002TFYMMLI   S372808.87 E1445027.60 180.0         10000     000                                                  
+S   TEYMMLYMML1YMML003CFYMMLF   S373408.65 E1445027.60 180.0         06000     250                                                  
+S   TEYMMLYMML1YMML004TFYMML    S374008.40 E1445027.60 180.0         04000     220                                                  
+S   TFYMMLILS36    001IFYMMLI   S372808.87 E1445027.60 00.0          04000     220                                                  
+S   TFYMMLILS36    002CFYMMLF   S373408.65 E1445027.60 180.0         03000     180                                                  
+S   TFYMMLILS36    003FAYMML    S374008.40 E1445027.60 180.0         00434     000                                                  
+S   TFYMMLILS36    004CAYMML    S374008.40 E1445027.60 180.0         00434     000                                                  
+S   TFYMMLILS36    005TFYMMLN   S371009.62 E1445027.60 00.0          05000     000                                                  
+S   EBNZAANNZAA                 S363030.74 E1744706.00                                                                              
+S   EBNZAASNZAA                 S373028.30 E1744706.00                                                                              
+S   EBNZAAENZAA                 S370023.62 E1752438.52                                                                              
+S   EBNZAAWNZAA                 S370023.62 E1740933.48                                                                              
+S   EBNZAAINZAA                 S364829.99 E1744706.00                                                                              
+S   EBNZAAINZAA                 S371229.05 E1744706.00                                                                              
+S   EBNZAAFNZAA                 S365429.77 E1744706.00                                                                              
+S   EBNZAAFNZAA                 S370629.27 E1744706.00                                                                              
+S   TDNZAANZAA1NZAA001IFNZAA    S370029.52 E1744706.00 00.0          00023     000                                                  
+S   TDNZAANZAA1NZAA002CFNZAAN   S363030.74 E1744706.00 00.0          05000     220                                                  
+S   TDNZAANZAA1NZAA003TFNZAAI   S364829.99 E1744706.00 00.0          08000     000                                                  
+S   TENZAANZAA1NZAA001IFNZAAN   S363030.74 E1744706.00 00.0          12500     000                                                  
+S   TENZAANZAA1NZAA002TFNZAAI   S364829.99 E1744706.00 180.0         10000     000                                                  
+S   TENZAANZAA1NZAA003CFNZAAF   S365429.77 E1744706.00 180.0         06000     250                                                  
+S   TENZAANZAA1NZAA004TFNZAA    S370029.52 E1744706.00 180.0         04000     220                                                  
+S   TFNZAAILS36    001IFNZAAI   S364829.99 E1744706.00 00.0          04000     220                                                  
+S   TFNZAAILS36    002CFNZAAF   S365429.77 E1744706.00 180.0         03000     180                                                  
+S   TFNZAAILS36    003FANZAA    S370029.52 E1744706.00 180.0         00023     000                                                  
+S   TFNZAAILS36    004CANZAA    S370029.52 E1744706.00 180.0         00023     000                                                  
+S   TFNZAAILS36    005TFNZAAN   S363030.74 E1744706.00 00.0          05000     000                                                  
+S   EBHECANHECA                 N303717.62 E0312420.16                                                                              
+S   EBHECASHECA                 N293720.06 E0312420.16                                                                              
+S   EBHECAEHECA                 N300714.30 E0315859.77                                                                              
+S   EBHECAWHECA                 N300714.30 E0304940.55                                                                              
+S   EBHECAIHECA                 N301918.37 E0312420.16                                                                              
+S   EBHECAIHECA                 N295519.31 E0312420.16                                                                              
+S   EBHECAFHECA                 N301318.59 E0312420.16                                                                              
+S   EBHECAFHECA                 N300119.09 E0312420.16                                                                              
+S   TDHECAHECA1HECA001IFHECA    N300718.84 E0312420.16 00.0          00389     000                                                  
+S   TDHECAHECA1HECA002CFHECAN   N303717.62 E0312420.16 00.0          05000     220                                                  
+S   TDHECAHECA1HECA003TFHECAI   N301918.37 E0312420.16 00.0          08000     000                                                  
+S   TEHECAHECA1HECA001IFHECAN   N303717.62 E0312420.16 00.0          12500     000                                                  
+S   TEHECAHECA1HECA002TFHECAI   N301918.37 E0312420.16 180.0         10000     000                                                  
+S   TEHECAHECA1HECA003CFHECAF   N301318.59 E0312420.16 180.0         06000     250                                                  
+S   TEHECAHECA1HECA004TFHECA    N300718.84 E0312420.16 180.0         04000     220                                                  
+S   TFHECAILS36    001IFHECAI   N301918.37 E0312420.16 00.0          04000     220                                                  
+S   TFHECAILS36    002CFHECAF   N301318.59 E0312420.16 180.0         03000     180                                                  
+S   TFHECAILS36    003FAHECA    N300718.84 E0312420.16 180.0         00389     000                                                  
+S   TFHECAILS36    004CAHECA    N300718.84 E0312420.16 180.0         00389     000                                                  
+S   TFHECAILS36    005TFHECAN   N303717.62 E0312420.16 00.0          05000     000                                                  
+S   EBFAORNFAOR                 S253822.34 E0281445.60                                                                              
+S   EBFAORSFAOR                 S263819.90 E0281445.60                                                                              
+S   EBFAOREFAOR                 S260817.27 E0284809.29                                                                              
+S   EBFAORWFAOR                 S260817.27 E0274121.91                                                                              
+S   EBFAORIFAOR                 S255621.59 E0281445.60                                                                              
+S   EBFAORIFAOR                 S262020.65 E0281445.60                                                                              
+S   EBFAORFFAOR                 S260221.37 E0281445.60                                                                              
+S   EBFAORFFAOR                 S261420.87 E0281445.60                                                                              
+S   TDFAORFAOR1FAOR001IFFAOR    S260821.12 E0281445.60 00.0          05558     000                                                  
+S   TDFAORFAOR1FAOR002CFFAORN   S253822.34 E0281445.60 00.0          05000     220                                                  
+S   TDFAORFAOR1FAOR003TFFAORI   S255621.59 E0281445.60 00.0          08000     000                                                  
+S   TEFAORFAOR1FAOR001IFFAORN   S253822.34 E0281445.60 00.0          12500     000                                                  
+S   TEFAORFAOR1FAOR002TFFAORI   S255621.59 E0281445.60 180.0         10000     000                                                  
+S   TEFAORFAOR1FAOR003CFFAORF   S260221.37 E0281445.60 180.0         06000     250                                                  
+S   TEFAORFAOR1FAOR004TFFAOR    S260821.12 E0281445.60 180.0         04000     220                                                  
+S   TFFAORILS36    001IFFAORI   S255621.59 E0281445.60 00.0          04000     220                                                  
+S   TFFAORILS36    002CFFAORF   S260221.37 E0281445.60 180.0         03000     180                                                  
+S   TFFAORILS36    003FAFAOR    S260821.12 E0281445.60 180.0         05558     000                                                  
+S   TFFAORILS36    004CAFAOR    S260821.12 E0281445.60 180.0         05558     000                                                  
+S   TFFAORILS36    005TFFAORN   S253822.34 E0281445.60 00.0          05000     000                                                  
+S   EBHKJKNHKJK                 S004910.34 E0365540.08                                                                              
+S   EBHKJKSHKJK                 S014907.90 E0365540.08                                                                              
+S   EBHKJKEHKJK                 S011908.94 E0372539.36                                                                              
+S   EBHKJKWHKJK                 S011908.94 E0362540.80                                                                              
+S   EBHKJKIHKJK                 S010709.59 E0365540.08                                                                              
+S   EBHKJKIHKJK                 S013108.65 E0365540.08                                                                              
+S   EBHKJKFHKJK                 S011309.37 E0365540.08                                                                              
+S   EBHKJKFHKJK                 S012508.87 E0365540.08                                                                              
+S   TDHKJKHKJK1HKJK001IFHKJK    S011909.12 E0365540.08 00.0          05327     000                                                  
+S   TDHKJKHKJK1HKJK002CFHKJKN   S004910.34 E0365540.08 00.0          05000     220                                                  
+S   TDHKJKHKJK1HKJK003TFHKJKI   S010709.59 E0365540.08 00.0          08000     000                                                  
+S   TEHKJKHKJK1HKJK001IFHKJKN   S004910.34 E0365540.08 00.0          12500     000                                                  
+S   TEHKJKHKJK1HKJK002TFHKJKI   S010709.59 E0365540.08 180.0         10000     000                                                  
+S   TEHKJKHKJK1HKJK003CFHKJKF   S011309.37 E0365540.08 180.0         06000     250                                                  
+S   TEHKJKHKJK1HKJK004TFHKJK    S011909.12 E0365540.08 180.0         04000     220                                                  
+S   TFHKJKILS36    001IFHKJKI   S010709.59 E0365540.08 00.0          04000     220                                                  
+S   TFHKJKILS36    002CFHKJKF   S011309.37 E0365540.08 180.0         03000     180                                                  
+S   TFHKJKILS36    003FAHKJK    S011909.12 E0365540.08 180.0         05327     000                                                  
+S   TFHKJKILS36    004CAHKJK    S011909.12 E0365540.08 180.0         05327     000                                                  
+S   TFHKJKILS36    005TFHKJKN   S004910.34 E0365540.08 00.0          05000     000                                                  
+S   EBSBGRNSBGR                 S225609.38 W0462823.16                                                                              
+S   EBSBGRSSBGR                 S235606.94 W0462823.16                                                                              
+S   EBSBGRESBGR                 S232604.78 W0455542.67                                                                              
+S   EBSBGRWSBGR                 S232604.78 W0470103.65                                                                              
+S   EBSBGRISBGR                 S231408.63 W0462823.16                                                                              
+S   EBSBGRISBGR                 S233807.69 W0462823.16                                                                              
+S   EBSBGRFSBGR                 S232008.41 W0462823.16                                                                              
+S   EBSBGRFSBGR                 S233207.91 W0462823.16                                                                              
+S   TDSBGRSBGR1SBGR001IFSBGR    S232608.16 W0462823.16 00.0          02451     000                                                  
+S   TDSBGRSBGR1SBGR002CFSBGRN   S225609.38 W0462823.16 00.0          05000     220                                                  
+S   TDSBGRSBGR1SBGR003TFSBGRI   S231408.63 W0462823.16 00.0          08000     000                                                  
+S   TESBGRSBGR1SBGR001IFSBGRN   S225609.38 W0462823.16 00.0          12500     000                                                  
+S   TESBGRSBGR1SBGR002TFSBGRI   S231408.63 W0462823.16 180.0         10000     000                                                  
+S   TESBGRSBGR1SBGR003CFSBGRF   S232008.41 W0462823.16 180.0         06000     250                                                  
+S   TESBGRSBGR1SBGR004TFSBGR    S232608.16 W0462823.16 180.0         04000     220                                                  
+S   TFSBGRILS36    001IFSBGRI   S231408.63 W0462823.16 00.0          04000     220                                                  
+S   TFSBGRILS36    002CFSBGRF   S232008.41 W0462823.16 180.0         03000     180                                                  
+S   TFSBGRILS36    003FASBGR    S232608.16 W0462823.16 180.0         02451     000                                                  
+S   TFSBGRILS36    004CASBGR    S232608.16 W0462823.16 180.0         02451     000                                                  
+S   TFSBGRILS36    005TFSBGRN   S225609.38 W0462823.16 00.0          05000     000                                                  
+S   EBSAEZNSAEZ                 S341921.14 W0583208.88                                                                              
+S   EBSAEZSSAEZ                 S351918.70 W0583208.88                                                                              
+S   EBSAEZESAEZ                 S344914.45 W0575537.74                                                                              
+S   EBSAEZWSAEZ                 S344914.45 W0590840.02                                                                              
+S   EBSAEZISAEZ                 S343720.39 W0583208.88                                                                              
+S   EBSAEZISAEZ                 S350119.45 W0583208.88                                                                              
+S   EBSAEZFSAEZ                 S344320.17 W0583208.88                                                                              
+S   EBSAEZFSAEZ                 S345519.67 W0583208.88                                                                              
+S   TDSAEZSAEZ1SAEZ001IFSAEZ    S344919.92 W0583208.88 00.0          00067     000                                                  
+S   TDSAEZSAEZ1SAEZ002CFSAEZN   S341921.14 W0583208.88 00.0          05000     220                                                  
+S   TDSAEZSAEZ1SAEZ003TFSAEZI   S343720.39 W0583208.88 00.0          08000     000                                                  
+S   TESAEZSAEZ1SAEZ001IFSAEZN   S341921.14 W0583208.88 00.0          12500     000                                                  
+S   TESAEZSAEZ1SAEZ002TFSAEZI   S343720.39 W0583208.88 180.0         10000     000                                                  
+S   TESAEZSAEZ1SAEZ003CFSAEZF   S344320.17 W0583208.88 180.0         06000     250                                                  
+S   TESAEZSAEZ1SAEZ004TFSAEZ    S344919.92 W0583208.88 180.0         04000     220                                                  
+S   TFSAEZILS36    001IFSAEZI   S343720.39 W0583208.88 00.0          04000     220                                                  
+S   TFSAEZILS36    002CFSAEZF   S344320.17 W0583208.88 180.0         03000     180                                                  
+S   TFSAEZILS36    003FASAEZ    S344919.92 W0583208.88 180.0         00067     000                                                  
+S   TFSAEZILS36    004CASAEZ    S344919.92 W0583208.88 180.0         00067     000                                                  
+S   TFSAEZILS36    005TFSAEZN   S341921.14 W0583208.88 00.0          05000     000                                                  
+S   EBMMMXNMMMX                 N195608.74 W0990418.84                                                                              
+S   EBMMMXSMMMX                 N185611.18 W0990418.84                                                                              
+S   EBMMMXEMMMX                 N192607.19 W0983231.34                                                                              
+S   EBMMMXWMMMX                 N192607.19 W0993606.34                                                                              
+S   EBMMMXIMMMX                 N193809.49 W0990418.84                                                                              
+S   EBMMMXIMMMX                 N191410.43 W0990418.84                                                                              
+S   EBMMMXFMMMX                 N193209.71 W0990418.84                                                                              
+S   EBMMMXFMMMX                 N192010.21 W0990418.84                                                                              
+S   TDMMMXMMMX1MMMX001IFMMMX    N192609.96 W0990418.84 00.0          07316     000                                                  
+S   TDMMMXMMMX1MMMX002CFMMMXN   N195608.74 W0990418.84 00.0          05000     220                                                  
+S   TDMMMXMMMX1MMMX003TFMMMXI   N193809.49 W0990418.84 00.0          08000     000                                                  
+S   TEMMMXMMMX1MMMX001IFMMMXN   N195608.74 W0990418.84 00.0          12500     000                                                  
+S   TEMMMXMMMX1MMMX002TFMMMXI   N193809.49 W0990418.84 180.0         10000     000                                                  
+S   TEMMMXMMMX1MMMX003CFMMMXF   N193209.71 W0990418.84 180.0         06000     250                                                  
+S   TEMMMXMMMX1MMMX004TFMMMX    N192609.96 W0990418.84 180.0         04000     220                                                  
+S   TFMMMXILS36    001IFMMMXI   N193809.49 W0990418.84 00.0          04000     220                                                  
+S   TFMMMXILS36    002CFMMMXF   N193209.71 W0990418.84 180.0         03000     180                                                  
+S   TFMMMXILS36    003FAMMMX    N192609.96 W0990418.84 180.0         07316     000                                                  
+S   TFMMMXILS36    004CAMMMX    N192609.96 W0990418.84 180.0         07316     000                                                  
+S   TFMMMXILS36    005TFMMMXN   N195608.74 W0990418.84 00.0          05000     000                                                  
+S   U ZJFIFCHENGDU FIR         001N330000.00 E1000000.00       0060000000                                                           
+S   U ZJFIFCHENGDU FIR         002N330000.00 E1080000.00       0060000000                                                           
+S   U ZJFIFCHENGDU FIR         003N300000.00 E1100000.00       0060000000                                                           
+S   U ZJFIFCHENGDU FIR         004N270000.00 E1080000.00       0060000000                                                           
+S   U ZJFIFCHENGDU FIR         005N260000.00 E1030000.00       0060000000                                                           
+S   U ZJFIFCHENGDU FIR         006N280000.00 E0990000.00       0060000000                                                           
+S   U ZBPEFBEIJING FIR         001N450000.00 E1100000.00       0060000000                                                           
+S   U ZBPEFBEIJING FIR         002N450000.00 E1250000.00       0060000000                                                           
+S   U ZBPEFBEIJING FIR         003N400000.00 E1280000.00       0060000000                                                           
+S   U ZBPEFBEIJING FIR         004N350000.00 E1250000.00       0060000000                                                           
+S   U ZBPEFBEIJING FIR         005N350000.00 E1100000.00       0060000000                                                           
+S   U ZBPEFBEIJING FIR         006N380000.00 E1080000.00       0060000000                                                           
+S   U ZSHAFSHANGHAI FIR        001N350000.00 E1180000.00       0060000000                                                           
+S   U ZSHAFSHANGHAI FIR        002N350000.00 E1300000.00       0060000000                                                           
+S   U ZSHAFSHANGHAI FIR        003N300000.00 E1320000.00       0060000000                                                           
+S   U ZSHAFSHANGHAI FIR        004N250000.00 E1280000.00       0060000000                                                           
+S   U ZSHAFSHANGHAI FIR        005N250000.00 E1180000.00       0060000000                                                           
+S   U ZSHAFSHANGHAI FIR        006N280000.00 E1160000.00       0060000000                                                           
+S   U ZGZUFGUANGZHOU FIR       001N280000.00 E1080000.00       0060000000                                                           
+S   U ZGZUFGUANGZHOU FIR       002N280000.00 E1200000.00       0060000000                                                           
+S   U ZGZUFGUANGZHOU FIR       003N220000.00 E1220000.00       0060000000                                                           
+S   U ZGZUFGUANGZHOU FIR       004N180000.00 E1180000.00       0060000000                                                           
+S   U ZGZUFGUANGZHOU FIR       005N180000.00 E1080000.00       0060000000                                                           
+S   U ZGZUFGUANGZHOU FIR       006N220000.00 E1060000.00       0060000000                                                           
+S   U RJJTFTOKYO FIR           001N450000.00 E1350000.00       0060000000                                                           
+S   U RJJTFTOKYO FIR           002N450000.00 E1500000.00       0060000000                                                           
+S   U RJJTFTOKYO FIR           003N350000.00 E1550000.00       0060000000                                                           
+S   U RJJTFTOKYO FIR           004N300000.00 E1500000.00       0060000000                                                           
+S   U RJJTFTOKYO FIR           005N300000.00 E1350000.00       0060000000                                                           
+S   U RJJTFTOKYO FIR           006N350000.00 E1320000.00       0060000000                                                           
+S   U VHHKFHONG KONG FIR       001N250000.00 E1120000.00       0060000000                                                           
+S   U VHHKFHONG KONG FIR       002N250000.00 E1200000.00       0060000000                                                           
+S   U VHHKFHONG KONG FIR       003N200000.00 E1220000.00       0060000000                                                           
+S   U VHHKFHONG KONG FIR       004N150000.00 E1180000.00       0060000000                                                           
+S   U VHHKFHONG KONG FIR       005N150000.00 E1120000.00       0060000000                                                           
+S   U VHHKFHONG KONG FIR       006N200000.00 E1100000.00       0060000000                                                           
+S   U WSJCFSINGAPORE FIR       001N050000.00 E1000000.00       0060000000                                                           
+S   U WSJCFSINGAPORE FIR       002N050000.00 E1100000.00       0060000000                                                           
+S   U WSJCFSINGAPORE FIR       003N000000.00 E1120000.00       0060000000                                                           
+S   U WSJCFSINGAPORE FIR       004S050000.00 E1080000.00       0060000000                                                           
+S   U WSJCFSINGAPORE FIR       005S050000.00 E1000000.00       0060000000                                                           
+S   U WSJCFSINGAPORE FIR       006N000000.00 E0980000.00       0060000000                                                           
+S   U OMAEFDUBAI FIR           001N300000.00 E0500000.00       0060000000                                                           
+S   U OMAEFDUBAI FIR           002N300000.00 E0600000.00       0060000000                                                           
+S   U OMAEFDUBAI FIR           003N250000.00 E0620000.00       0060000000                                                           
+S   U OMAEFDUBAI FIR           004N200000.00 E0580000.00       0060000000                                                           
+S   U OMAEFDUBAI FIR           005N200000.00 E0500000.00       0060000000                                                           
+S   U OMAEFDUBAI FIR           006N250000.00 E0480000.00       0060000000                                                           
+S   U EGTTFLONDON FIR          001N600000.00 W0100000.00       0060000000                                                           
+S   U EGTTFLONDON FIR          002N600000.00 E0050000.00       0060000000                                                           
+S   U EGTTFLONDON FIR          003N500000.00 E0080000.00       0060000000                                                           
+S   U EGTTFLONDON FIR          004N480000.00 E0020000.00       0060000000                                                           
+S   U EGTTFLONDON FIR          005N480000.00 W0100000.00       0060000000                                                           
+S   U EGTTFLONDON FIR          006N520000.00 W0120000.00       0060000000                                                           
+S   U LFEEFPARIS FIR           001N550000.00 W0050000.00       0060000000                                                           
+S   U LFEEFPARIS FIR           002N550000.00 E0100000.00       0060000000                                                           
+S   U LFEEFPARIS FIR           003N450000.00 E0120000.00       0060000000                                                           
+S   U LFEEFPARIS FIR           004N420000.00 E0080000.00       0060000000                                                           
+S   U LFEEFPARIS FIR           005N420000.00 W0050000.00       0060000000                                                           
+S   U LFEEFPARIS FIR           006N480000.00 W0080000.00       0060000000                                                           
+S   U EDUUFFRANKFURT FIR       001N550000.00 E0050000.00       0060000000                                                           
+S   U EDUUFFRANKFURT FIR       002N550000.00 E0150000.00       0060000000                                                           
+S   U EDUUFFRANKFURT FIR       003N480000.00 E0170000.00       0060000000                                                           
+S   U EDUUFFRANKFURT FIR       004N450000.00 E0120000.00       0060000000                                                           
+S   U EDUUFFRANKFURT FIR       005N450000.00 E0050000.00       0060000000                                                           
+S   U EDUUFFRANKFURT FIR       006N500000.00 E0030000.00       0060000000                                                           
+S   U KZNYFNEW YORK FIR        001N500000.00 W0800000.00       0060000000                                                           
+S   U KZNYFNEW YORK FIR        002N500000.00 W0600000.00       0060000000                                                           
+S   U KZNYFNEW YORK FIR        003N400000.00 W0550000.00       0060000000                                                           
+S   U KZNYFNEW YORK FIR        004N350000.00 W0650000.00       0060000000                                                           
+S   U KZNYFNEW YORK FIR        005N350000.00 W0800000.00       0060000000                                                           
+S   U KZNYFNEW YORK FIR        006N420000.00 W0850000.00       0060000000                                                           
+S   U KZLAFLOS ANGELES FIR     001N500000.00 W1300000.00       0060000000                                                           
+S   U KZLAFLOS ANGELES FIR     002N500000.00 W1150000.00       0060000000                                                           
+S   U KZLAFLOS ANGELES FIR     003N350000.00 W1100000.00       0060000000                                                           
+S   U KZLAFLOS ANGELES FIR     004N300000.00 W1180000.00       0060000000                                                           
+S   U KZLAFLOS ANGELES FIR     005N300000.00 W1300000.00       0060000000                                                           
+S   U KZLAFLOS ANGELES FIR     006N400000.00 W1350000.00       0060000000                                                           
+S   U KZAUFCHICAGO FIR         001N500000.00 W1000000.00       0060000000                                                           
+S   U KZAUFCHICAGO FIR         002N500000.00 W0800000.00       0060000000                                                           
+S   U KZAUFCHICAGO FIR         003N400000.00 W0750000.00       0060000000                                                           
+S   U KZAUFCHICAGO FIR         004N350000.00 W0850000.00       0060000000                                                           
+S   U KZAUFCHICAGO FIR         005N350000.00 W1000000.00       0060000000                                                           
+S   U KZAUFCHICAGO FIR         006N420000.00 W1050000.00       0060000000                                                           
+S   U CZQMFTORONTO FIR         001N700000.00 W1000000.00       0060000000                                                           
+S   U CZQMFTORONTO FIR         002N700000.00 W0600000.00       0060000000                                                           
+S   U CZQMFTORONTO FIR         003N500000.00 W0550000.00       0060000000                                                           
+S   U CZQMFTORONTO FIR         004N450000.00 W0700000.00       0060000000                                                           
+S   U CZQMFTORONTO FIR         005N450000.00 W1000000.00       0060000000                                                           
+S   U CZQMFTORONTO FIR         006N550000.00 W1100000.00       0060000000                                                           
+S   U YBBBFBRISBANE FIR        001S100000.00 E1400000.00       0060000000                                                           
+S   U YBBBFBRISBANE FIR        002S100000.00 E1600000.00       0060000000                                                           
+S   U YBBBFBRISBANE FIR        003S300000.00 E1650000.00       0060000000                                                           
+S   U YBBBFBRISBANE FIR        004S400000.00 E1550000.00       0060000000                                                           
+S   U YBBBFBRISBANE FIR        005S400000.00 E1400000.00       0060000000                                                           
+S   U YBBBFBRISBANE FIR        006S250000.00 E1350000.00       0060000000                                                           
+S   U NZZCFAUCKLAND FIR        001S250000.00 E1600000.00       0060000000                                                           
+S   U NZZCFAUCKLAND FIR        002S250000.00 E1800000.00       0060000000                                                           
+S   U NZZCFAUCKLAND FIR        003S500000.00 E1800000.00       0060000000                                                           
+S   U NZZCFAUCKLAND FIR        004S500000.00 E1600000.00       0060000000                                                           
+S   U NZZCFAUCKLAND FIR        005S400000.00 E1550000.00       0060000000                                                           
+S   U NZZCFAUCKLAND FIR        006S300000.00 E1580000.00       0060000000                                                           
+S   U HECCFCAIRO FIR           001N350000.00 E0250000.00       0060000000                                                           
+S   U HECCFCAIRO FIR           002N350000.00 E0400000.00       0060000000                                                           
+S   U HECCFCAIRO FIR           003N250000.00 E0420000.00       0060000000                                                           
+S   U HECCFCAIRO FIR           004N200000.00 E0350000.00       0060000000                                                           
+S   U HECCFCAIRO FIR           005N200000.00 E0250000.00       0060000000                                                           
+S   U HECCFCAIRO FIR           006N280000.00 E0220000.00       0060000000                                                           
+S   U FAJOFJOHANNESBURG FIR    001S100000.00 E0150000.00       0060000000                                                           
+S   U FAJOFJOHANNESBURG FIR    002S100000.00 E0350000.00       0060000000                                                           
+S   U FAJOFJOHANNESBURG FIR    003S300000.00 E0400000.00       0060000000                                                           
+S   U FAJOFJOHANNESBURG FIR    004S350000.00 E0300000.00       0060000000                                                           
+S   U FAJOFJOHANNESBURG FIR    005S350000.00 E0150000.00       0060000000                                                           
+S   U FAJOFJOHANNESBURG FIR    006S200000.00 E0100000.00       0060000000                                                           
+S   U SBAOFSAO PAULO FIR       001N000000.00 W0500000.00       0060000000                                                           
+S   U SBAOFSAO PAULO FIR       002N000000.00 W0350000.00       0060000000                                                           
+S   U SBAOFSAO PAULO FIR       003S250000.00 W0300000.00       0060000000                                                           
+S   U SBAOFSAO PAULO FIR       004S350000.00 W0400000.00       0060000000                                                           
+S   U SBAOFSAO PAULO FIR       005S350000.00 W0550000.00       0060000000                                                           
+S   U SBAOFSAO PAULO FIR       006S150000.00 W0600000.00       0060000000                                                           
+S   U MMFRFMEXICO FIR          001N300000.00 W1050000.00       0060000000                                                           
+S   U MMFRFMEXICO FIR          002N300000.00 W0850000.00       0060000000                                                           
+S   U MMFRFMEXICO FIR          003N150000.00 W0800000.00       0060000000                                                           
+S   U MMFRFMEXICO FIR          004N100000.00 W0950000.00       0060000000                                                           
+S   U MMFRFMEXICO FIR          005N100000.00 W1100000.00       0060000000                                                           
+S   U MMFRFMEXICO FIR          006N200000.00 W1150000.00       0060000000                                                           
+S   U ZBAATZBAA CTR            001N402946.64 E1163611.16       0100000000                                                           
+S   U ZBAATZBAA CTR            002N402225.28 E1165922.45       0100000000                                                           
+S   U ZBAATZBAA CTR            003N400443.07 E1170850.21       0100000000                                                           
+S   U ZBAATZBAA CTR            004N394705.42 E1165910.50       0100000000                                                           
+S   U ZBAATZBAA CTR            005N393948.64 E1163611.16       0100000000                                                           
+S   U ZBAATZBAA CTR            006N394705.42 E1161311.82       0100000000                                                           
+S   U ZBAATZBAA CTR            007N400443.07 E1160332.11       0100000000                                                           
+S   U ZBAATZBAA CTR            008N402225.28 E1161259.87       0100000000                                                           
+S   U ZSPDTZSPD CTR            001N313338.48 E1214829.88       0100000000                                                           
+S   U ZSPDTZSPD CTR            002N312617.77 E1220912.20       0100000000                                                           
+S   U ZSPDTZSPD CTR            003N310836.20 E1221741.28       0100000000                                                           
+S   U ZSPDTZSPD CTR            004N305057.91 E1220904.50       0100000000                                                           
+S   U ZSPDTZSPD CTR            005N304340.48 E1214829.88       0100000000                                                           
+S   U ZSPDTZSPD CTR            006N305057.91 E1212755.26       0100000000                                                           
+S   U ZSPDTZSPD CTR            007N310836.20 E1211918.48       0100000000                                                           
+S   U ZSPDTZSPD CTR            008N312617.77 E1212747.56       0100000000                                                           
+S   U ZGGGTZGGG CTR            001N234831.64 E1131755.68       0100000000                                                           
+S   U ZGGGTZGGG CTR            002N234111.40 E1133713.12       0100000000                                                           
+S   U ZGGGTZGGG CTR            003N232330.30 E1134508.89       0100000000                                                           
+S   U ZGGGTZGGG CTR            004N230551.54 E1133708.00       0100000000                                                           
+S   U ZGGGTZGGG CTR            005N225833.64 E1131755.68       0100000000                                                           
+S   U ZGGGTZGGG CTR            006N230551.54 E1125843.36       0100000000                                                           
+S   U ZGGGTZGGG CTR            007N232330.30 E1125042.47       0100000000                                                           
+S   U ZGGGTZGGG CTR            008N234111.40 E1125838.24       0100000000                                                           
+S   U ZUUUTZUUU CTR            001N305941.60 E1035649.20       0100000000                                                           
+S   U ZUUUTZUUU CTR            002N305220.93 E1041724.11       0100000000                                                           
+S   U ZUUUTZUUU CTR            003N303439.40 E1042550.30       0100000000                                                           
+S   U ZUUUTZUUU CTR            004N301701.07 E1041716.66       0100000000                                                           
+S   U ZUUUTZUUU CTR            005N300943.60 E1035649.20       0100000000                                                           
+S   U ZUUUTZUUU CTR            006N301701.07 E1033621.74       0100000000                                                           
+S   U ZUUUTZUUU CTR            007N303439.40 E1032748.10       0100000000                                                           
+S   U ZUUUTZUUU CTR            008N305220.93 E1033614.29       0100000000                                                           
+S   U ZSSSTZSSS CTR            001N313651.44 E1212010.68       0100000000                                                           
+S   U ZSSSTZSSS CTR            002N312930.73 E1214053.69       0100000000                                                           
+S   U ZSSSTZSSS CTR            003N311149.13 E1214923.09       0100000000                                                           
+S   U ZSSSTZSSS CTR            004N305410.87 E1214045.98       0100000000                                                           
+S   U ZSSSTZSSS CTR            005N304653.44 E1212010.68       0100000000                                                           
+S   U ZSSSTZSSS CTR            006N305410.87 E1205935.38       0100000000                                                           
+S   U ZSSSTZSSS CTR            007N311149.13 E1205058.27       0100000000                                                           
+S   U ZSSSTZSSS CTR            008N312930.73 E1205927.67       0100000000                                                           
+S   U ZLXYTZLXY CTR            001N345148.56 E1084505.76       0100000000                                                           
+S   U ZLXYTZLXY CTR            002N344427.64 E1090635.64       0100000000                                                           
+S   U ZLXYTZLXY CTR            003N342645.82 E1091523.47       0100000000                                                           
+S   U ZLXYTZLXY CTR            004N340907.74 E1090626.57       0100000000                                                           
+S   U ZLXYTZLXY CTR            005N340150.56 E1084505.76       0100000000                                                           
+S   U ZLXYTZLXY CTR            006N340907.74 E1082344.95       0100000000                                                           
+S   U ZLXYTZLXY CTR            007N342645.82 E1081448.05       0100000000                                                           
+S   U ZLXYTZLXY CTR            008N344427.64 E1082335.88       0100000000                                                           
+S   U RJTTTRJTT CTR            001N355756.84 E1394647.28       0100000000                                                           
+S   U RJTTTRJTT CTR            002N355035.84 E1400834.84       0100000000                                                           
+S   U RJTTTRJTT CTR            003N353253.95 E1401729.65       0100000000                                                           
+S   U RJTTTRJTT CTR            004N351515.95 E1400825.30       0100000000                                                           
+S   U RJTTTRJTT CTR            005N350758.84 E1394647.28       0100000000                                                           
+S   U RJTTTRJTT CTR            006N351515.95 E1392509.26       0100000000                                                           
+S   U RJTTTRJTT CTR            007N353253.95 E1391604.91       0100000000                                                           
+S   U RJTTTRJTT CTR            008N355035.84 E1392459.72       0100000000                                                           
+S   U RJBBTRJBB CTR            001N345103.92 E1351358.80       0100000000                                                           
+S   U RJBBTRJBB CTR            002N344343.00 E1353528.50       0100000000                                                           
+S   U RJBBTRJBB CTR            003N342601.18 E1354416.26       0100000000                                                           
+S   U RJBBTRJBB CTR            004N340823.14 E1353519.43       0100000000                                                           
+S   U RJBBTRJBB CTR            005N340105.92 E1351358.80       0100000000                                                           
+S   U RJBBTRJBB CTR            006N340823.14 E1345238.17       0100000000                                                           
+S   U RJBBTRJBB CTR            007N342601.18 E1344341.34       0100000000                                                           
+S   U RJBBTRJBB CTR            008N344343.00 E1345229.10       0100000000                                                           
+S   U RKSITRKSI CTR            001N375235.72 E1262626.52       0100000000                                                           
+S   U RKSITRKSI CTR            002N374514.58 E1264847.12       0100000000                                                           
+S   U RKSITRKSI CTR            003N372732.54 E1265754.94       0100000000                                                           
+S   U RKSITRKSI CTR            004N370954.68 E1264836.61       0100000000                                                           
+S   U RKSITRKSI CTR            005N370237.72 E1262626.52       0100000000                                                           
+S   U RKSITRKSI CTR            006N370954.68 E1260416.43       0100000000                                                           
+S   U RKSITRKSI CTR            007N372732.54 E1255458.10       0100000000                                                           
+S   U RKSITRKSI CTR            008N374514.58 E1260405.92       0100000000                                                           
+S   U VHHHTVHHH CTR            001N224327.80 E1135506.60       0100000000                                                           
+S   U VHHHTVHHH CTR            002N223607.63 E1141414.71       0100000000                                                           
+S   U VHHHTVHHH CTR            003N221826.57 E1142206.85       0100000000                                                           
+S   U VHHHTVHHH CTR            004N220047.74 E1141409.89       0100000000                                                           
+S   U VHHHTVHHH CTR            005N215329.80 E1135506.60       0100000000                                                           
+S   U VHHHTVHHH CTR            006N220047.74 E1133603.31       0100000000                                                           
+S   U VHHHTVHHH CTR            007N221826.57 E1132806.35       0100000000                                                           
+S   U VHHHTVHHH CTR            008N223607.63 E1133558.49       0100000000                                                           
