@@ -167,6 +167,9 @@
         <option value="">-- 选择机场跳转 --</option>
     </select>
 
+    <!-- 地面数据加载状态提示 -->
+    <div id="ground-loader-status" style="display:none;position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:rgba(10,14,26,0.95);color:#4fc3f7;padding:10px 18px;border-radius:8px;font-size:14px;z-index:1000;border:1px solid #1e3a5f;max-width:90%;text-align:center;"></div>
+
     <!-- 底部工具栏 -->
     <div id="bottombar">
         <button class="tool-btn" id="btn-basemap">
@@ -440,6 +443,26 @@
                 renderLayers();
                 initAirportSelect();
                 document.getElementById('loading').style.display = 'none';
+
+                // 初始化机场地面数据按需加载器
+                if (window.AirportGroundLoader) {
+                    AirportGroundLoader.init(map, function(status, icao, message) {
+                        const statusEl = document.getElementById('ground-loader-status');
+                        if (statusEl) {
+                            if (status === 'loading') {
+                                statusEl.textContent = '⏳ ' + message;
+                                statusEl.style.display = 'block';
+                            } else if (status === 'loaded') {
+                                statusEl.textContent = '✅ ' + message;
+                                setTimeout(() => { statusEl.style.display = 'none'; }, 3000);
+                            } else if (status === 'error') {
+                                statusEl.textContent = '⚠️ ' + message;
+                                setTimeout(() => { statusEl.style.display = 'none'; }, 5000);
+                            }
+                        }
+                        console.log('[GroundLoader]', status, icao, message);
+                    });
+                }
             } catch (e) {
                 document.getElementById('loading').innerHTML =
                     '<div style="color:#ff6b6b">数据加载失败: ' + e.message + '</div>';
@@ -1114,5 +1137,6 @@
             loadData();
         }
     </script>
+    <script src="airport_ground_loader.js"></script>
 </body>
 </html>

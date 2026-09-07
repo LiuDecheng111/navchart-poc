@@ -216,6 +216,8 @@
         <span class="lod" id="lod-level">全球视图</span>
     </div>
 
+    <div id="ground-loader-status" style="display:none;position:fixed;bottom:40px;left:50%;transform:translateX(-50%);background:rgba(10,14,26,0.9);color:#4fc3f7;padding:8px 16px;border-radius:6px;font-size:13px;z-index:1000;border:1px solid #1e3a5f;"></div>
+
     <script>
         // 全局错误捕获
         window.onerror = function(msg, url, line) {
@@ -384,6 +386,26 @@
                 renderLayers();
                 initAirportSelect();
                 document.getElementById('loading').style.display = 'none';
+
+                // 初始化机场地面数据按需加载器
+                if (window.AirportGroundLoader) {
+                    AirportGroundLoader.init(map, function(status, icao, message) {
+                        const statusEl = document.getElementById('ground-loader-status');
+                        if (statusEl) {
+                            if (status === 'loading') {
+                                statusEl.textContent = '⏳ ' + message;
+                                statusEl.style.display = 'block';
+                            } else if (status === 'loaded') {
+                                statusEl.textContent = '✅ ' + message;
+                                setTimeout(() => { statusEl.style.display = 'none'; }, 3000);
+                            } else if (status === 'error') {
+                                statusEl.textContent = '⚠️ ' + message;
+                                setTimeout(() => { statusEl.style.display = 'none'; }, 5000);
+                            }
+                        }
+                        console.log('[GroundLoader]', status, icao, message);
+                    });
+                }
             } catch (e) {
                 document.getElementById('loading').innerHTML =
                     '<div style="color:#ff6b6b">数据加载失败: ' + e.message + '</div>';
@@ -1007,5 +1029,6 @@
             loadData();
         }
     </script>
+    <script src="airport_ground_loader.js"></script>
 </body>
 </html>
