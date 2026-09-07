@@ -279,21 +279,21 @@ out geom;`;
         // 按类型添加图层
         const layerDefs = [
             // 面图层（先绘制，在底层）
-            { id: 'og-aerodrome', type: 'fill', aeroway: 'aerodrome', color: '#1a1a1a', opacity: 0.5 },
-            { id: 'og-apron', type: 'fill', aeroway: 'apron', color: '#2d2d2d', opacity: 0.8 },
-            { id: 'og-terminal', type: 'fill', aeroway: 'terminal', color: '#4a4a4a', opacity: 0.9 },
-            { id: 'og-hangar', type: 'fill', aeroway: 'hangar', color: '#3d3d3d', opacity: 0.85 },
-            { id: 'og-stopway', type: 'fill', aeroway: 'stopway', color: '#252525', opacity: 0.7 },
-            { id: 'og-helipad', type: 'fill', aeroway: 'helipad', color: '#2a2a4a', opacity: 0.7 },
+            { id: 'og-aerodrome', type: 'fill', aeroway: 'aerodrome', color: '#1a1a1a', opacity: 0.6 },
+            { id: 'og-apron', type: 'fill', aeroway: 'apron', color: '#3a3a3a', opacity: 0.9 },
+            { id: 'og-terminal', type: 'fill', aeroway: 'terminal', color: '#5a5a5a', opacity: 0.95 },
+            { id: 'og-hangar', type: 'fill', aeroway: 'hangar', color: '#4a4a4a', opacity: 0.9 },
+            { id: 'og-stopway', type: 'fill', aeroway: 'stopway', color: '#2a2a2a', opacity: 0.8 },
+            { id: 'og-helipad', type: 'fill', aeroway: 'helipad', color: '#2a2a4a', opacity: 0.8 },
 
-            // 线图层
-            { id: 'og-runway', type: 'line', aeroway: 'runway', color: '#f0f0f0', width: 8, opacity: 0.95 },
-            { id: 'og-taxiway', type: 'line', aeroway: 'taxiway', color: '#999', width: 4, opacity: 0.85 },
-            { id: 'og-jetbridge', type: 'line', aeroway: 'jet_bridge', color: '#777', width: 2, opacity: 0.7 },
+            // 线图层（大幅增加线宽模拟面效果）
+            { id: 'og-runway', type: 'line', aeroway: 'runway', color: '#ffffff', width: 18, opacity: 0.95 },
+            { id: 'og-taxiway', type: 'line', aeroway: 'taxiway', color: '#b8b8b8', width: 10, opacity: 0.9 },
+            { id: 'og-jetbridge', type: 'line', aeroway: 'jet_bridge', color: '#888', width: 3, opacity: 0.8 },
 
             // 点图层（最后绘制，在顶层）
-            { id: 'og-parking', type: 'circle', aeroway: 'parking_position', color: '#4fc3f7', radius: 3 },
-            { id: 'og-gate', type: 'circle', aeroway: 'gate', color: '#81c784', radius: 3.5 },
+            { id: 'og-parking', type: 'circle', aeroway: 'parking_position', color: '#4fc3f7', radius: 3.5 },
+            { id: 'og-gate', type: 'circle', aeroway: 'gate', color: '#81c784', radius: 4 },
             { id: 'og-navaid', type: 'circle', aeroway: 'navigationaid', color: '#ffd54f', radius: 3 },
             { id: 'og-windsock', type: 'circle', aeroway: 'windsock', color: '#ff8a65', radius: 2.5 },
             { id: 'og-tower', type: 'circle', aeroway: 'tower', color: '#ba68c8', radius: 3 }
@@ -341,6 +341,105 @@ out geom;`;
                 mapInstance.addLayer(layer);
             } catch (e) {
                 console.error(`[GroundLoader] 图层添加失败 ${def.id}:`, e.message);
+            }
+        }
+
+        // ===== 标注图层（高缩放级别显示） =====
+        const labelLayers = [
+            // 跑道号标注（zoom>=14）
+            {
+                id: 'og-runway-label',
+                type: 'symbol',
+                source: 'og-ground',
+                filter: ['all', ['==', ['get', 'aeroway'], 'runway'], ['!=', ['get', 'ref'], '']],
+                minzoom: 14,
+                layout: {
+                    'text-field': ['get', 'ref'],
+                    'text-size': 12,
+                    'text-offset': [0, 0],
+                    'text-allow-overlap': true,
+                    'text-ignore-placement': true
+                },
+                paint: {
+                    'text-color': '#000000',
+                    'text-halo-color': '#ffffff',
+                    'text-halo-width': 2
+                }
+            },
+            // 滑行道代号标注（zoom>=15）
+            {
+                id: 'og-taxiway-label',
+                type: 'symbol',
+                source: 'og-ground',
+                filter: ['all', ['==', ['get', 'aeroway'], 'taxiway'], ['!=', ['get', 'ref'], '']],
+                minzoom: 15,
+                layout: {
+                    'text-field': ['get', 'ref'],
+                    'text-size': 10,
+                    'text-offset': [0, 0],
+                    'text-allow-overlap': false,
+                    'text-optional': true
+                },
+                paint: {
+                    'text-color': '#ffffff',
+                    'text-halo-color': '#000000',
+                    'text-halo-width': 1.5
+                }
+            },
+            // 机位号标注（zoom>=16）
+            {
+                id: 'og-parking-label',
+                type: 'symbol',
+                source: 'og-ground',
+                filter: ['all',
+                    ['==', ['get', 'aeroway'], 'parking_position'],
+                    ['any', ['!=', ['get', 'ref'], ''], ['!=', ['get', 'name'], '']]
+                ],
+                minzoom: 16,
+                layout: {
+                    'text-field': ['coalesce', ['get', 'ref'], ['get', 'name'], ''],
+                    'text-size': 9,
+                    'text-offset': [0, 1.2],
+                    'text-allow-overlap': false,
+                    'text-optional': true
+                },
+                paint: {
+                    'text-color': '#4fc3f7',
+                    'text-halo-color': '#0a0e1a',
+                    'text-halo-width': 1.5
+                }
+            },
+            // 登机口标注（zoom>=15）
+            {
+                id: 'og-gate-label',
+                type: 'symbol',
+                source: 'og-ground',
+                filter: ['all',
+                    ['==', ['get', 'aeroway'], 'gate'],
+                    ['any', ['!=', ['get', 'ref'], ''], ['!=', ['get', 'name'], '']]
+                ],
+                minzoom: 15,
+                layout: {
+                    'text-field': ['coalesce', ['get', 'ref'], ['get', 'name'], ''],
+                    'text-size': 10,
+                    'text-offset': [0, 1.2],
+                    'text-allow-overlap': false,
+                    'text-optional': true
+                },
+                paint: {
+                    'text-color': '#81c784',
+                    'text-halo-color': '#0a0e1a',
+                    'text-halo-width': 1.5
+                }
+            }
+        ];
+
+        for (const def of labelLayers) {
+            if (mapInstance.getLayer(def.id)) continue;
+            try {
+                mapInstance.addLayer(def);
+            } catch (e) {
+                console.error(`[GroundLoader] 标注图层添加失败 ${def.id}:`, e.message);
             }
         }
 

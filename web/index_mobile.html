@@ -1089,7 +1089,8 @@
             document.getElementById('layer-labels').addEventListener('change', (e) => {
                 const visible = e.target.checked;
                 const labelLayers = ['global-airport-label', 'airport-label', 'navaid-label', 'runway-label',
-                    'taxiway-label', 'gate-label', 'parking-label', 'terminal-label'];
+                    'taxiway-label', 'gate-label', 'parking-label', 'terminal-label',
+                    'og-runway-label', 'og-taxiway-label', 'og-parking-label', 'og-gate-label'];
                 labelLayers.forEach(id => {
                     if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', visible ? 'visible' : 'none');
                 });
