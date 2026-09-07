@@ -358,6 +358,10 @@
             if (airport) {
                 const coords = airport.geometry.coordinates;
                 map.flyTo({center: [coords[0], coords[1]], zoom: 13.5, speed: 1.5});
+                // 动画结束后延迟触发按需加载
+                setTimeout(() => {
+                    if (window.AirportGroundLoader) AirportGroundLoader.checkAndLoad();
+                }, 4500);
             }
         };
 

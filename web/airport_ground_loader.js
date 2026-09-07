@@ -16,6 +16,13 @@
     const LOAD_ZOOM_THRESHOLD = 12; // 达到此缩放级别开始加载地面数据
     const MAX_CONCURRENT_LOADS = 2; // 最大并发加载数
 
+    // 中国 30 个机场已有预加载 OSM 数据，跳过按需加载避免重复
+    const CHINA_PRELOADED_AIRPORTS = new Set([
+        'ZBAA','ZBDS','ZBER','ZBYN','ZGGG','ZGKL','ZGSZ','ZGZJ','ZHEC','ZHHH',
+        'ZJQH','ZLIC','ZLLL','ZPPP','ZSFZ','ZSHC','ZSNB','ZSNJ','ZSNT','ZSOF',
+        'ZSPD','ZSSS','ZSTX','ZSZS','ZUCK','ZULS','ZWWW','ZYHB','ZYJM','ZYTL'
+    ]);
+
     // ===== 状态 =====
     const loadedCache = {};      // 已加载的机场地面数据 {icao: geojson}
     const loadingSet = new Set(); // 正在加载的机场 ICAO
@@ -75,12 +82,13 @@
             layers: ['global-airport-point']
         });
 
-        // 去重并筛选未加载的机场
+        // 去重并筛选未加载的机场（跳过中国预加载机场）
         const airportsToLoad = [];
         const seen = new Set();
         for (const f of features) {
             const icao = f.properties.icao;
             if (!icao || seen.has(icao)) continue;
+            if (CHINA_PRELOADED_AIRPORTS.has(icao)) continue; // 跳过中国预加载机场
             if (loadedCache[icao] || loadingSet.has(icao) || failedSet.has(icao)) continue;
             seen.add(icao);
             airportsToLoad.push({
@@ -225,10 +233,12 @@ out geom;`;
                     coords[0][0] === coords[coords.length - 1][0] &&
                     coords[0][1] === coords[coords.length - 1][1];
 
+                // 某些类型强制作为线处理（即使闭合也不转面）
+                const forceLine = ['runway', 'taxiway', 'jet_bridge'];
                 // 某些类型强制作为面处理
-                const forcePolygon = ['apron', 'terminal', 'hangar', 'aerodrome', 'stopway', 'helipad'].includes(aerowayType);
+                const forcePolygon = ['apron', 'terminal', 'hangar', 'aerodrome', 'stopway', 'helipad'];
 
-                if (isClosed || forcePolygon) {
+                if (!forceLine.includes(aerowayType) && (isClosed || forcePolygon.includes(aerowayType))) {
                     // 确保闭合
                     if (!isClosed && coords.length > 2) {
                         coords.push([...coords[0]]);
@@ -269,17 +279,17 @@ out geom;`;
         // 按类型添加图层
         const layerDefs = [
             // 面图层（先绘制，在底层）
-            { id: 'og-aerodrome', type: 'fill', aeroway: 'aerodrome', color: '#2a2a2a', opacity: 0.6 },
-            { id: 'og-apron', type: 'fill', aeroway: 'apron', color: '#3d3d3d', opacity: 0.7 },
-            { id: 'og-terminal', type: 'fill', aeroway: 'terminal', color: '#5a5a5a', opacity: 0.8 },
-            { id: 'og-hangar', type: 'fill', aeroway: 'hangar', color: '#4a4a4a', opacity: 0.8 },
-            { id: 'og-stopway', type: 'fill', aeroway: 'stopway', color: '#333', opacity: 0.7 },
-            { id: 'og-helipad', type: 'fill', aeroway: 'helipad', color: '#3a3a5a', opacity: 0.7 },
+            { id: 'og-aerodrome', type: 'fill', aeroway: 'aerodrome', color: '#1a1a1a', opacity: 0.5 },
+            { id: 'og-apron', type: 'fill', aeroway: 'apron', color: '#2d2d2d', opacity: 0.8 },
+            { id: 'og-terminal', type: 'fill', aeroway: 'terminal', color: '#4a4a4a', opacity: 0.9 },
+            { id: 'og-hangar', type: 'fill', aeroway: 'hangar', color: '#3d3d3d', opacity: 0.85 },
+            { id: 'og-stopway', type: 'fill', aeroway: 'stopway', color: '#252525', opacity: 0.7 },
+            { id: 'og-helipad', type: 'fill', aeroway: 'helipad', color: '#2a2a4a', opacity: 0.7 },
 
             // 线图层
-            { id: 'og-runway', type: 'line', aeroway: 'runway', color: '#e0e0e0', width: 5, opacity: 0.95 },
-            { id: 'og-taxiway', type: 'line', aeroway: 'taxiway', color: '#888', width: 2.5, opacity: 0.85 },
-            { id: 'og-jetbridge', type: 'line', aeroway: 'jet_bridge', color: '#666', width: 1.5, opacity: 0.7 },
+            { id: 'og-runway', type: 'line', aeroway: 'runway', color: '#f0f0f0', width: 8, opacity: 0.95 },
+            { id: 'og-taxiway', type: 'line', aeroway: 'taxiway', color: '#999', width: 4, opacity: 0.85 },
+            { id: 'og-jetbridge', type: 'line', aeroway: 'jet_bridge', color: '#777', width: 2, opacity: 0.7 },
 
             // 点图层（最后绘制，在顶层）
             { id: 'og-parking', type: 'circle', aeroway: 'parking_position', color: '#4fc3f7', radius: 3 },
@@ -308,12 +318,13 @@ out geom;`;
                 };
             } else if (def.type === 'line') {
                 layer.type = 'line';
+                // line-cap 和 line-join 是 layout 属性，不是 paint 属性！
+                layer.layout['line-cap'] = 'round';
+                layer.layout['line-join'] = 'round';
                 layer.paint = {
                     'line-color': def.color,
                     'line-width': def.width,
-                    'line-opacity': def.opacity,
-                    'line-cap': 'round',
-                    'line-join': 'round'
+                    'line-opacity': def.opacity
                 };
             } else if (def.type === 'circle') {
                 layer.type = 'circle';
@@ -326,7 +337,11 @@ out geom;`;
                 };
             }
 
-            mapInstance.addLayer(layer);
+            try {
+                mapInstance.addLayer(layer);
+            } catch (e) {
+                console.error(`[GroundLoader] 图层添加失败 ${def.id}:`, e.message);
+            }
         }
 
         sourceAdded = true;
