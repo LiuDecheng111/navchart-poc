@@ -292,7 +292,10 @@ out geom;`;
             { id: 'og-jetbridge', type: 'line', aeroway: 'jet_bridge', color: '#888', width: 3, opacity: 0.8 },
 
             // 点图层（最后绘制，在顶层）
-            { id: 'og-parking', type: 'circle', aeroway: 'parking_position', color: '#4fc3f7', radius: 3.5 },
+            // 停机位：只显示有 ref/name 标注的，避免 OSM 中位置不准确的未标注点形成大量蓝色圆点
+            { id: 'og-parking', type: 'circle', aeroway: 'parking_position', color: '#4fc3f7', radius: 2.5, minzoom: 15,
+              filter: ['all', ['==', ['get', 'aeroway'], 'parking_position'],
+                ['any', ['has', 'ref'], ['has', 'name']]] },
             { id: 'og-gate', type: 'circle', aeroway: 'gate', color: '#81c784', radius: 4 },
             { id: 'og-navaid', type: 'circle', aeroway: 'navigationaid', color: '#ffd54f', radius: 3 },
             { id: 'og-windsock', type: 'circle', aeroway: 'windsock', color: '#ff8a65', radius: 2.5 },
@@ -305,8 +308,8 @@ out geom;`;
             const layer = {
                 id: def.id,
                 source: 'og-ground',
-                filter: ['==', ['get', 'aeroway'], def.aeroway],
-                minzoom: 11,
+                filter: def.filter || ['==', ['get', 'aeroway'], def.aeroway],
+                minzoom: def.minzoom || 11,
                 layout: { visibility: 'visible' }
             };
 
