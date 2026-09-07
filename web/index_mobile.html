@@ -197,6 +197,19 @@
     <div id="layer-panel">
         <div class="drag-handle"></div>
         <h3>图层控制</h3>
+        <div class="group-title">VATSIM 实时数据</div>
+        <div class="layer-item">
+            <input type="checkbox" id="layer-vatsim" checked>
+            <label for="layer-vatsim">在线飞机</label>
+            <span class="count" id="count-vatsim">--</span>
+            <span class="color-dot" style="background:linear-gradient(90deg,#4fc3f7,#ffb74d)"></span>
+        </div>
+        <div class="layer-item">
+            <input type="checkbox" id="layer-vatsim-ctrl" checked>
+            <label for="layer-vatsim-ctrl">在线管制</label>
+            <span class="count" id="count-vatsim-ctrl">--</span>
+            <span class="color-dot" style="background:linear-gradient(90deg,#2196f3,#f44336)"></span>
+        </div>
         <div class="group-title">全球机场数据 (OurAirports)</div>
         <div class="layer-item">
             <input type="checkbox" id="layer-global-airports" checked>
@@ -461,6 +474,21 @@
                             }
                         }
                         console.log('[GroundLoader]', status, icao, message);
+                    });
+                }
+
+                // 初始化 VATSIM 实时数据加载器
+                if (window.VATSIMLoader) {
+                    VATSIMLoader.init(map, function(status, id, message) {
+                        const statusEl = document.getElementById('ground-loader-status');
+                        if (statusEl && status !== 'loaded') {
+                            statusEl.textContent = (status === 'loading' ? '⏳ ' : '⚠️ ') + message;
+                            statusEl.style.display = 'block';
+                            if (status === 'error') {
+                                setTimeout(() => { statusEl.style.display = 'none'; }, 5000);
+                            }
+                        }
+                        console.log('[VATSIM]', status, message);
                     });
                 }
             } catch (e) {
@@ -1030,6 +1058,30 @@
                 });
             });
 
+            // VATSIM 在线飞机开关
+            document.getElementById('layer-vatsim').addEventListener('change', (e) => {
+                const visible = e.target.checked;
+                ['vatsim-aircraft', 'vatsim-aircraft-labels'].forEach(id => {
+                    if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', visible ? 'visible' : 'none');
+                });
+                if (window.VATSIMLoader) {
+                    const ctrlEnabled = document.getElementById('layer-vatsim-ctrl').checked;
+                    VATSIMLoader.setEnabled(visible || ctrlEnabled);
+                }
+            });
+
+            // VATSIM 在线管制开关
+            document.getElementById('layer-vatsim-ctrl').addEventListener('change', (e) => {
+                const visible = e.target.checked;
+                ['vatsim-controllers', 'vatsim-controller-labels'].forEach(id => {
+                    if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', visible ? 'visible' : 'none');
+                });
+                if (window.VATSIMLoader) {
+                    const acftEnabled = document.getElementById('layer-vatsim').checked;
+                    VATSIMLoader.setEnabled(acftEnabled || visible);
+                }
+            });
+
             document.getElementById('layer-labels').addEventListener('change', (e) => {
                 const visible = e.target.checked;
                 const labelLayers = ['global-airport-label', 'airport-label', 'navaid-label', 'runway-label',
@@ -1138,5 +1190,6 @@
         }
     </script>
     <script src="airport_ground_loader.js"></script>
+    <script src="vatsim_data.js"></script>
 </body>
 </html>
