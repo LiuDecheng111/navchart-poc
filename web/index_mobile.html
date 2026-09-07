@@ -194,6 +194,13 @@
     <div id="layer-panel">
         <div class="drag-handle"></div>
         <h3>图层控制</h3>
+        <div class="group-title">全球机场数据 (OurAirports)</div>
+        <div class="layer-item">
+            <input type="checkbox" id="layer-global-airports" checked>
+            <label for="layer-global-airports">全球机场</label>
+            <span class="count" id="count-global-airports">72549</span>
+            <span class="color-dot" style="background:linear-gradient(90deg,#4fc3f7,#81c784,#ffb74d)"></span>
+        </div>
         <div class="group-title">航空导航数据 (e-AIP)</div>
         <div class="layer-item">
             <input type="checkbox" id="layer-airport" checked>
@@ -328,22 +335,53 @@
             ['ZYTL', '大连/周水子', 38.9667, 121.5400]
         ];
 
-        // 机场跳转全局函数
+        // 机场跳转全局函数（从全球机场数据查找）
         window.jumpToAirport = function(icao) {
-            const airport = AIRPORT_LIST.find(a => a[0] === icao);
+            if (!globalAirportsData) return;
+            const airport = globalAirportsData.features.find(f => f.properties.icao === icao);
             if (airport) {
-                map.flyTo({center: [airport[3], airport[2]], zoom: 13.5, speed: 1.5});
+                const coords = airport.geometry.coordinates;
+                map.flyTo({center: [coords[0], coords[1]], zoom: 13.5, speed: 1.5});
             }
         };
 
         function initAirportSelect() {
             const select = document.getElementById('airport-select');
-            AIRPORT_LIST.forEach(([icao, name]) => {
-                const opt = document.createElement('option');
-                opt.value = icao;
-                opt.textContent = icao + ' - ' + name;
-                select.appendChild(opt);
+            select.innerHTML = '<option value="">-- 全球大型机场 --</option>';
+
+            if (!globalAirportsData) return;
+
+            // 筛选大型机场，按大洲分组
+            const continentGroups = {};
+            globalAirportsData.features
+                .filter(f => f.properties.type === 'large_airport' && f.properties.icao)
+                .forEach(f => {
+                    const cont = f.properties.continent_name || f.properties.continent || '其他';
+                    if (!continentGroups[cont]) continentGroups[cont] = [];
+                    continentGroups[cont].push(f);
+                });
+
+            const continentOrder = ['亚洲', '欧洲', '北美洲', '南美洲', '非洲', '大洋洲', '南极洲'];
+            const sortedContinents = Object.keys(continentGroups).sort((a, b) => {
+                const ia = continentOrder.indexOf(a);
+                const ib = continentOrder.indexOf(b);
+                return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
             });
+
+            sortedContinents.forEach(cont => {
+                const group = document.createElement('optgroup');
+                group.label = cont + ` (${continentGroups[cont].length})`;
+                continentGroups[cont]
+                    .sort((a, b) => a.properties.icao.localeCompare(b.properties.icao))
+                    .forEach(f => {
+                        const opt = document.createElement('option');
+                        opt.value = f.properties.icao;
+                        opt.textContent = f.properties.icao + ' - ' + f.properties.name;
+                        group.appendChild(opt);
+                    });
+                select.appendChild(group);
+            });
+
             select.addEventListener('change', (e) => {
                 if (e.target.value) window.jumpToAirport(e.target.value);
             });
@@ -367,29 +405,33 @@
         let landData = null;
         let countriesData = null;
         let countryLabelsData = null;
+        let globalAirportsData = null;
         let isDark = true;
         let basemapMode = 'satellite'; // 'satellite' or 'simple'
 
         async function loadData() {
             try {
                 // 并行加载所有数据源
-                const [realResp, groundResp, landResp, countriesResp, labelsResp] = await Promise.all([
+                const [realResp, groundResp, landResp, countriesResp, labelsResp, globalResp] = await Promise.all([
                     fetch('../data/china_airports_real.geojson'),
                     fetch('../data/china_airports_ground.geojson'),
                     fetch('../data/ne_110m_land.geojson'),
                     fetch('../data/ne_110m_countries.geojson'),
-                    fetch('../data/country_labels.geojson')
+                    fetch('../data/country_labels.geojson'),
+                    fetch('../data/global_airports.geojson')
                 ]);
                 realData = await realResp.json();
                 groundData = await groundResp.json();
                 landData = await landResp.json();
                 countriesData = await countriesResp.json();
                 countryLabelsData = await labelsResp.json();
+                globalAirportsData = await globalResp.json();
                 console.log('[e-AIP真实数据]', realData.features.length, 'Feature');
                 console.log('[OSM地面数据]', groundData.features.length, 'Feature');
                 console.log('[Natural Earth陆地]', landData.features.length, 'Feature');
                 console.log('[Natural Earth国家]', countriesData.features.length, 'Feature');
                 console.log('[国家标注点]', countryLabelsData.features.length, 'Feature');
+                console.log('[全球机场]', globalAirportsData.features.length, 'Feature');
 
                 if (!map.loaded()) {
                     await new Promise(resolve => map.once('load', resolve));
@@ -469,16 +511,79 @@
                 minzoom: 2
             });
 
+            // ===== 全球机场数据: OurAirports (72549个机场, 247国家) =====
+            map.addSource('global-airports', { type: 'geojson', data: globalAirportsData });
+
+            // 全球机场点 (按类型分级显示)
+            map.addLayer({
+                id: 'global-airport-point',
+                type: 'circle',
+                source: 'global-airports',
+                filter: ['>=', ['zoom'], ['get', 'minzoom']],
+                paint: {
+                    'circle-radius': [
+                        'match', ['get', 'type'],
+                        'large_airport', 6,
+                        'medium_airport', 5,
+                        'small_airport', 4,
+                        'seaplane_base', 4,
+                        'heliport', 3,
+                        'balloonport', 3,
+                        3
+                    ],
+                    'circle-color': [
+                        'match', ['get', 'type'],
+                        'large_airport', '#4fc3f7',
+                        'medium_airport', '#81c784',
+                        'small_airport', '#ffb74d',
+                        'seaplane_base', '#4dd0e1',
+                        'heliport', '#ba68c8',
+                        'balloonport', '#e57373',
+                        '#ccc'
+                    ],
+                    'circle-stroke-color': '#0a0e1a',
+                    'circle-stroke-width': 1,
+                    'circle-opacity': 0.95
+                }
+            });
+
+            // 全球机场标注 (zoom >= 8, 有ICAO代码的机场)
+            map.addLayer({
+                id: 'global-airport-label',
+                type: 'symbol',
+                source: 'global-airports',
+                filter: ['all', ['>=', ['zoom'], 8], ['!=', ['get', 'icao'], '']],
+                layout: {
+                    'text-field': ['get', 'icao'],
+                    'text-size': ['interpolate', ['linear'], ['zoom'], 8, 10, 12, 12],
+                    'text-offset': [0, 1.2],
+                    'text-allow-overlap': false,
+                    'text-optional': true
+                },
+                paint: {
+                    'text-color': [
+                        'match', ['get', 'type'],
+                        'large_airport', '#4fc3f7',
+                        'medium_airport', '#81c784',
+                        'small_airport', '#ffb74d',
+                        '#ccc'
+                    ],
+                    'text-halo-color': '#0a0e1a',
+                    'text-halo-width': 1.5
+                }
+            });
+
             // ===== 数据源1: e-AIP 真实数据 =====
             map.addSource('real', { type: 'geojson', data: realData });
 
-            // 机场点 (zoom >= 3)
+            // 机场点 (zoom >= 3) - 默认隐藏，全球机场数据更完整
             map.addLayer({
                 id: 'airport-point',
                 type: 'circle',
                 source: 'real',
                 filter: ['all', ['==', ['get', 'category'], 'airport'], ['==', ['geometry-type'], 'Point']],
                 minzoom: 3,
+                layout: { 'visibility': 'none' },
                 paint: {
                     'circle-radius': ['interpolate', ['linear'], ['zoom'], 3, 3, 6, 5, 10, 7],
                     'circle-color': '#4fc3f7',
@@ -488,7 +593,7 @@
                 }
             });
 
-            // 机场标注 (zoom >= 4)
+            // 机场标注 (zoom >= 4) - 默认隐藏
             map.addLayer({
                 id: 'airport-label',
                 type: 'symbol',
@@ -500,7 +605,8 @@
                     'text-size': ['interpolate', ['linear'], ['zoom'], 4, 10, 8, 12],
                     'text-font': ['Noto Sans Regular'],
                     'text-offset': [0, 1.2],
-                    'text-allow-overlap': false
+                    'text-allow-overlap': false,
+                    'visibility': 'none'
                 },
                 paint: { 'text-color': '#4fc3f7', 'text-halo-color': '#0a0e1a', 'text-halo-width': 1.5 }
             });
@@ -880,6 +986,7 @@
         // 图层开关
         function setupLayerToggles() {
             const toggles = [
+                ['layer-global-airports', ['global-airport-point', 'global-airport-label']],
                 ['layer-airport', ['airport-point', 'airport-label']],
                 ['layer-navaid', ['navaid-point', 'navaid-label']],
                 ['layer-runway-real', ['runway-real-line']],
@@ -902,7 +1009,7 @@
 
             document.getElementById('layer-labels').addEventListener('change', (e) => {
                 const visible = e.target.checked;
-                const labelLayers = ['airport-label', 'navaid-label', 'runway-label',
+                const labelLayers = ['global-airport-label', 'airport-label', 'navaid-label', 'runway-label',
                     'taxiway-label', 'gate-label', 'parking-label', 'terminal-label'];
                 labelLayers.forEach(id => {
                     if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', visible ? 'visible' : 'none');
