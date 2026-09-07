@@ -446,6 +446,25 @@ out geom;`;
             }
         }
 
+        // 同步页面图层面板的复选框状态（如果页面上存在对应复选框）
+        const checkboxSync = [
+            ['layer-apron', ['og-aerodrome', 'og-apron', 'og-terminal', 'og-hangar', 'og-stopway', 'og-helipad']],
+            ['layer-runway', ['og-runway', 'og-runway-label']],
+            ['layer-taxiway', ['og-taxiway', 'og-taxiway-label']],
+            ['layer-parking', ['og-parking', 'og-parking-label']],
+            ['layer-gate', ['og-gate', 'og-gate-label']]
+        ];
+        checkboxSync.forEach(([checkboxId, layerIds]) => {
+            const checkbox = document.getElementById(checkboxId);
+            if (checkbox && !checkbox.checked) {
+                layerIds.forEach(id => {
+                    if (mapInstance.getLayer(id)) {
+                        mapInstance.setLayoutProperty(id, 'visibility', 'none');
+                    }
+                });
+            }
+        });
+
         sourceAdded = true;
     }
 
